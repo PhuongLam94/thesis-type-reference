@@ -1,0 +1,33 @@
+// Syntax :
+//			#MACHINE_PLATFORM{
+//					ASSIGNMENT
+//					ASSIGNMENT
+//						....
+// 						}
+// ASSIGNMENT <- atribute = locations(separated by comma ,)
+
+#PLAT_SPARC{
+	parameters = r8, r9, r10, r11, r12, r13
+	add_params = r14
+	righttoleft = 1
+	return = r24
+}
+#PLAT_PENTIUM{
+	righttoleft = 1
+	return = r24
+	add_params = r28
+
+}
+#PLAT_PPC{
+	return = r24
+	parameters = r3,r4,r5,r6,r7,r8,r9,r10
+	alias  = m[r1 + 24], m[r1 + 28], m[r1 + 32], m[r1 + 36], m[r1 + 40], m[r1 + 44], m[r1 + 48], m[r1 + 52]
+	righttoleft = 1
+	add_params = r1
+}
+#PLAT_MIPS{
+	
+}
+#PLAT_ST20{
+	
+}

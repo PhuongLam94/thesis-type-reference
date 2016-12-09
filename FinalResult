@@ -1,0 +1,78 @@
+ABCDEFG
+		MOV
+					 A 
+					 OPTIONS + 1 
+		JNB
+					 SMPDUP 
+					 NOP_K1ECROF 
+		MOV
+					 DPTR 
+					 SLVFLGMAP + 20 
+		MOVX
+					 A 
+					 DPTR 
+		SETB
+					 TESTUPS6 
+		MOVX
+					 DPTR 
+					 A 
+		RET
+		MOV
+					 A 
+					 56 
+		JB
+					 A 
+					 TSMKHC 
+		MOV
+					 A 
+					 BTS 
+		SETB
+					 MASTER 
+		MOV
+					 DPTR 
+					 XROVLY + 20 
+		MOVX
+					 A 
+					 DPTR 
+		CLR
+					 SIMP 
+		MOV
+					 A 
+					 OPTIONS2 
+		SETB
+					 TESTUPS6 
+		RET
+		RET
+NOP_K1ECROF
+		MOV
+					 DPTR 
+					 SLVFLGMAP + 20 
+		MOVX
+					 A 
+					 DPTR 
+		SETB
+					 TESTUPS6 
+		MOVX
+					 DPTR 
+					 A 
+		RET
+TSMKHC
+		MOV
+					 A 
+					 BTS 
+		SETB
+					 MASTER 
+		MOV
+					 DPTR 
+					 XROVLY + 20 
+		MOVX
+					 A 
+					 DPTR 
+		CLR
+					 SIMP 
+		MOV
+					 A 
+					 OPTIONS2 
+		SETB
+					 TESTUPS6 
+		RET

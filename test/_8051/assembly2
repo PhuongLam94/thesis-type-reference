@@ -1,0 +1,4 @@
+PUBLIC bb
+bb:
+	MOV A, Option + 1
+	CLR FLEX
