@@ -1341,6 +1341,7 @@ bool UserProc::unionCheck(std::list<UnionDefine*>& unionDefine, std::map<Exp*, C
                 setStatus(PROC_VISITED); 					// We have at least visited this proc "on the way down"
                                                 // Append this proc to path
          BB_IT it;
+         bool valid = true;
                 // Recurse to children first, to perform a depth first search
                 //initialiseDecompile();
 
@@ -1352,10 +1353,10 @@ bool UserProc::unionCheck(std::list<UnionDefine*>& unionDefine, std::map<Exp*, C
 
                    if(!bb->makeUnion_new(unionDefine, replacement, bitVar, mapExp))
                        //cout<<"proc check union is false"<<endl;
-                       return false;
+                       valid =  false;
                    status = PROC_FINAL;
                 }
-                return true;
+                return valid;
 
 }
 void UserProc::replaceAcc(std::list<UnionDefine*>& unionDefine, std::map<Exp*, ConstantVariable*> mapExp) {

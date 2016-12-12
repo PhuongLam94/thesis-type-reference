@@ -678,7 +678,21 @@ DecodeResult& _8051Decoder::decodeAssembly(ADDRESS pc,std::string line, Assembly
                                 stmts = instantiate(pc,"MOV_DPTR_ADDR16", exp1, exp2);
                             }
                             else
-                                stmts = instantiate(pc,"MOV_DPTR_ADDR16", exp1, new Const(arg2->value.i));
+                            {
+                                int num = arg2->value.i;
+                                std::cout<<"ARG CHAR: "<<arg2->value.c<<", "<<arg2->kind<<endl;
+                                if (arg2->kind == IMMEDIATE_ID){
+                                    std::map<char*, AssemblyArgument*>::iterator mit;
+                                    for (mit = replacement.begin(); mit!=replacement.end(); mit++){
+                                        if (strcmp((*mit).first, arg2->value.c) == 0){
+                                            num = (*mit).second->value.i;
+                                            break;
+                                        }
+                                    }
+                                }
+                                std::cout<<"NUM: "<<num<<endl;
+                                stmts = instantiate(pc,"MOV_DPTR_ADDR16", exp1, new Const(num));
+                            }
                         }
                         else if ((op1 >= 9 && op1 <= 10) || op1 >= 12){ /* MOV DIRECT */
                             Exp * new_exp1 = Location::memOf(exp1);

@@ -38,10 +38,15 @@ ABCDEFG
 					 SIMP 
 		MOV
 					 A 
-					 OPTIONS2 
+					 OPTIONS 
 		SETB
 					 TESTUPS6 
 		RET
+		MOV
+					 A 
+					 38 
+		SETB
+					 CTPR 
 		RET
 NOP_K1ECROF
 		MOV
@@ -72,7 +77,7 @@ TSMKHC
 					 SIMP 
 		MOV
 					 A 
-					 OPTIONS2 
+					 OPTIONS 
 		SETB
 					 TESTUPS6 
 		RET

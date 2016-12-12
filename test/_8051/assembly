@@ -16,12 +16,15 @@
 #DEFINE TESTUPS2 ACC.2
 #DEFINE TESTUPS9 ACC.2
 #DEFINE SIMP ACC.1
+#DEFINE	CTPR ACC.6
 PUBLIC ABCDEFG
 ABCDEFG:
                 MOV     A,OPTIONS+1
                 JNB     SMPDUP,NOP_K1ECROF
                 MOV     A,38H
                 JB      ACC.6,TSMKHC
+		MOV	A, 26H
+		SETB	CTPR
 		RET
 
 NOP_K1ECROF:    MOV     DPTR,#SLVFLGMAP+14H
@@ -35,6 +38,6 @@ TSMKHC:         MOV     A,BTS
                 MOV     DPTR,#XROVLY+14H
                 MOVX    A,@DPTR
                 CLR	SIMP
-		MOV	A, OPTIONS2
+		MOV	A, OPTIONS
 		SETB	TESTUPS6
 		RET

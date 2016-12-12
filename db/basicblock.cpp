@@ -2001,6 +2001,7 @@ bool BasicBlock::makeUnion_new(std::list<UnionDefine*>& unionDefine, std::map<ch
     std::cout<<"UNION MAKING AREA"<<endl;
     UserProc* proc = NULL;
     std::list<RTL*>::iterator rit;
+    bool validAll = true;
     for (rit = m_pRtls->begin(); rit != m_pRtls->end(); rit++){
         std::list<Statement*>& stmts = (*rit)->getList();
         std::list<Statement*>::iterator sit;
@@ -2035,7 +2036,7 @@ bool BasicBlock::makeUnion_new(std::list<UnionDefine*>& unionDefine, std::map<ch
                        std::cout<<"aValue: "<<aValue<<", "<<bitVar<<endl;
                        bool valid = makeUnion_new(unionDefine, bitVar, aValue, bitVar2);
                        if (!valid)
-                           return false;
+                           validAll = false;
                    } else {
                        std::cout<<"ERROR: A DO NOT HAVE A CONSTANT VALUE AT THIS POINT OF PROGRAM"<<endl;
                        std::cout<<"STATEMENT: "<<statement->prints()<<endl;
@@ -2044,11 +2045,11 @@ bool BasicBlock::makeUnion_new(std::list<UnionDefine*>& unionDefine, std::map<ch
 //                           std::cout<<"Exp: "<<(*mit).first->prints()<<endl;
 //                           std::cout<<"Value type: "<<(*mit).second->type<<endl;
 //                       }
-                       return false;
+                       validAll = false;
                    }
                } else {
                    std::cout<<"ERROR: ACC HASN'T BEEN ASSIGNED YET!";
-                   return false;
+                   validAll = false;
                }
            }
            if (!proc)
@@ -2058,7 +2059,7 @@ bool BasicBlock::makeUnion_new(std::list<UnionDefine*>& unionDefine, std::map<ch
     }
     std::cout<<"UnionDefine size: "<<unionDefine.size()<<endl;
     std::cout<<"==================================="<<std::endl;
-    return true;
+    return validAll;
 }
 
 bool BasicBlock::makeUnion_new(std::list<UnionDefine *> &unionDefine, char* bitVar, int byteVarValue, map<char*, int> bitVar2, bool reCall){

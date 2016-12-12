@@ -1360,6 +1360,7 @@ void Prog::decompile() {
 }
 bool Prog::unionCheck(){
     unionDefine.clear();
+    bool valid = true;
     assert(m_procs.size());
     if (VERBOSE)
             LOG << (int)m_procs.size() << " procedures\n";
@@ -1372,7 +1373,7 @@ bool Prog::unionCheck(){
                     LOG << "decompiling entry point " << (*ee)->getName() << "\n";
             int indent = 0;
             if(!(*ee)->unionCheck(unionDefine, map))
-                return false;
+                valid = false;
 
     }
 
@@ -1388,12 +1389,14 @@ bool Prog::unionCheck(){
                             if (proc->isDecompiled()) continue;
                             int indent = 0;
                             if(!proc->unionCheck(unionDefine, map))
-                                return false;
+                                valid = false;
                             foundone = true;
                     }
             }
     }
-
+    if (!valid){
+        return false;
+    }
     std::map<char*, AssemblyArgument*> replacement = ((UserProc*) (*entryProcs.begin()))->replacement;
     std::map<char*, AssemblyArgument*>::iterator mit;
     list<UnionDefine*>::iterator it2;
