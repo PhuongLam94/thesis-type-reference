@@ -141,6 +141,7 @@ protected:
 #if		USE_DOMINANCE_NUMS
 		int			dominanceNum;	// Like a statement number, but has dominance properties
 public:
+                Statement* accAssign;
                 bool isBitUse = false;
                 char* bitName = NULL;
 		int			getDomNumber() {return dominanceNum;}

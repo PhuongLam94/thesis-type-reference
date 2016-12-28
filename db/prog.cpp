@@ -1448,7 +1448,8 @@ bool Prog::unionCheck(){
             if (VERBOSE)
                     LOG << "decompiling entry point " << (*ee)->getName() << "\n";
             int indent = 0;
-            (*ee)->replaceAcc(unionDefine, map);
+            if (!(*ee)->replaceAcc(unionDefine, map))
+                valid = false;
 
     }
 
@@ -1463,12 +1464,13 @@ bool Prog::unionCheck(){
                             if (proc->isLib()) continue;
                             if (proc->isDecompiled()) continue;
                             int indent = 0;
-                            proc->replaceAcc(unionDefine, map);
+                            if (!proc->replaceAcc(unionDefine, map))
+                                valid = false;
                             foundone = true;
                     }
             }
     }
-    return true;
+    return valid;
 }
 void Prog::constantPropagation(){
     std::cout<<"Into constant propagation of program"<<std::endl;

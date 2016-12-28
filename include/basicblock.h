@@ -135,7 +135,7 @@ class BasicBlock {
 		friend class Cfg;
 
 public:
-                void replaceAcc(std::list<UnionDefine*> unionDefine, std::map<Exp*, ConstantVariable*> m);
+                bool replaceAcc(std::list<UnionDefine*> unionDefine, std::map<Exp*, ConstantVariable*> m);
 		/*
 		 * Constructor.
 		 */

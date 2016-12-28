@@ -1898,10 +1898,12 @@ bool BasicBlock::makeUnion(std::list<UnionDefine *> &unionDefine, char* bitVar, 
     return true;
 }
 
-void BasicBlock::replaceAcc(std::list<UnionDefine *> unionDefine, std::map<Exp *, ConstantVariable *> m){
+bool BasicBlock::replaceAcc(std::list<UnionDefine *> unionDefine, std::map<Exp *, ConstantVariable *> m){
     std::cout<<"ENTER REPLACE ACC"<<endl;
     std::list<RTL*>::iterator rit;
     bool convert;
+    bool valid = true;
+    Statement* recentAssign;
     for (rit = m_pRtls->begin(); rit != m_pRtls->end(); rit++){
         std::list<Statement*>& stmts = (*rit)->getList();
         std::list<Statement*>::iterator sit;
@@ -1909,18 +1911,50 @@ void BasicBlock::replaceAcc(std::list<UnionDefine *> unionDefine, std::map<Exp *
            Statement* statement = (*sit);
            int subscript = -1;
            Exp* aDefine = NULL;
+           if (statement->accAssign){
            map<Exp*, ConstantVariable*>::iterator mit;
            for (mit = m.begin(); mit != m.end(); mit++){
                Exp* exp = (*mit).first;
                //std::cout<<exp->prints()<<", "<<exp->isSubscript()<<endl;
                if (exp->isSubscript() && (*exp->getSubExp1() == *Location::regOf(8))){
-                   int temp = ((RefExp*) exp)->getDef()->getNumber();
-                   //std::cout<<"Temp: "<<temp<<endl;
-                   if (temp>subscript && temp<=statement->getNumber()){
-                       subscript = temp;
-                       aDefine = exp;
+                   RefExp* left = (RefExp*) exp;
+                   if (statement->accAssign->isAssign()){
+                       if (left->getDef()->isAssign()){
+                           Assign* temp1 = (Assign*) statement->accAssign;
+                           Assign* temp2 = (Assign*) left->getDef();
+                           if(temp1->getNumber() == temp2->getNumber()){
+                               aDefine = exp;
+                               subscript = left->getDef()->getNumber();
+                               break;
+                           }
+                       }
+                   } else {
+                       if (left->getDef()->isPhi()){
+                           PhiAssign* temp1 = (PhiAssign*) statement->accAssign;
+                           PhiAssign* temp2 = (PhiAssign*) left->getDef();
+                           //std::cout<<"compare: "<<temp1->getLeft()->prints()<<", "<<temp2->getLeft()->prints()
+                           //        <<", "<<(*temp1->getLeft() == *temp2->getLeft())<<endl;
+
+                           if (temp1->getNumDefs() == temp2->getNumDefs()){
+                               //std::cout<<"phi assign: "<<temp1->prints()<<", "<<temp2->prints()<<endl;
+                               bool equal = true;
+                               for (int i=0; i<temp1->getNumDefs(); i++){
+                                   if (temp1->getStmtAt(i)->getNumber() != temp2->getStmtAt(i)->getNumber())
+                                       equal = false;
+
+                               }
+                               if (equal){
+                                   aDefine = exp;
+                                   subscript = left->getDef()->getNumber();
+                                   break;
+
+                               }
+                           }
+                       }
                    }
+
                }
+           }
            }
            if (statement->isBitUse){
                std::cout<<"Statement: "<<statement->prints()<<endl;
@@ -1948,7 +1982,8 @@ void BasicBlock::replaceAcc(std::list<UnionDefine *> unionDefine, std::map<Exp *
                                 }
                             }
                         } else {
-                            std::cout<<"ERROR: A DO NOT HAVE A CONSTANT VALUE AT THIS POINT OF PROGRAM"<<endl;
+                            std::cout<<"ERROR: A DOES NOT HAVE A CONSTANT VALUE AT THIS POINT OF PROGRAM"<<endl;
+                            valid = false;
                             std::cout<<"STATEMENT: "<<statement->prints()<<endl;
                             //std::cout<<"A VALUE: "<<val->variable->prints()<<", "<<subscript<<endl;
      //                       for (mit = mapExp.begin(); mit != mapExp.end(); mit++){
@@ -1959,6 +1994,7 @@ void BasicBlock::replaceAcc(std::list<UnionDefine *> unionDefine, std::map<Exp *
                         }
                     } else {
                         std::cout<<"ERROR: ACC HASN'T BEEN ASSIGNED YET!";
+                        valid = false;
                     }
                 }
                 std::cout<<"Byte var: "<<byteVar<<endl;
@@ -1973,10 +2009,11 @@ void BasicBlock::replaceAcc(std::list<UnionDefine *> unionDefine, std::map<Exp *
            else {
                if (subscript != -1){
                    char * byteVar;
+                   {
+                     if (statement->isLastStatementInBB())
+                         statement->getProc()->removeStatement(((RefExp*) aDefine)->getDef());
                    ConstantVariable* val = m[aDefine];
-                   if (val->type == 2 && statement == ((RefExp*)aDefine)->getDef()){
-                       statement->getProc()->removeStatement(statement);
-                   } else if (val->type ==2){
+                   if (val->type ==2){
                        int aValue = ((Const*) val->variable)->getInt();
                        list<UnionDefine*>::iterator udit;
                        for (udit = unionDefine.begin(); udit != unionDefine.end(); udit++){
@@ -1989,19 +2026,39 @@ void BasicBlock::replaceAcc(std::list<UnionDefine *> unionDefine, std::map<Exp *
                                                      Location::global(byteVar, statement->getProc()), new Const("byte")));
                        statement->replaceRef(Location::local("a", statement->getProc()), assign, convert);
                    }
+                   }
                }
            }
+           bool removed = false;
+           Statement* parentStatement = NULL;
+           if (aDefine && (statement->getAccAssign() || statement->isLastStatementInBB())){
+               Statement* deleteStatement = ((RefExp*) aDefine)->getDef();
+               parentStatement = deleteStatement->getParent();
+               deleteStatement->getProc()->removeStatement(deleteStatement);
+               removed = true;
+           }
+
+           if (statement->getAccAssign() && statement->isLastStatementInBB()){
+               parentStatement = statement->getParent();
+               statement->getProc()->removeStatement(statement);
+               removed = true;
+           }
+
         }
     }
+
+    return valid;
 }
 
 bool BasicBlock::makeUnion_new(std::list<UnionDefine*>& unionDefine, std::map<char*, AssemblyArgument*> replacement, std::map<char*, int> bitVar2, std::map<Exp*, ConstantVariable*> mapExp)
 {
+
     std::cout<<"==============================="<<endl;
     std::cout<<"UNION MAKING AREA"<<endl;
     UserProc* proc = NULL;
     std::list<RTL*>::iterator rit;
     bool validAll = true;
+    Statement* recentAssign = NULL;
     for (rit = m_pRtls->begin(); rit != m_pRtls->end(); rit++){
         std::list<Statement*>& stmts = (*rit)->getList();
         std::list<Statement*>::iterator sit;
@@ -2011,26 +2068,59 @@ bool BasicBlock::makeUnion_new(std::list<UnionDefine*>& unionDefine, std::map<ch
            std::cout<<"Bit use: "<<statement->isBitUse<<", "<<(statement->bitName==NULL?"":statement->bitName)<<endl;
            if (statement->isBitUse && string(statement->bitName).find("specbits") == string::npos){
                //std::cout<<"Map: "<<mapExp.size()<<endl;
+                //std::cout<<"Acc: "<<(statement->accAssign?statement->accAssign->prints():"NULL")<<endl;
                int aValue;
                int subscript = -1;
                char* bitVar = statement->bitName;
                Exp* aDefine = NULL;
+               if (statement->accAssign){
                map<Exp*, ConstantVariable*>::iterator mit;
                for (mit = mapExp.begin(); mit != mapExp.end(); mit++){
                    Exp* exp = (*mit).first;
                    //std::cout<<exp->prints()<<", "<<exp->isSubscript()<<endl;
                    if (exp->isSubscript() && (*exp->getSubExp1() == *Location::regOf(8))){
-                       int temp = ((RefExp*) exp)->getDef()->getNumber();
-                       //std::cout<<"Temp: "<<temp<<endl;
-                       if (temp>subscript && temp<statement->getNumber()){
-                           subscript = temp;
-                           aDefine = exp;
+                       RefExp* left = (RefExp*) exp;
+                       if (statement->accAssign->isAssign()){
+                           if (left->getDef()->isAssign()){
+                               Assign* temp1 = (Assign*) statement->accAssign;
+                               Assign* temp2 = (Assign*) left->getDef();
+                               if(temp1->getNumber() == temp2->getNumber()){
+                                   aDefine = exp;
+                                   subscript = left->getDef()->getNumber();
+                                   break;
+                               }
+                           }
+                       } else {
+                           if (left->getDef()->isPhi()){
+                               PhiAssign* temp1 = (PhiAssign*) statement->accAssign;
+                               PhiAssign* temp2 = (PhiAssign*) left->getDef();
+                               std::cout<<"compare: "<<temp1->getLeft()->prints()<<", "<<temp2->getLeft()->prints()
+                                       <<", "<<(*temp1->getLeft() == *temp2->getLeft())<<endl;
+
+                               if (temp1->getNumDefs() == temp2->getNumDefs()){
+                                   std::cout<<"phi assign: "<<temp1->prints()<<", "<<temp2->prints()<<endl;
+                                   bool equal = true;
+                                   for (int i=0; i<temp1->getNumDefs(); i++){
+                                       if (temp1->getStmtAt(i)->getNumber() != temp2->getStmtAt(i)->getNumber())
+                                           equal = false;
+
+                                   }
+                                   if (equal){
+                                       aDefine = exp;
+                                       subscript = left->getDef()->getNumber();
+                                       break;
+
+                                   }
+                               }
+                           }
                        }
+
                    }
+               }
                }
                if (subscript!=-1){
                    ConstantVariable* val = mapExp[aDefine];
-                   //std::cout<<"aDefine: "<<aDefine->prints()<<endl;
+                   std::cout<<"aDefine: "<<aDefine->prints()<<endl;
                    if (val->type == 2){
                        aValue = ((Const*) val->variable)->getInt();
                        std::cout<<"aValue: "<<aValue<<", "<<bitVar<<endl;
@@ -2038,9 +2128,9 @@ bool BasicBlock::makeUnion_new(std::list<UnionDefine*>& unionDefine, std::map<ch
                        if (!valid)
                            validAll = false;
                    } else {
-                       std::cout<<"ERROR: A DO NOT HAVE A CONSTANT VALUE AT THIS POINT OF PROGRAM"<<endl;
-                       std::cout<<"STATEMENT: "<<statement->prints()<<endl;
-                       std::cout<<"A VALUE: "<<val->variable->prints()<<", "<<subscript<<endl;
+                       std::cout<<"ERROR: A DOES NOT HAVE A CONSTANT VALUE AT THIS POINT OF PROGRAM aaa"<<endl;
+                       //std::cout<<"STATEMENT: "<<statement->prints()<<endl;
+                       //std::cout<<"A VALUE: "<<val->variable->prints()<<", "<<subscript<<endl;
 //                       for (mit = mapExp.begin(); mit != mapExp.end(); mit++){
 //                           std::cout<<"Exp: "<<(*mit).first->prints()<<endl;
 //                           std::cout<<"Value type: "<<(*mit).second->type<<endl;
@@ -2048,16 +2138,17 @@ bool BasicBlock::makeUnion_new(std::list<UnionDefine*>& unionDefine, std::map<ch
                        validAll = false;
                    }
                } else {
-                   std::cout<<"ERROR: ACC HASN'T BEEN ASSIGNED YET!";
+                   std::cout<<"ERROR: A HAS NOT BEEN ASSIGNED YET"<<endl;
                    validAll = false;
                }
            }
+
            if (!proc)
                proc = statement->getProc();
 
     }
     }
-    std::cout<<"UnionDefine size: "<<unionDefine.size()<<endl;
+    //std::cout<<"UnionDefine size: "<<unionDefine.size()<<endl;
     std::cout<<"==================================="<<std::endl;
     return validAll;
 }

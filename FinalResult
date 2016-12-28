@@ -1,83 +1,17 @@
-ABCDEFG
+AA
 		MOV
 					 A 
-					 OPTIONS + 1 
-		JNB
-					 SMPDUP 
-					 NOP_K1ECROF 
-		MOV
-					 DPTR 
-					 SLVFLGMAP + 20 
-		MOVX
-					 A 
-					 DPTR 
-		SETB
-					 TESTUPS6 
-		MOVX
-					 DPTR 
-					 A 
-		RET
-		MOV
-					 A 
-					 56 
+					 OPTIONS 
 		JB
-					 A 
-					 TSMKHC 
+					 TESTSUPS 
+					 BB 
 		MOV
 					 A 
-					 BTS 
+					 OPTIONS2 - 1 
 		SETB
-					 MASTER 
-		MOV
-					 DPTR 
-					 XROVLY + 20 
-		MOVX
-					 A 
-					 DPTR 
-		CLR
 					 SIMP 
-		MOV
-					 A 
-					 OPTIONS 
-		SETB
-					 TESTUPS6 
 		RET
+BB
 		MOV
 					 A 
-					 38 
-		SETB
-					 CTPR 
-		RET
-NOP_K1ECROF
-		MOV
-					 DPTR 
-					 SLVFLGMAP + 20 
-		MOVX
-					 A 
-					 DPTR 
-		SETB
-					 TESTUPS6 
-		MOVX
-					 DPTR 
-					 A 
-		RET
-TSMKHC
-		MOV
-					 A 
-					 BTS 
-		SETB
-					 MASTER 
-		MOV
-					 DPTR 
-					 XROVLY + 20 
-		MOVX
-					 A 
-					 DPTR 
-		CLR
-					 SIMP 
-		MOV
-					 A 
-					 OPTIONS 
-		SETB
-					 TESTUPS6 
-		RET
+					 OPTIONS2 - 1 

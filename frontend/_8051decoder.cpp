@@ -679,8 +679,9 @@ DecodeResult& _8051Decoder::decodeAssembly(ADDRESS pc,std::string line, Assembly
                             }
                             else
                             {
+                                //std::cout<<"dptr"<<endl;
                                 int num = arg2->value.i;
-                                std::cout<<"ARG CHAR: "<<arg2->value.c<<", "<<arg2->kind<<endl;
+                                //std::cout<<"ARG CHAR: "<<arg2->value.c<<", "<<arg2->kind<<endl;
                                 if (arg2->kind == IMMEDIATE_ID){
                                     std::map<char*, AssemblyArgument*>::iterator mit;
                                     for (mit = replacement.begin(); mit!=replacement.end(); mit++){

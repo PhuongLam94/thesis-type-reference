@@ -174,13 +174,21 @@ void UserProc::constantPropagation(std::map<Exp*, ConstantVariable*>& map){
             Exp* rhs = assign2->getRight();
             Exp* eval;
             //std::cout<<lhs->prints()<<", "<<Location::regOf(8)->prints()<<", "<<lhs->isRegOf()<<", "<<((*lhs) == (*Location::regOf(8)))<<", "<<rhs->isMemOf()<<endl;
-           if (lhs->isRegOf() && (*lhs) == (*Location::regOf(8)) && rhs->isMemOf()){
+           if (lhs->isRegOf() && (*lhs) == (*Location::regOf(8))){
+               if (rhs->isMemOf())
                 eval = rhs->getSubExp1();
+               else eval = NULL;
            } else {
+              if (!rhs->isMemOf())
                eval = rhs;
+              else eval = NULL;
            }
            //std::cout<<"Eval: "<<eval->prints()<<", "<<eval->isConst()<<", "<<eval->getOper()<<std::endl;
-           val = eval->accept(v, map, replacement, this);
+           if (eval) val = eval->accept(v, map, replacement, this);
+           else {
+               val = new ConstantVariable();
+               val->type = 3;
+           }
         }
         if (assign->isPhi()){
             PhiAssign* phiAssign = (PhiAssign*) assign;
@@ -196,7 +204,6 @@ void UserProc::constantPropagation(std::map<Exp*, ConstantVariable*>& map){
                     }
                 }
                 if (tempVal){
-
                     if (tempVal->type == 3){
                         val->type = 3;
                         break;
@@ -1359,7 +1366,7 @@ bool UserProc::unionCheck(std::list<UnionDefine*>& unionDefine, std::map<Exp*, C
                 return valid;
 
 }
-void UserProc::replaceAcc(std::list<UnionDefine*>& unionDefine, std::map<Exp*, ConstantVariable*> mapExp) {
+bool UserProc::replaceAcc(std::list<UnionDefine*>& unionDefine, std::map<Exp*, ConstantVariable*> mapExp) {
         //std::cout<<"UNION CHECK OF PROC IS CALLED"<<endl;
         if (VERBOSE)
                 LOG << "begin decompile(" << getName() << ")\n";
@@ -1374,6 +1381,7 @@ void UserProc::replaceAcc(std::list<UnionDefine*>& unionDefine, std::map<Exp*, C
                 setStatus(PROC_VISITED); 					// We have at least visited this proc "on the way down"
                                                 // Append this proc to path
          BB_IT it;
+         bool valid = true;
                 // Recurse to children first, to perform a depth first search
                 //initialiseDecompile();
 
@@ -1383,10 +1391,24 @@ void UserProc::replaceAcc(std::list<UnionDefine*>& unionDefine, std::map<Exp*, C
                     //bb->checkUnion(unionDefine);
                     //unionDefine.clear();
 
-                   bb->replaceAcc(unionDefine, mapExp);
+                   if(!bb->replaceAcc(unionDefine, mapExp))
+                       valid = false;
+                   else
+                   {
+                       StatementList stmtList;
+                       bb->getStatements(stmtList);
+                       std::cout<<"statment list: "<<stmtList.size()<<endl;
+                       std::cout<<"bb: "<<bb->prints()<<endl;
+                       if (stmtList.size() == 0){
+                           std::cout<<"Remove bb "<<bb->getCallDest()<<endl;
+
+                        cfg->removeBB(bb);
+                       }
+                   }
                        //cout<<"proc check union is false"<<endl;
                    status = PROC_FINAL;
                 }
+               return valid;
 
 }
 
@@ -1894,15 +1916,16 @@ void UserProc::checkAccAssign(){
     StatementList::iterator it;
     StatementList stmts;
     getStatements(stmts);
+    Statement* recentAccAssign;
     for (it = stmts.begin(); it!= stmts.end(); it++){
         Statement* s = (*it);
-        std::cout<<"ISACCASSIGN: "<<s->prints()<<endl;
+        s->accAssign = recentAccAssign?recentAccAssign->clone():NULL;
+        //std::cout<<"ISACCASSIGN: "<<s->prints()<<endl;
+        //std::cout<<"test: "<<(s->accAssign?s->accAssign->prints():"NULL")<<endl;
         bool isAssignAcc = false;
-        if (s->isAssign()){
-           Assign* assign = (Assign*) s;
-            if (assign->getRight()->isMemOf()&&
-                    assign->getRight()->getSubExp1()->isSubscript() &&
-                    assign->getRight()->getSubExp1()->getSubExp1()->isRegOf()
+        if (s->isAssignment()){
+           Assignment* assign = (Assignment*) s;
+            if (true
                     )
             {
                 bool isA = false;
@@ -1913,19 +1936,12 @@ void UserProc::checkAccAssign(){
                     isA = ((Const*)assign->getLeft()->getSubExp1()->getSubExp1())->getInt() == 8;
                 }
 
-                if (isA){
-                 Exp* rhs = (Exp*) assign->getRight()->getSubExp1()->getSubExp1();
-                        char* byteVar = getRegName(rhs);
-                        isAssignAcc = true;
-                        s->setByteAssign(byteVar);
-                        s->setAccAssign(isAssignAcc);
-                        std::cout<<"ISASSIGN: "<<isAssignAcc<<endl;
-                    }
-
+               isAssignAcc = isA;
             }
         }
         s->setAccAssign(isAssignAcc);
-
+        if (isAssignAcc)
+            recentAccAssign = s;
     }
 }
 
