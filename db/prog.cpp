@@ -1291,14 +1291,14 @@ void Prog::decompile() {
 	assert(m_procs.size());
 	if (VERBOSE) 
 		LOG << (int)m_procs.size() << " procedures\n";
-
-	// Start decompiling each entry point
+    // Start decompiling each entry point
 	std::list<UserProc*>::iterator ee;
 	for (ee = entryProcs.begin(); ee != entryProcs.end(); ++ee) {
         std::cerr << "decompiling entry point" << (*ee)->getName() << "\n";
 		if (VERBOSE)
 			LOG << "decompiling entry point " << (*ee)->getName() << "\n";
 		int indent = 0;
+        std::cout<<"Proc before: "<<(*ee)->prints()<<endl;
         (*ee)->decompile(new ProcList, indent, map, unionDefine);
 	}
 
@@ -1335,6 +1335,7 @@ void Prog::decompile() {
 			// Repeat until no change. Note 100% sure if needed.
 			while(removeUnusedReturns());
 		}
+        std::cout<<"abc xyz"<<endl;
 
 		// print XML after removing returns
 		for (pp = m_procs.begin(); pp != m_procs.end(); pp++) {
@@ -1349,11 +1350,13 @@ void Prog::decompile() {
 
 	// Now it is OK to transform out of SSA form
 	fromSSAform();
+    std::cout<<"mnk xyz"<<endl;
 
 	// Note: removeUnusedLocals() is now in UserProc::generateCode()
 
 	removeUnusedGlobals();
 
+    std::cout<<"uik xyz"<<endl;
 
 
 
@@ -1417,30 +1420,22 @@ bool Prog::unionCheck(){
         }
         if (!existByte){
             ud->byteVar = strdup(string("LOCATION_"+to_string(ud->byteVarValue)).c_str());
-            std::cout<<"UD BYTE VAR: "<<ud->byteVar<<endl;
+            //std::cout<<"UD BYTE VAR: "<<ud->byteVar<<endl;
         }
         ud->prints();
-        UnionType * ut_temp = new UnionType();
-        ut_temp->addType(new SizeType(8), "byte");
-        CompoundType* ct_temp = new CompoundType();
-        //ud->bitVar->
         std::map<int,char*>::iterator mi;
         for (int i=1; i<9; i++){
             std::string temp;
             if (ud->bitVar->find(i) == ud->bitVar->end()){
                 (*ud->bitVar)[i] = strdup(string("bit"+std::to_string(i)).c_str());
             }
-            temp = std::string((*ud->bitVar)[i])+":1";
-            //std::cout<<"TEMP: "<<temp<<endl;
-            ct_temp->addType(new SizeType(8), temp.c_str());
+
         }
 //        for (mi = ud->bitVar->begin(); mi != ud->bitVar->end(); ++mi)
 //        {
 //            std::string temp(std::string((*mi).second)+":1");
 //            ct_temp->addType(new SizeType(8), temp.c_str());
 //        }
-        ut_temp->addType(ct_temp, "bits");
-        globals.insert(new Global(ut_temp, NULL, ud->byteVar));
 
     }
     for (ee = entryProcs.begin(); ee != entryProcs.end(); ++ee) {
@@ -1469,6 +1464,49 @@ bool Prog::unionCheck(){
                             foundone = true;
                     }
             }
+    }
+    if (valid){
+        for (it2 = unionDefine.begin(); it2 != unionDefine.end(); it2++){
+           // std::cout<<"LIST OF UNION DEFINE: "<<std::endl;
+
+            //(*it2)->prints();
+            UnionDefine* ud = (*it2);
+            bool existByte = false;
+            for (mit = replacement.begin(); mit!= replacement.end(); mit++){
+
+                if (ud->byteVarValue == ((AssemblyArgument*) (*mit).second)->value.i){
+                    ud->byteVar = (*mit).first;
+                    existByte = true;
+                }
+            }
+            if (!existByte){
+                ud->byteVar = strdup(string("LOCATION_"+to_string(ud->byteVarValue)).c_str());
+                //std::cout<<"UD BYTE VAR: "<<ud->byteVar<<endl;
+            }
+            ud->prints();
+            UnionType * ut_temp = new UnionType();
+            ut_temp->addType(new SizeType(8), "byte");
+            CompoundType* ct_temp = new CompoundType();
+            //ud->bitVar->
+            std::map<int,char*>::iterator mi;
+            for (int i=1; i<9; i++){
+                std::string temp;
+                if (ud->bitVar->find(i) == ud->bitVar->end()){
+                    (*ud->bitVar)[i] = strdup(string("bit"+std::to_string(i)).c_str());
+                }
+                temp = std::string((*ud->bitVar)[i])+":1";
+                //std::cout<<"TEMP: "<<temp<<endl;
+                ct_temp->addType(new SizeType(8), temp.c_str());
+            }
+    //        for (mi = ud->bitVar->begin(); mi != ud->bitVar->end(); ++mi)
+    //        {
+    //            std::string temp(std::string((*mi).second)+":1");
+    //            ct_temp->addType(new SizeType(8), temp.c_str());
+    //        }
+            ut_temp->addType(ct_temp, "bits");
+            globals.insert(new Global(ut_temp, NULL, ud->byteVar));
+
+        }
     }
     return valid;
 }
@@ -1585,7 +1623,8 @@ bool Prog::removeUnusedReturns() {
 	while (removeRetSet.size()) {
 		it = removeRetSet.begin();		// Pick the first element of the set
         change |= (*it)->removeRedundantReturns(removeRetSet, map, unionDefine);
-		// Note: removing the currently processed item here should prevent unnecessary reprocessing of self recursive
+        std::cout<<"after rem return"<<endl;
+        // Note: removing the currently processed item here should prevent unnecessary reprocessing of self recursive
 		// procedures
 		removeRetSet.erase(it);			// Remove the current element (may no longer be the first)
 	}

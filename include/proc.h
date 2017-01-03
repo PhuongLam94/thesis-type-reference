@@ -72,7 +72,7 @@ public:
                 //std::list<UnionDefine*> unionDefine;
                 std::map<char*, AssemblyArgument*> replacement;
                 std::map<char*, int> bitVar;
-
+                char* getByteFromValue(int value);
 virtual				~Proc();
 
 		/**

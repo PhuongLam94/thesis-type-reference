@@ -4368,21 +4368,26 @@ bool lessAssign::operator()(const Assign* x, const Assign* y) const {
 // Update the modifieds, in case the signature and hence ordering and filtering has changed, or the locations in the
 // collector have changed. Does NOT remove preserveds (deferred until updating returns).
 void ReturnStatement::updateModifieds() {
+    std::cout<<"test 11"<<std::endl;
 	Signature* sig = proc->getSignature();
 	StatementList oldMods(modifieds);					// Copy the old modifieds
 	modifieds.clear();
+    std::cout<<"test 12"<<", "<<(pbb?"not null":"null")<<std::endl;
 
 	if (pbb->getNumInEdges() == 1 && pbb->getInEdges()[0]->getLastStmt()->isCall()) {
 		CallStatement *call = (CallStatement*)pbb->getInEdges()[0]->getLastStmt();
-		if (call->getDestProc() && FrontEnd::noReturnCallDest(call->getDestProc()->getName()))
+        if (call->getDestProc() && FrontEnd::noReturnCallDest(call->getDestProc()->getName())){
+            std::cout<<"test 13"<<std::endl;
 			return;
+        }
 	}
 	// For each location in the collector, make sure that there is an assignment in the old modifieds, which will
 	// be filtered and sorted to become the new modifieds
 	// Ick... O(N*M) (N existing modifeds, M collected locations)
 	DefCollector::iterator ll;
 	StatementList::iterator it;
-	for (ll = col.begin(); ll != col.end(); ++ll) {
+    for (ll = col.begin(); ll != col.end(); ++ll) {
+
 		bool found = false;
 		Assign* as = (Assign*)*ll;
 		Exp* colLhs = as->getLeft();
@@ -4404,6 +4409,7 @@ void ReturnStatement::updateModifieds() {
 			oldMods.append(ias);
 		}
 	}
+    std::cout<<"test 14"<<std::endl;
 
 	// Mostly the old modifications will be in the correct order, and inserting will be fastest near the start of the
 	// new list. So read the old modifications in reverse order
@@ -4430,6 +4436,8 @@ void ReturnStatement::updateModifieds() {
 		if (!inserted)
 			modifieds.insert(modifieds.end(), as);	// In case larger than all existing elements
 	}
+    std::cout<<"test 15"<<std::endl;
+
 }
 
 // Update the returns, in case the signature and hence ordering and filtering has changed, or the locations in the

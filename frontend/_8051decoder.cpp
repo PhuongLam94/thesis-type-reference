@@ -139,7 +139,7 @@ unsigned map_sfr(std::string name, std::map<string, int>* symbolTable, int byteV
             }
         }
         if (isDefined || name.find("specbits") != string::npos ){
-        if (symbolTable->find(name) == symbolTable->end()){
+        if (symbolTable->find(name) == symbolTable->end() || name.find("specbits") != string::npos){
             bool existed = false;
             int num;
             do{
@@ -159,10 +159,11 @@ unsigned map_sfr(std::string name, std::map<string, int>* symbolTable, int byteV
                     }
                 }
             } while (existed);
-            (*symbolTable)[name] = num;
             if (name.find("specbits") != string::npos){
-                std::cout<<"Name: "<<name<<", "<<num<<endl;
+                name = name.substr(0, name.length()-1)+"_"+to_string(num)+"_"+name.substr(name.length()-1,1);
             }
+            (*symbolTable)[name] = num;
+
             return num;
         } else {
             return symbolTable->find(name)->second;
@@ -784,7 +785,12 @@ DecodeResult& _8051Decoder::decodeAssembly(ADDRESS pc,std::string line, Assembly
                     else if (op1 == 1 )
                         stmts = instantiate(pc, "MOVX_RI1_A", exp2);
                     else if (op1 == 11)
-                         stmts = instantiate(pc, "MOVX_DPTRA_A",exp2);
+                    {
+                        stmts = instantiate(pc, "MOVX_DPTRA_A",exp2);
+                        Statement* first = *(++stmts->begin());
+                        std::cout<<"movx dptr a: "<<first->prints()<<endl;
+                        first->isAccToDptr = true;
+                        }
                     break;
                 }
                 case 6: /*MOVX A, INDIRECT*/
@@ -921,7 +927,7 @@ DecodeResult& _8051Decoder::decodeAssembly(ADDRESS pc,std::string line, Assembly
                                 Exp * temp = Location::regOf(op2);
                                 if(if_a_byte(arg2->value.c))
                                     temp = byte_present(arg2->value.c, &symbolTable);
-                                exp2 = Location::memOf(temp);
+                                exp2 = temp;
                             }
                             stmts = instantiate(pc,name, exp1,exp2);
                             break;
@@ -947,6 +953,7 @@ DecodeResult& _8051Decoder::decodeAssembly(ADDRESS pc,std::string line, Assembly
                     switch(arg2->kind){
                         case 6: /*JUST DIRECT, A*/
                         {
+                            std::cout<<"bbbbbbbb"<<endl;
                             exp2 = Location::regOf(map_sfr(std::string(arg2->value.c), &symbolTable));
                             if (if_a_byte(arg2->value.c))
                                 exp2 = byte_present(arg2->value.c, &symbolTable);

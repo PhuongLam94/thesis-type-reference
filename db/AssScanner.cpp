@@ -702,22 +702,22 @@ YY_RULE_SETUP
 case 2:
 YY_RULE_SETUP
 #line 12 "AssScanner.l"
-{return BEGINDEFINE;}
+{return COMMENT;}
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
 #line 13 "AssScanner.l"
-{return DEFINEBYTE;}
+{return COMMENT;}
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
 #line 14 "AssScanner.l"
-{return DEFINEBITS;}
+{return COMMENT;}
 	YY_BREAK
 case 5:
 YY_RULE_SETUP
 #line 15 "AssScanner.l"
-{return ENDDEFINE;}
+{return COMMENT;}
 	YY_BREAK
 case 6:
 YY_RULE_SETUP
@@ -778,7 +778,7 @@ YY_RULE_SETUP
 	string defineByte = ";DEFINE BYTE";
 	string defineBits = ";DEFINE BITS";
 	string val = strdup(yytext);
-	if (beginDefine== val.substr(0, beginDefine.length()))
+	/*if (beginDefine== val.substr(0, beginDefine.length()))
 		return BEGINDEFINE;
 	else if (endDefine== val.substr(0, endDefine.length()))
 		return ENDDEFINE;
@@ -786,67 +786,68 @@ YY_RULE_SETUP
 		return DEFINEBYTE;
 	else if (defineBits== val.substr(0, defineBits.length()))
 		return DEFINEBITS;
-	else return COMMENT;
+	else */
+	return COMMENT;
 	
 
 }
 	YY_BREAK
 case 17:
 YY_RULE_SETUP
-#line 44 "AssScanner.l"
+#line 45 "AssScanner.l"
 {yylval.sval=strdup(yytext);return ID;}
 	YY_BREAK
 case 18:
 YY_RULE_SETUP
-#line 45 "AssScanner.l"
+#line 46 "AssScanner.l"
 {return COLON;}
 	YY_BREAK
 case 19:
 YY_RULE_SETUP
-#line 46 "AssScanner.l"
+#line 47 "AssScanner.l"
 {return COMMA;}
 	YY_BREAK
 case 20:
 YY_RULE_SETUP
-#line 47 "AssScanner.l"
+#line 48 "AssScanner.l"
 { yylval.fval = atof(yytext); return FLOAT; }
 	YY_BREAK
 case 21:
 YY_RULE_SETUP
-#line 48 "AssScanner.l"
+#line 49 "AssScanner.l"
 { yylval.ival = atoi(yytext); return INT; }
 	YY_BREAK
 case 22:
 YY_RULE_SETUP
-#line 49 "AssScanner.l"
+#line 50 "AssScanner.l"
 { yylval.sval = strdup(yytext); return STRING;}
 	YY_BREAK
 case 23:
 YY_RULE_SETUP
-#line 50 "AssScanner.l"
+#line 51 "AssScanner.l"
 {return '(';}
 	YY_BREAK
 case 24:
 YY_RULE_SETUP
-#line 51 "AssScanner.l"
+#line 52 "AssScanner.l"
 {return ')';}
 	YY_BREAK
 case 25:
 YY_RULE_SETUP
-#line 52 "AssScanner.l"
+#line 53 "AssScanner.l"
 {yylval.sval = strdup(yytext); return OPERATOR;}
 	YY_BREAK
 case 26:
 YY_RULE_SETUP
-#line 53 "AssScanner.l"
+#line 54 "AssScanner.l"
 ;
 	YY_BREAK
 case 27:
 YY_RULE_SETUP
-#line 54 "AssScanner.l"
+#line 55 "AssScanner.l"
 ECHO;
 	YY_BREAK
-#line 850 "AssScanner.cpp"
+#line 851 "AssScanner.cpp"
 case YY_STATE_EOF(INITIAL):
 	yyterminate();
 
@@ -1736,5 +1737,5 @@ int main()
 	return 0;
 	}
 #endif
-#line 54 "AssScanner.l"
+#line 55 "AssScanner.l"
 

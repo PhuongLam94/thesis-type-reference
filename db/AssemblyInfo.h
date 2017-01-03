@@ -51,6 +51,7 @@ public:
         char* byteVar;
         map<int, char*>* bitVar;
         int byteVarValue;
+        bool isUnion = true;
         void prints(){
             cout << "Byte var: " << byteVar <<endl;
             cout << "Bit vars: "<<endl;

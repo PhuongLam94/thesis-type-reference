@@ -142,6 +142,7 @@ protected:
 		int			dominanceNum;	// Like a statement number, but has dominance properties
 public:
                 Statement* accAssign;
+                bool isAccToDptr = false;
                 bool isBitUse = false;
                 char* bitName = NULL;
 		int			getDomNumber() {return dominanceNum;}

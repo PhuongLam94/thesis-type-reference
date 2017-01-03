@@ -1898,12 +1898,13 @@ bool BasicBlock::makeUnion(std::list<UnionDefine *> &unionDefine, char* bitVar, 
     return true;
 }
 
-bool BasicBlock::replaceAcc(std::list<UnionDefine *> unionDefine, std::map<Exp *, ConstantVariable *> m){
+bool BasicBlock::replaceAcc(std::list<UnionDefine *>& unionDefine, std::map<Exp *, ConstantVariable *> m){
     std::cout<<"ENTER REPLACE ACC"<<endl;
     std::list<RTL*>::iterator rit;
     bool convert;
     bool valid = true;
     Statement* recentAssign;
+    std::set<int> removeStatementList;
     for (rit = m_pRtls->begin(); rit != m_pRtls->end(); rit++){
         std::list<Statement*>& stmts = (*rit)->getList();
         std::list<Statement*>::iterator sit;
@@ -1911,7 +1912,10 @@ bool BasicBlock::replaceAcc(std::list<UnionDefine *> unionDefine, std::map<Exp *
            Statement* statement = (*sit);
            int subscript = -1;
            Exp* aDefine = NULL;
+           std::cout<<"Statement: "<<statement->prints()<<endl;
+           // std::cout<<"mov acc to dptr: "<<statement->isAccToDptr<<endl;
            if (statement->accAssign){
+              std::cout<<"AccAssin statement: "<<statement->accAssign->prints()<<endl;
            map<Exp*, ConstantVariable*>::iterator mit;
            for (mit = m.begin(); mit != m.end(); mit++){
                Exp* exp = (*mit).first;
@@ -1957,8 +1961,7 @@ bool BasicBlock::replaceAcc(std::list<UnionDefine *> unionDefine, std::map<Exp *
            }
            }
            if (statement->isBitUse){
-               std::cout<<"Statement: "<<statement->prints()<<endl;
-               std::cout<<"Bit name: "<<statement->bitName<<endl;
+                std::cout<<"Bit name: "<<statement->bitName<<endl;
                char* byteVar;
                char* bitName;
                 if (string(statement->bitName).find("specbits") == string::npos){
@@ -1967,19 +1970,58 @@ bool BasicBlock::replaceAcc(std::list<UnionDefine *> unionDefine, std::map<Exp *
                 } else {
                     string bitNameString = string(statement->bitName);
                     int i = atoi(bitNameString.substr(bitNameString.length()-1,1).c_str());
-
+                    if (statement->isAssignment()){
+                        statement->bitName = ((Const*) ((Assignment*) statement)->getLeft()->getSubExp1())->getChar();
+                    } else {
+                    LocationSet used;
+                    statement->addUsedLocs(used);
+                    //std::cout<<"used: "<<used.prints()<<endl;
+                    LocationSet::iterator lit;
+                    for (lit = used.begin(); lit != used.end(); lit++){
+                        Exp* expUsed = (*lit);
+                        if (expUsed->isLocal()){
+                            char* name = ((Const*) expUsed->getSubExp1())->getChar();
+                            //std::cout<<"expUsed: "<<expUsed->prints()<<", "<<expUsed->isLocal()<<", "<<name<<endl;
+                            string nameString = string(name);
+                            //std::cout<<"name string: "<<nameString<<", "<<(nameString.find("specbits") != string::npos)<<endl;
+                            if (nameString.find("specbits") != string::npos){
+                                statement->bitName = name;
+                                break;
+                            }
+                        }
+                    }}
+                    //std::cout<<"statement bit name: "<<statement->bitName<<endl;
                     if (subscript!=-1){
                         ConstantVariable* val = m[aDefine];
                         //std::cout<<"aDefine: "<<aDefine->prints()<<endl;
                         if (val->type == 2){
                             int aValue = ((Const*) val->variable)->getInt();
+                            bool exist = false;
                             list<UnionDefine*>::iterator udit;
                             for (udit = unionDefine.begin(); udit != unionDefine.end(); udit++){
                                 UnionDefine* ud = (*udit);
                                 if (ud->byteVarValue == aValue){
                                     byteVar = ud->byteVar;
-                                    bitName = (*ud->bitVar)[i];
+                                    if ((*ud->bitVar).find(i) != (*ud->bitVar).end())
+                                        bitName = (*ud->bitVar)[i];
+                                    else {
+                                        (*ud->bitVar)[i] = strdup(string("bit"+to_string(i)).c_str());
+                                        bitName = (*ud->bitVar)[i];
+                                    }
+                                    exist = true;
+                                    break;
                                 }
+                            }
+                            if (!exist){
+                                std::cout<<"not exist, "<<aValue<<endl;
+                                UnionDefine* temp = new UnionDefine();
+                                temp->byteVarValue = aValue;
+                                temp->byteVar = statement->getProc()->getByteFromValue(aValue);
+                                temp->bitVar = new map<int, char*>();
+                                (*temp->bitVar)[i] = strdup(string("bit"+to_string(i)).c_str());
+                                unionDefine.push_back(temp);
+                                byteVar = temp->byteVar;
+                                bitName = (*temp->bitVar)[i];
                             }
                         } else {
                             std::cout<<"ERROR: A DOES NOT HAVE A CONSTANT VALUE AT THIS POINT OF PROGRAM"<<endl;
@@ -2015,13 +2057,25 @@ bool BasicBlock::replaceAcc(std::list<UnionDefine *> unionDefine, std::map<Exp *
                    ConstantVariable* val = m[aDefine];
                    if (val->type ==2){
                        int aValue = ((Const*) val->variable)->getInt();
+                       bool exist = false;
                        list<UnionDefine*>::iterator udit;
                        for (udit = unionDefine.begin(); udit != unionDefine.end(); udit++){
                            UnionDefine* ud = (*udit);
                            if (ud->byteVarValue == aValue){
                                byteVar = ud->byteVar;
+                               exist = true;
                            }
                        }
+                       if (!exist){
+                           UnionDefine* temp = new UnionDefine();
+                           temp->byteVarValue = aValue;
+                           temp->byteVar = statement->getProc()->getByteFromValue(aValue);
+                           temp->bitVar = new map<int, char*>();
+                           unionDefine.push_back(temp);
+                           byteVar = temp->byteVar;
+                       }
+                       std::cout<<"aDefine: "<<aDefine->prints()<<", aValue: "<<aValue<<endl;
+                       std::cout<<"byte var: "<<byteVar<<endl;
                        Assign* assign = new Assign(Location::local("a", statement->getProc()), new Binary(opMemberAccess,
                                                      Location::global(byteVar, statement->getProc()), new Const("byte")));
                        statement->replaceRef(Location::local("a", statement->getProc()), assign, convert);
@@ -2029,24 +2083,58 @@ bool BasicBlock::replaceAcc(std::list<UnionDefine *> unionDefine, std::map<Exp *
                    }
                }
            }
-           bool removed = false;
-           Statement* parentStatement = NULL;
-           if (aDefine && (statement->getAccAssign() || statement->isLastStatementInBB())){
-               Statement* deleteStatement = ((RefExp*) aDefine)->getDef();
-               parentStatement = deleteStatement->getParent();
-               deleteStatement->getProc()->removeStatement(deleteStatement);
-               removed = true;
-           }
-
-           if (statement->getAccAssign() && statement->isLastStatementInBB()){
-               parentStatement = statement->getParent();
-               statement->getProc()->removeStatement(statement);
-               removed = true;
-           }
-
+           if (statement->getAccAssign() || statement->isAccToDptr)
+               removeStatementList.insert(statement->getNumber());
         }
     }
+    for (rit = m_pRtls->begin(); rit != m_pRtls->end(); rit++){
+        std::list<Statement*>& stmts = (*rit)->getList();
+        std::list<Statement*>::iterator sit;
+        char* byteVar;
+        for (sit = stmts.begin(); sit!=stmts.end(); sit++){
+           Statement* statement = (*sit);
+           bool removed = true;
+           if (removeStatementList.find(statement->getNumber()) != removeStatementList.end()){
+               Assign* assign = (Assign*) statement;
+               if (assign->getLeft()->isMemOf()){
+                   if (assign->getRight()->isLocal() &&
+                           strcmp(((Const*) assign->getRight()->getSubExp1())->getChar(),"a") == 0){
+                        //std::cout<<"aaar"<<endl;
+                   } else {
+                       std::map<Exp *, ConstantVariable *>::iterator mit;
+                       for (mit = m.begin(); mit!=m.end(); mit++){
+                           RefExp* refExp = (RefExp*) ((*mit).first);
+                           if (assign->accAssign->getNumber() == refExp->getDef()->getNumber()){
+                               ConstantVariable* val = (*mit).second;
+                               if (val->type == 2){
+                                   int a = ((Const*) (val->variable))->getInt();
+                                list<UnionDefine*>::iterator mit2;
+                                for (mit2 = unionDefine.begin(); mit2 != unionDefine.end(); mit2++){
+                                    UnionDefine* ud = (*mit2);
+                                    if (ud->byteVarValue == a)
+                                       {
+                                        byteVar = ud->byteVar;
+                                        break;
+                                    }
+                                }
+                               }
+                               break;
+                           }
+                       }
+                       std::cout<<"xxxxx "<<byteVar<<endl;
+                       bool convert;
+                        Assign* temp = new Assign(assign->getLeft(), new Binary(opMemberAccess,
+                                                                               Location::global(byteVar, statement->getProc()), new Const("byte")));
+                       assign->replaceRef(assign->getLeft(), temp, convert);
+                       removed = false;
+                   }
+               } else {
 
+               }
+               if(removed) statement->getProc()->removeStatement(statement);
+           }
+    }
+    }
     return valid;
 }
 

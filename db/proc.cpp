@@ -1290,6 +1290,7 @@ ProcSet* UserProc::decompile(ProcList* path, int& indent, std::map<Exp*, Constan
 	}
 	if (child->size() == 0) {
         remUnusedStmtEtc(map, unionDefine);	// Do the whole works
+        std::cout<<"after rem"<<endl;
 		setStatus(PROC_FINAL);
 		Boomerang::get()->alert_end_decompile(this);
 	} else {
@@ -1347,7 +1348,8 @@ bool UserProc::unionCheck(std::list<UnionDefine*>& unionDefine, std::map<Exp*, C
         if (status < PROC_VISITED)
                 setStatus(PROC_VISITED); 					// We have at least visited this proc "on the way down"
                                                 // Append this proc to path
-         BB_IT it;
+        std::cout<<"Proc: "<<prints()<<endl;
+        BB_IT it;
          bool valid = true;
                 // Recurse to children first, to perform a depth first search
                 //initialiseDecompile();
@@ -1366,6 +1368,20 @@ bool UserProc::unionCheck(std::list<UnionDefine*>& unionDefine, std::map<Exp*, C
                 return valid;
 
 }
+char* Proc::getByteFromValue(int value){
+    map<char*, AssemblyArgument*>::iterator mi;
+    std::cout<<"getbytefromvalue is called, "<<value<<endl;
+    for (mi = replacement.begin(); mi != replacement.end(); mi++){
+        AssemblyArgument* arg = (*mi).second;
+        std::cout<<"byteVar: "<<(*mi).first<<endl;
+        if (arg->kind == IMMEDIATE_INT && arg->value.i == value)
+            return (*mi).first;
+    }
+    char* result = strdup(string("LOCATION_"+to_string(value)).c_str());
+    std::cout<<"result: "<<result<<endl;
+    return result;
+}
+
 bool UserProc::replaceAcc(std::list<UnionDefine*>& unionDefine, std::map<Exp*, ConstantVariable*> mapExp) {
         //std::cout<<"UNION CHECK OF PROC IS CALLED"<<endl;
         if (VERBOSE)
@@ -1514,15 +1530,17 @@ void UserProc::earlyDecompile() {
 }
 
 ProcSet* UserProc::middleDecompile(ProcList* path, int indent, std::map<Exp*, ConstantVariable*>&map, std::list<UnionDefine*>& unionDefine) {
-
-	Boomerang::get()->alert_decompile_debug_point(this, "before middle");
-	std::cout<<"middle decompile  1"<<getTheReturnStatement()->getNumReturns()<<"\n";
-	// The call bypass logic should be staged as well. For example, consider m[r1{11}]{11} where 11 is a call.
+    Boomerang::get()->alert_decompile_debug_point(this, "before middle");
+    std::cout<<"abc"<<endl;
+    std::cout<<"middle decompile  1"<<getTheReturnStatement()->getNumReturns()<<"\n";
+    // The call bypass logic should be staged as well. For example, consider m[r1{11}]{11} where 11 is a call.
 	// The first stage bypass yields m[r1{2}]{11}, which needs another round of propagation to yield m[r1{-}-32]{11}
 	// (which can safely be processed at depth 1).
 	// Except that this is now inherent in the visitor nature of the latest algorithm.
-	fixCallAndPhiRefs();			// Bypass children that are finalised (if any)
-	bool convert;
+
+    fixCallAndPhiRefs();			// Bypass children that are finalised (if any)
+    std::cout<<"test 1"<<endl;
+    bool convert;
 	if (status != PROC_INCYCLE)		// FIXME: need this test?
 		propagateStatements(convert, 2);
 	if (VERBOSE) {
@@ -1530,16 +1548,18 @@ ProcSet* UserProc::middleDecompile(ProcList* path, int indent, std::map<Exp*, Co
 		printToLog();
 		LOG << "\n=== done after call and phi bypass (1) of " << getName() << " ===\n\n";
 	}
-
+    std::cout<<"test 2"<<endl;
 	// This part used to be calle middleDecompile():
 
 	findSpPreservation();
-	// Oops - the idea of splitting the sp from the rest of the preservations was to allow correct naming of locals
+    std::cout<<"test 3"<<endl;
+    // Oops - the idea of splitting the sp from the rest of the preservations was to allow correct naming of locals
 	// so you are alias conservative. But of course some locals are ebp (etc) based, and so these will never be correct
 	// until all the registers have preservation analysis done. So I may as well do them all together here.
 	findPreserveds();
 	fixCallAndPhiRefs(); 	// Propagate and bypass sp
-	if (VERBOSE) {
+    std::cout<<"test 4"<<endl;
+    if (VERBOSE) {
 		LOG << "--- after preservation, bypass and propagation ---\n";
 		printToLog();
 		LOG << "=== end after preservation, bypass and propagation ===\n";
@@ -1575,6 +1595,7 @@ ProcSet* UserProc::middleDecompile(ProcList* path, int indent, std::map<Exp*, Co
 	reverseStrengthReduction();
 	//processTypes();
 
+    std::cout<<"test 5"<<endl;
 	// Repeat until no change
 	int pass;
 	for (pass = 3; pass <= 12; ++pass) {
@@ -1590,10 +1611,15 @@ ProcSet* UserProc::middleDecompile(ProcList* path, int indent, std::map<Exp*, Co
 		// Seed the return statement with reaching definitions
 		// FIXME: does this have to be in this loop?
 		//std::cout<<"middle decompile 4"<<getTheReturnStatement()->getNumReturns()<<"\n";
-		if (theReturnStatement) {
+        std::cout<<"test 6"<<endl;
+
+        if (theReturnStatement) {
 			theReturnStatement->updateModifieds();		// Everything including new arguments reaching the exit
-			theReturnStatement->updateReturns();
+
+            theReturnStatement->updateReturns();
 		}
+        std::cout<<"test 7"<<endl;
+
 	//std::cout<<"middle decompile 5"<<getTheReturnStatement()->getNumReturns()<<"\n";
 		printXML();
 
@@ -1650,8 +1676,7 @@ ProcSet* UserProc::middleDecompile(ProcList* path, int indent, std::map<Exp*, Co
 
 		Boomerang::get()->alert_decompile_beforePropagate(this, pass);
 		Boomerang::get()->alert_decompile_debug_point(this, "before propagating statements");
-
-		// Propagate
+        // Propagate
 		bool convert;			// True when indirect call converted to direct
 		do {
 			convert = false;
@@ -1690,7 +1715,8 @@ ProcSet* UserProc::middleDecompile(ProcList* path, int indent, std::map<Exp*, Co
 		// The problem with removing %flags and %CF is that %CF is a subset of %flags
 		//removeMatchingAssignsIfPossible(new Terminal(opFlags));
 		//removeMatchingAssignsIfPossible(new Terminal(opCF));
-		removeMatchingAssignsIfPossible(new Unary(opTemp, new Terminal(opWildStrConst)));
+        std::cout<<"test 5"<<endl;
+        removeMatchingAssignsIfPossible(new Unary(opTemp, new Terminal(opWildStrConst)));
 		removeMatchingAssignsIfPossible(new Terminal(opPC));
 
 		//processTypes();
@@ -1722,7 +1748,8 @@ ProcSet* UserProc::middleDecompile(ProcList* path, int indent, std::map<Exp*, Co
 		LOG << "--- after setting phis for memofs, renaming them for " << getName() << "\n";
 		printToLog();
 		LOG << "=== done after setting phis for memofs, renaming them for " << getName() << "\n";
-	}
+    }
+
 	propagateStatements(convert, pass);
 	// Now that memofs are renamed, the bypassing for memofs can work
 	fixCallAndPhiRefs();			// Bypass children that are finalised (if any)
@@ -1742,7 +1769,7 @@ ProcSet* UserProc::middleDecompile(ProcList* path, int indent, std::map<Exp*, Co
 		//mapExpressionsToParameters();
 	}
 
-	// Check for indirect jumps or calls not already removed by propagation of constants
+    // Check for indirect jumps or calls not already removed by propagation of constants
 	if (cfg->decodeIndirectJmp(this)) {
 		// There was at least one indirect jump or call found and decoded. That means that most of what has been done
 		// to this function so far is invalid. So redo everything. Very expensive!!
@@ -1783,7 +1810,7 @@ ProcSet* UserProc::middleDecompile(ProcList* path, int indent, std::map<Exp*, Co
 			printToLog();
 			LOG << "=== end after replacing expressions, trimming params and returns for " << getName() << " ===\n";
 		}
-	}
+    }
 
 	eliminateDuplicateArgs();
 
@@ -1803,8 +1830,7 @@ ProcSet* UserProc::middleDecompile(ProcList* path, int indent, std::map<Exp*, Co
  *	*	*	*	*	*	*	*	*	*	*	*	*	*/
 
 void UserProc::remUnusedStmtEtc(std::map<Exp*, ConstantVariable*>&map, std::list<UnionDefine*>& unionDefine) {
-
-	// NO! Removing of unused statements is an important part of the global removing unused returns analysis, which
+    // NO! Removing of unused statements is an important part of the global removing unused returns analysis, which
 	// happens after UserProc::decompile is complete
 	//if (status >= PROC_FINAL)
 	//	return;
@@ -1859,22 +1885,25 @@ void UserProc::remUnusedStmtEtc(std::map<Exp*, ConstantVariable*>&map, std::list
 	// Now remove any that have no used
 	if (!Boomerang::get()->noRemoveNull)
 		remUnusedStmtEtc(refCounts);
-
+    //std::cout<<"test 1"<<endl;
 	// Remove null statements
 	if (!Boomerang::get()->noRemoveNull)
 		removeNullStatements();
-
-	printXML();
+    printXML();
 	if (VERBOSE && !Boomerang::get()->noRemoveNull) {
 		LOG << "--- after removing unused and null statements pass " << 1 << " for " << getName() << " ---\n";
 		printToLog();
 		LOG << "=== end after removing unused statements for " << getName() << " ===\n\n";
 	}
 	Boomerang::get()->alert_decompile_afterRemoveStmts(this, 1);
-	std::cout<<"\nremUnusedStmtEtc 2.5"<<getSignature()->prints()<<"\n";
-	std::cout<<getTheReturnStatement()->getNumReturns()<<"\n";
+    std::cout<<"test 2 "<<getSignature()->prints()<<endl;
+    std::cout<<"\nremUnusedStmtEtc 2.5"<<getSignature()->prints()<<"\n";
+    std::cout<<"test 3 "<<endl;
+    std::cout<<getTheReturnStatement()->getNumReturns()<<"\n";
 	findFinalParameters();
-	std::cout<<"\nremUnusedStmtEtc 3"<<getSignature()->prints()<<"\n";
+    std::cout<<"test 4 "<<endl;
+    std::cout<<"\nremUnusedStmtEtc 3"<<getSignature()->prints()<<"\n";
+    std::cout<<"test 5 "<<endl;
 	if (!Boomerang::get()->noParameterNames) {
 		// Replace the existing temporary parameters with the final ones:
 		//mapExpressionsToParameters();
@@ -1890,7 +1919,9 @@ void UserProc::remUnusedStmtEtc(std::map<Exp*, ConstantVariable*>&map, std::list
 #if 0				// Construction zone; pay no attention
 	bool convert;
 	propagateStatements(convert, 222);	// This is the first opportunity to safely propagate memory parameters
-	if (VERBOSE) {
+
+    std::cout<<"test 6 "<<endl;
+    if (VERBOSE) {
 		LOG << "--- after propagating new parameters ---\n";
 		printToLog();
 		LOG << "=== end after propagating new parameters ===\n";
@@ -1899,7 +1930,10 @@ void UserProc::remUnusedStmtEtc(std::map<Exp*, ConstantVariable*>&map, std::list
 
 	updateCalls();				// Or just updateArguments?
 
+    std::cout<<"test 7 "<<endl;
 	branchAnalysis();
+
+    std::cout<<"test 8 "<<endl;
 	fixUglyBranches();
 	std::cout<<"\nremUnusedStmtEtc 4"<<getSignature()->prints()<<"\n";
 	if (VERBOSE) {
@@ -1910,7 +1944,10 @@ void UserProc::remUnusedStmtEtc(std::map<Exp*, ConstantVariable*>&map, std::list
     //std::cout<<"Before constant propagation: "<<endl;
     //std::cout<<prints()<<endl;
 
+    std::cout<<"test 9 "<<endl;
 	Boomerang::get()->alert_decompile_debug_point(this, "after final");
+    std::cout<<"test 10 "<<endl;
+
 }
 void UserProc::checkAccAssign(){
     StatementList::iterator it;
@@ -1920,10 +1957,11 @@ void UserProc::checkAccAssign(){
     for (it = stmts.begin(); it!= stmts.end(); it++){
         Statement* s = (*it);
         s->accAssign = recentAccAssign?recentAccAssign->clone():NULL;
-        //std::cout<<"ISACCASSIGN: "<<s->prints()<<endl;
+        std::cout<<"ISACCASSIGN: "<<s->prints()<<endl;
         //std::cout<<"test: "<<(s->accAssign?s->accAssign->prints():"NULL")<<endl;
         bool isAssignAcc = false;
         if (s->isAssignment()){
+            std::cout<<"1"<<endl;
            Assignment* assign = (Assignment*) s;
             if (true
                     )
@@ -1935,7 +1973,8 @@ void UserProc::checkAccAssign(){
                 if (assign->getLeft()->isMemberOf()){
                     isA = ((Const*)assign->getLeft()->getSubExp1()->getSubExp1())->getInt() == 8;
                 }
-
+                isA = isA && ((assign->isAssign() && ((Assign*) assign)->getRight()->isMemOf()) || assign->isPhi());
+                std::cout<<"2: "<<isA<<endl;
                isAssignAcc = isA;
             }
         }
@@ -2008,8 +2047,9 @@ void UserProc::remUnusedStmtEtc(RefCounter& refCounts) {
 				}
 				if (DEBUG_UNUSED)
 					LOG << "removing unused statement " << s->getNumber() << " " << s << "\n";
-                if (!(s->isBitUse)){
-                removeStatement(s);
+                std::cout<<"remove: "<<(s?s->prints():"null")<<", "<<(s?((s->getAccAssign() || s->isBitUse)?"1":"0"):"null")<<endl;
+                if (!(s->isBitUse || s->getAccAssign())){
+                    removeStatement(s);
 				ll = stmts.erase(ll);	// So we don't try to re-remove it
                 change = true;
 				continue;				// Don't call getNext this time
@@ -5242,6 +5282,7 @@ bool UserProc::removeRedundantParameters() {
 // (only add procs to this set, never remove)
 // Return true if any change
 bool UserProc::removeRedundantReturns(std::set<UserProc*>& removeRetSet, std::map<Exp*, ConstantVariable*>&map, std::list<UnionDefine*>& unionDefine) {
+    std::cout<<"is called ..."<<endl;
     Boomerang::get()->alert_decompiling(this);
 	Boomerang::get()->alert_decompile_debug_point(this, "before removing unused returns");
 	// First remove the unused parameters
@@ -5278,6 +5319,7 @@ bool UserProc::removeRedundantReturns(std::set<UserProc*>& removeRetSet, std::ma
 		if (removedRets)
 			// Still may have effects on calls or now unused statements
             updateForUseChange(removeRetSet, map, unionDefine);
+            std::cout<<"after 1"<<endl;
 		return removedRets;
 	}
 
@@ -5339,12 +5381,15 @@ bool UserProc::removeRedundantReturns(std::set<UserProc*>& removeRetSet, std::ma
 		// Now update myself
         updateForUseChange(removeRetSet, map, unionDefine);
 
+        std::cout<<"after 2"<<endl;
 		// Update any other procs that need updating
 		updateSet.erase(this);		// Already done this proc
 		while (updateSet.size()) {
 			UserProc* proc = *updateSet.begin();
 			updateSet.erase(proc);
             proc->updateForUseChange(removeRetSet, map, unionDefine);
+
+            std::cout<<"after 3"<<endl;
 		}
 	}
 
@@ -5387,13 +5432,14 @@ void UserProc::updateForUseChange(std::set<UserProc*>& removeRetSet, std::map<Ex
 	// Have to redo dataflow to get the liveness at the calls correct
 	removeCallLiveness();			// Want to recompute the call livenesses
 	doRenameBlockVars(-3, true);
-
+    std::cout<<"update for change"<<endl;
     remUnusedStmtEtc(map, unionDefine);				// Also redoes parameters
-
+    std::cout<<"after rem"<<endl;
 	// Have the parameters changed? If so, then all callers will need to update their arguments, and do similar
 	// analysis to the removal of returns
 	//findFinalParameters();
 	removeRedundantParameters();
+    std::cout<<"test 12"<<endl;
 	if (parameters.size() != oldParameters.size()) {
 		if (DEBUG_UNUSED)
 			LOG << "%%%  parameters changed for " << getName() << "\n";
@@ -5407,6 +5453,8 @@ void UserProc::updateForUseChange(std::set<UserProc*>& removeRetSet, std::map<Ex
 			removeRetSet.insert((*cc)->getProc());
 		}
 	}
+    std::cout<<"test 13"<<endl;
+
 	// Check if the liveness of any calls has changed
 	std::map<CallStatement*, UseCollector>::iterator ll;
 	for (ll = callLiveness.begin(); ll != callLiveness.end(); ++ll) {
@@ -5420,6 +5468,8 @@ void UserProc::updateForUseChange(std::set<UserProc*>& removeRetSet, std::map<Ex
 			removeRetSet.insert((UserProc*)call->getDestProc());
 		}
 	}
+    std::cout<<"test 14"<<endl;
+
 }
 
 void UserProc::clearUses() {
