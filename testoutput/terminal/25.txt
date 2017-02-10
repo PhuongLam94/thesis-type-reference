@@ -1,0 +1,6747 @@
+Boomerang alpha 0.3.1 09/Sep/2006
+Machine 8051 detected 
+Decode assembly 
+loading...
+fname= ./typereferencetestcases/tpn25.txt
+ pname = `
+creating a new Frontend 
+in frontend::load pBF =bff->load
+binaryfactory::load
+after get instace for, numsections =  0
+<---------------RealLoad---------------> 
+file image size :4884
+ELF
+pHeader -> e_ident ELF
+pHeader -> e_class 
+pHeader -> endianess 
+pHeader -> e_version 16777216
+pHeader -> phoff 34000000
+i34
+pHeader -> shoff dc0e0000
+iedc
+m_pStrings
+<--SECTION INFO 0-->
+NAME : 
+OFFSET : 0
+HOSTADDR : 0
+NATIVEADDR : 0
+SECTIONSIZE : 0
+.rel true
+jump to branch
+align : 0
+re set NativeAddr: 8000000
+TYPE : 0
+READONLY SECTION
+<--SECTION INFO 1-->
+NAME : .interp
+OFFSET : 114
+HOSTADDR : 921a114
+NATIVEADDR : 10114
+SECTIONSIZE : 13
+.rel true
+TYPE : 1
+READONLY SECTION
+<--SECTION INFO 2-->
+NAME : .note.ABI-tag
+OFFSET : 128
+HOSTADDR : 921a128
+NATIVEADDR : 10128
+SECTIONSIZE : 20
+.rel true
+TYPE : 7
+READONLY SECTION
+<--SECTION INFO 3-->
+NAME : .hash
+OFFSET : 148
+HOSTADDR : 921a148
+NATIVEADDR : 10148
+SECTIONSIZE : 24
+.rel true
+TYPE : 5
+READONLY SECTION
+<--SECTION INFO 4-->
+NAME : .dynsym
+OFFSET : 16c
+HOSTADDR : 921a16c
+NATIVEADDR : 1016c
+SECTIONSIZE : 40
+.rel true
+TYPE : b
+READONLY SECTION
+<--SECTION INFO 5-->
+NAME : .dynstr
+OFFSET : 1ac
+HOSTADDR : 921a1ac
+NATIVEADDR : 101ac
+SECTIONSIZE : 45
+.rel true
+TYPE : 3
+READONLY SECTION
+<--SECTION INFO 6-->
+NAME : .gnu.version
+OFFSET : 1f2
+HOSTADDR : 921a1f2
+NATIVEADDR : 101f2
+SECTIONSIZE : 8
+.rel true
+TYPE : 6fffffff
+READONLY SECTION
+<--SECTION INFO 7-->
+NAME : .gnu.version_r
+OFFSET : 1fc
+HOSTADDR : 921a1fc
+NATIVEADDR : 101fc
+SECTIONSIZE : 20
+.rel true
+TYPE : 6ffffffe
+READONLY SECTION
+<--SECTION INFO 8-->
+NAME : .rela.dyn
+OFFSET : 21c
+HOSTADDR : 921a21c
+NATIVEADDR : 1021c
+SECTIONSIZE : c
+TYPE : 4
+READONLY SECTION
+<--SECTION INFO 9-->
+NAME : .rela.plt
+OFFSET : 228
+HOSTADDR : 921a228
+NATIVEADDR : 10228
+SECTIONSIZE : 18
+TYPE : 4
+READONLY SECTION
+<--SECTION INFO a-->
+NAME : .init
+OFFSET : 240
+HOSTADDR : 921a240
+NATIVEADDR : 10240
+SECTIONSIZE : 48
+.rel true
+TYPE : 1
+READONLY SECTION
+EXECUTE SECTION
+<--SECTION INFO b-->
+NAME : .text
+OFFSET : 2a0
+HOSTADDR : 921a2a0
+NATIVEADDR : 102a0
+SECTIONSIZE : 2b0
+.rel true
+TYPE : 1
+READONLY SECTION
+EXECUTE SECTION
+<--SECTION INFO c-->
+NAME : .fini
+OFFSET : 550
+HOSTADDR : 921a550
+NATIVEADDR : 10550
+SECTIONSIZE : 14
+.rel true
+TYPE : 1
+READONLY SECTION
+EXECUTE SECTION
+<--SECTION INFO d-->
+NAME : .rodata
+OFFSET : 564
+HOSTADDR : 921a564
+NATIVEADDR : 10564
+SECTIONSIZE : 4
+.rel true
+TYPE : 1
+READONLY SECTION
+<--SECTION INFO e-->
+NAME : .eh_frame
+OFFSET : 568
+HOSTADDR : 921a568
+NATIVEADDR : 10568
+SECTIONSIZE : 4
+.rel true
+TYPE : 1
+READONLY SECTION
+<--SECTION INFO f-->
+NAME : .ctors
+OFFSET : 56c
+HOSTADDR : 921a56c
+NATIVEADDR : 2056c
+SECTIONSIZE : 8
+.rel true
+TYPE : 1
+<--SECTION INFO 10-->
+NAME : .dtors
+OFFSET : 574
+HOSTADDR : 921a574
+NATIVEADDR : 20574
+SECTIONSIZE : 8
+.rel true
+TYPE : 1
+<--SECTION INFO 11-->
+NAME : .jcr
+OFFSET : 57c
+HOSTADDR : 921a57c
+NATIVEADDR : 2057c
+SECTIONSIZE : 4
+.rel true
+TYPE : 1
+<--SECTION INFO 12-->
+NAME : .dynamic
+OFFSET : 580
+HOSTADDR : 921a580
+NATIVEADDR : 20580
+SECTIONSIZE : c8
+.rel true
+TYPE : 6
+<--SECTION INFO 13-->
+NAME : .got
+OFFSET : 648
+HOSTADDR : 921a648
+NATIVEADDR : 20648
+SECTIONSIZE : 10
+.rel true
+TYPE : 1
+<--SECTION INFO 14-->
+NAME : .plt
+OFFSET : 658
+HOSTADDR : 921a658
+NATIVEADDR : 20658
+SECTIONSIZE : 4c
+.rel true
+TYPE : 1
+EXECUTE SECTION
+<--SECTION INFO 15-->
+NAME : .data
+OFFSET : 6a4
+HOSTADDR : 921a6a4
+NATIVEADDR : 206a4
+SECTIONSIZE : 8
+.rel true
+TYPE : 1
+<--SECTION INFO 16-->
+NAME : .bss
+OFFSET : 6ac
+HOSTADDR : 921a6ac
+NATIVEADDR : 206ac
+SECTIONSIZE : c
+.rel true
+TYPE : 8
+BSS SECTION
+<--SECTION INFO 17-->
+NAME : .comment
+OFFSET : 6ac
+HOSTADDR : 921a6ac
+NATIVEADDR : 0
+SECTIONSIZE : 21
+.rel true
+jump to branch
+align : 1
+re set NativeAddr: 8000000
+TYPE : 1
+READONLY SECTION
+<--SECTION INFO 18-->
+NAME : .shstrtab
+OFFSET : 6cd
+HOSTADDR : 921a6cd
+NATIVEADDR : 0
+SECTIONSIZE : d0
+.rel true
+jump to branch
+align : 1
+re set NativeAddr: 8000021
+TYPE : 3
+READONLY SECTION
+<--SECTION INFO 19-->
+NAME : .symtab
+OFFSET : 7a0
+HOSTADDR : 921a7a0
+NATIVEADDR : 0
+SECTIONSIZE : 480
+.rel true
+jump to branch
+align : 4
+re set NativeAddr: 80000f4
+TYPE : 2
+READONLY SECTION
+<--SECTION INFO 1a-->
+NAME : .strtab
+OFFSET : c20
+HOSTADDR : 921ac20
+NATIVEADDR : 0
+SECTIONSIZE : 2ba
+.rel true
+jump to branch
+align : 1
+re set NativeAddr: 8000574
+TYPE : 3
+READONLY SECTION
+<---------------Finish RealLoad---------------> 
+after realload, numsections =  1b
+in binaryfile::gettextlimits, numsections = 1b 
+Sect->pSectionName 0 000 
+Sect->pSectionName 1 000 .interp
+Sect->pSectionName 2 000 .note.ABI-tag
+Sect->pSectionName 3 000 .hash
+Sect->pSectionName 4 000 .dynsym
+Sect->pSectionName 5 000 .dynstr
+Sect->pSectionName 6 000 .gnu.version
+Sect->pSectionName 7 000 .gnu.version_r
+Sect->pSectionName 8 000 .rela.dyn
+Sect->pSectionName 9 000 .rela.plt
+Sect->pSectionName a 100 .init
+Sect->pSectionName b 100 .text
+Sect->pSectionName c 100 .fini
+Sect->pSectionName d 010 .rodata
+Sect->pSectionName e 010 .eh_frame
+Sect->pSectionName f 010 .ctors
+Sect->pSectionName 10 010 .dtors
+Sect->pSectionName 11 010 .jcr
+Sect->pSectionName 12 010 .dynamic
+Sect->pSectionName 13 010 .got
+Sect->pSectionName 14 100 .plt
+Sect->pSectionName 15 010 .data
+Sect->pSectionName 16 001 .bss
+Sect->pSectionName 17 000 .comment
+Sect->pSectionName 18 000 .shstrtab
+Sect->pSectionName 19 000 .symtab
+Sect->pSectionName 1a 000 .strtab
+./typereferencetestcases/tpn25.txt
+instantiate 8051
+------START PARSING------
+./typereferencetestcases/tpn25.txt
+Immediate Value 26
+Define variable OPTIONS
+BIT
+Immediate Value 12
+Define variable SLVFLGMAP
+Immediate Value 38
+Define variable BTS
+BIT
+Immediate Value 20
+Define variable XROVLY
+BIT
+Immediate Value 9
+Define variable SYSFLGMAP
+BIT
+ID A
+ID OPTIONS
+Direct Value 1
+Operator +
+ID SMPDUP
+ID NOP_K1ECROF
+ID A
+Direct Value 38
+BIT
+ID TSMKHC
+Label ABCDEFG
+ID DPTR
+Immediate Value SLVFLGMAP
+Direct Value 14
+Operator +
+ID A
+Indirect value DPTR
+BIT
+Indirect value DPTR
+ID A
+ID CLRBRAC
+Label NOP_K1ECROF
+ID A
+ID BTS
+ID MASTER
+ID BPFUPFL
+ID DPTR
+Immediate Value XROVLY
+Direct Value 14
+Operator +
+ID A
+Indirect value DPTR
+ID SIMP
+ID BPFUPFL
+Label TSMKHC
+ID DPTR
+Immediate Value SYSFLGMAP
+Direct Value 4
+Operator +
+ID A
+Indirect value DPTR
+ID A
+Immediate Value c0
+ID B
+ID A
+ID DPTR
+Immediate Value SLVFLGMAP
+Direct Value 6
+Operator +
+ID A
+Indirect value DPTR
+ID A
+Immediate Value c0
+ID A
+ID B
+Indirect value DPTR
+ID A
+Label BPFUPFL
+ID CARB
+ID CARB
+ID CHK_RACA_KPON
+ID DPTR
+Immediate Value SLVFLGMAP
+Direct Value 14
+Operator +
+ID A
+Indirect value DPTR
+BIT
+ID CLRXXBRAC
+ID DPTR
+Immediate Value SLVFLGMAP
+Direct Value 6
+Operator +
+ID A
+Indirect value DPTR
+BIT
+BIT
+Indirect value DPTR
+ID A
+ID CLRXXBRAC
+Label CLRBRAC
+ID DPTR
+Immediate Value XROVLY
+Direct Value 14
+Operator +
+ID A
+Indirect value DPTR
+BIT
+ID CLRXXBRAC
+ID DPTR
+Immediate Value XROVLY
+Direct Value 6
+Operator +
+ID A
+Indirect value DPTR
+BIT
+BIT
+Indirect value DPTR
+ID A
+Label CHK_RACA_KPON
+BIT
+Label CLRXXBRAC
+ID DPTR
+Immediate Value XROVLY
+Direct Value 14
+Operator +
+ID CARB
+ID PMIS_CT
+ID DPTR
+Immediate Value SLVFLGMAP
+Direct Value 14
+Operator +
+Label CHKLFP
+ID A
+Indirect value DPTR
+ID SIMP
+ID TCNOPK
+ID DPTR
+Immediate Value XROVLY
+Direct Value 6
+Operator +
+ID CARB
+ID NNGOL1
+ID DPTR
+Immediate Value SLVFLGMAP
+Direct Value 6
+Operator +
+Label PMIS_CT
+ID A
+Indirect value DPTR
+BIT
+ID ULFPK
+Label NNGOL1
+ID DPTR
+Immediate Value XROVLY
+Direct Value 14
+Operator +
+ID CARB
+ID NNGOL2
+ID DPTR
+Immediate Value SLVFLGMAP
+Direct Value 14
+Operator +
+Label TCNOPK
+ID A
+Indirect value DPTR
+BIT
+ID RSTLFP
+ID DPTR
+Immediate Value XROVLY
+Direct Value 6
+Operator +
+ID CARB
+ID NNGOL3
+ID DPTR
+Immediate Value SLVFLGMAP
+Direct Value 6
+Operator +
+Label NNGOL2
+ID A
+Indirect value DPTR
+BIT
+Label NNGOL3
+BIT
+Indirect value DPTR
+ID A
+ID NNGOL4
+Label RSTUFP
+ID DPTR
+Immediate Value XROVLY
+Direct Value 14
+Operator +
+ID CARB
+ID NNGOL5
+ID DPTR
+Immediate Value SLVFLGMAP
+Direct Value 14
+Operator +
+Label ULFPK
+ID A
+Indirect value DPTR
+BIT
+ID RSTLFP
+Label NNGOL5
+ID DPTR
+Immediate Value XROVLY
+Direct Value 6
+Operator +
+ID CARB
+ID PKLOG6
+ID DPTR
+Immediate Value SLVFLGMAP
+Direct Value 6
+Operator +
+Label ULF1
+ID A
+Indirect value DPTR
+BIT
+BIT
+Indirect value DPTR
+ID A
+ID NNGOL4
+Label PKLOG6
+ID DPTR
+Immediate Value XROVLY
+Direct Value 6
+Operator +
+ID CARB
+ID PKLOG7
+ID DPTR
+Immediate Value SLVFLGMAP
+Direct Value 6
+Operator +
+Label RSTLFP
+ID A
+Indirect value DPTR
+BIT
+BIT
+Indirect value DPTR
+ID A
+Label PKLOG7
+ID CARB
+ID NNGRET
+ID CARB
+ID CHKLFP
+Label NNGOL4
+ID DPTR
+Immediate Value SLVFLGMAP
+Direct Value 6
+Operator +
+ID A
+Indirect value DPTR
+ID A
+Immediate Value c0
+ID B
+ID A
+ID DPTR
+Immediate Value SYSFLGMAP
+Direct Value 4
+Operator +
+ID A
+Indirect value DPTR
+ID A
+Immediate Value 3f
+ID A
+ID B
+Indirect value DPTR
+ID A
+Label NNGRET
+Start LabelABCDEFG16
+TESTTTT 9
+-----HANDLE BINARY EXPRESSION---
+-----HANDLE BIT ---
+-----APPENDING JUMP AND BRANCH STATEMENTS---
+-----CHECK FOR LOOPS------
+***Assembly Name 8051
+***Number of labels 16
+	 Label name: ABCDEFG
+	 Number of lines: 35
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:3
+					 OPTIONS + 1 
+		 Offset 19
+		 Opcode JNB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 SMPDUP 
+				 Number of Arguments:1
+					 NOP_K1ECROF 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 SLVFLGMAP + 14 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset 0
+		 Opcode SETB
+			 Number of Expression: 1
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode CLR
+			 Number of Expression: 1
+				 Number of Arguments:1
+					 CARB 
+		 Offset 9
+		 Opcode JB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 CARB 
+				 Number of Arguments:1
+					 CHK_RACA_KPON 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 XROVLY + 14 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset 1
+		 Opcode JNB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 CLRXXBRAC 
+		 Offset 0
+		 Opcode SETB
+			 Number of Expression: 1
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 XROVLY + 6 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset 0
+		 Opcode CLR
+			 Number of Expression: 1
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode CLR
+			 Number of Expression: 1
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 SLVFLGMAP + 14 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset 1
+		 Opcode JNB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 CLRXXBRAC 
+		 Offset 0
+		 Opcode SETB
+			 Number of Expression: 1
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 SLVFLGMAP + 6 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset 0
+		 Opcode CLR
+			 Number of Expression: 1
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode CLR
+			 Number of Expression: 1
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode SETB
+			 Number of Expression: 1
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 38 
+		 Offset 17
+		 Opcode JB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 TSMKHC 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 BTS 
+		 Offset 9
+		 Opcode JB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 MASTER 
+				 Number of Arguments:1
+					 BPFUPFL 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 SYSFLGMAP + 4 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset 0
+		 Opcode ANL
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 c0 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 B 
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 SLVFLGMAP + 6 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset 0
+		 Opcode ANL
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 c0 
+		 Offset 0
+		 Opcode ORL
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 B 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 XROVLY + 14 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset 9
+		 Opcode JB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 SIMP 
+				 Number of Arguments:1
+					 BPFUPFL 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 SYSFLGMAP + 4 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset 0
+		 Opcode ANL
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 c0 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 B 
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 SLVFLGMAP + 6 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset 0
+		 Opcode ANL
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 c0 
+		 Offset 0
+		 Opcode ORL
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 B 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode RET
+			 Number of Expression: 0
+	 Label name: NOP_K1ECROF
+	 Number of lines: 19
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 SLVFLGMAP + 14 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset 0
+		 Opcode SETB
+			 Number of Expression: 1
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode CLR
+			 Number of Expression: 1
+				 Number of Arguments:1
+					 CARB 
+		 Offset 9
+		 Opcode JB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 CARB 
+				 Number of Arguments:1
+					 CHK_RACA_KPON 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 XROVLY + 14 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset 1
+		 Opcode JNB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 CLRXXBRAC 
+		 Offset 0
+		 Opcode SETB
+			 Number of Expression: 1
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 XROVLY + 6 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset 0
+		 Opcode CLR
+			 Number of Expression: 1
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode CLR
+			 Number of Expression: 1
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 SLVFLGMAP + 14 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset 1
+		 Opcode JNB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 CLRXXBRAC 
+		 Offset 0
+		 Opcode SETB
+			 Number of Expression: 1
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 SLVFLGMAP + 6 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset 0
+		 Opcode CLR
+			 Number of Expression: 1
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode CLR
+			 Number of Expression: 1
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode SETB
+			 Number of Expression: 1
+				 Number of Arguments:1
+					 A 
+	 Label name: TSMKHC
+	 Number of lines: 17
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 BTS 
+		 Offset 9
+		 Opcode JB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 MASTER 
+				 Number of Arguments:1
+					 BPFUPFL 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 SYSFLGMAP + 4 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset 0
+		 Opcode ANL
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 c0 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 B 
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 SLVFLGMAP + 6 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset 0
+		 Opcode ANL
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 c0 
+		 Offset 0
+		 Opcode ORL
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 B 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 XROVLY + 14 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset 9
+		 Opcode JB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 SIMP 
+				 Number of Arguments:1
+					 BPFUPFL 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 SYSFLGMAP + 4 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset 0
+		 Opcode ANL
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 c0 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 B 
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 SLVFLGMAP + 6 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset 0
+		 Opcode ANL
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 c0 
+		 Offset 0
+		 Opcode ORL
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 B 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:1
+					 A 
+	 Label name: BPFUPFL
+	 Number of lines: 9
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 SYSFLGMAP + 4 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset 0
+		 Opcode ANL
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 c0 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 B 
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 SLVFLGMAP + 6 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset 0
+		 Opcode ANL
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 c0 
+		 Offset 0
+		 Opcode ORL
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 B 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:1
+					 A 
+	 Label name: CLRBRAC
+	 Number of lines: 15
+		 Offset 0
+		 Opcode CLR
+			 Number of Expression: 1
+				 Number of Arguments:1
+					 CARB 
+		 Offset 9
+		 Opcode JB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 CARB 
+				 Number of Arguments:1
+					 CHK_RACA_KPON 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 XROVLY + 14 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset 1
+		 Opcode JNB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 CLRXXBRAC 
+		 Offset 0
+		 Opcode SETB
+			 Number of Expression: 1
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 XROVLY + 6 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset 0
+		 Opcode CLR
+			 Number of Expression: 1
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode CLR
+			 Number of Expression: 1
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 SLVFLGMAP + 14 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset 1
+		 Opcode JNB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 CLRXXBRAC 
+		 Offset 0
+		 Opcode SETB
+			 Number of Expression: 1
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 SLVFLGMAP + 6 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset 0
+		 Opcode CLR
+			 Number of Expression: 1
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode CLR
+			 Number of Expression: 1
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode SETB
+			 Number of Expression: 1
+				 Number of Arguments:1
+					 A 
+	 Label name: CHK_RACA_KPON
+	 Number of lines: 9
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 XROVLY + 14 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset 1
+		 Opcode JNB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 CLRXXBRAC 
+		 Offset 0
+		 Opcode SETB
+			 Number of Expression: 1
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 XROVLY + 6 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset 0
+		 Opcode CLR
+			 Number of Expression: 1
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode CLR
+			 Number of Expression: 1
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:1
+					 A 
+	 Label name: CLRXXBRAC
+	 Number of lines: 1
+		 Offset 0
+		 Opcode SETB
+			 Number of Expression: 1
+				 Number of Arguments:1
+					 A 
+	 Label name: CHKLFP
+	 Number of lines: 27
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 XROVLY + 14 
+		 Offset 24
+		 Opcode JNB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 CARB 
+				 Number of Arguments:1
+					 PMIS_CT 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset 11
+		 Opcode JB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 SIMP 
+				 Number of Arguments:1
+					 TCNOPK 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 XROVLY + 14 
+		 Offset e
+		 Opcode JNB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 CARB 
+				 Number of Arguments:1
+					 NNGOL2 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset 7
+		 Opcode JB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 RSTLFP 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 XROVLY + 6 
+		 Offset 4
+		 Opcode JNB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 CARB 
+				 Number of Arguments:1
+					 PKLOG7 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset 0
+		 Opcode CLR
+			 Number of Expression: 1
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode CLR
+			 Number of Expression: 1
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 SLVFLGMAP + 6 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 XROVLY + 6 
+		 Offset 2
+		 Opcode JNB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 CARB 
+				 Number of Arguments:1
+					 NNGOL3 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset 0
+		 Opcode SETB
+			 Number of Expression: 1
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 SLVFLGMAP + 6 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 SLVFLGMAP + 14 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 XROVLY + 6 
+		 Offset e
+		 Opcode JB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 CARB 
+				 Number of Arguments:1
+					 NNGOL1 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset c
+		 Opcode JB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 ULFPK 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 XROVLY + 14 
+		 Offset 9
+		 Opcode JNB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 CARB 
+				 Number of Arguments:1
+					 NNGOL5 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset 7
+		 Opcode JB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 RSTLFP 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 XROVLY + 6 
+		 Offset 4
+		 Opcode JNB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 CARB 
+				 Number of Arguments:1
+					 PKLOG7 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset 0
+		 Opcode CLR
+			 Number of Expression: 1
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode CLR
+			 Number of Expression: 1
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 SLVFLGMAP + 6 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 SLVFLGMAP + 14 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 SLVFLGMAP + 6 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 SLVFLGMAP + 14 
+	 Label name: PMIS_CT
+	 Number of lines: 24
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset 11
+		 Opcode JB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 SIMP 
+				 Number of Arguments:1
+					 TCNOPK 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 XROVLY + 14 
+		 Offset e
+		 Opcode JNB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 CARB 
+				 Number of Arguments:1
+					 NNGOL2 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset 7
+		 Opcode JB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 RSTLFP 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 XROVLY + 6 
+		 Offset 4
+		 Opcode JNB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 CARB 
+				 Number of Arguments:1
+					 PKLOG7 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset 0
+		 Opcode CLR
+			 Number of Expression: 1
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode CLR
+			 Number of Expression: 1
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 SLVFLGMAP + 6 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 XROVLY + 6 
+		 Offset 2
+		 Opcode JNB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 CARB 
+				 Number of Arguments:1
+					 NNGOL3 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset 0
+		 Opcode SETB
+			 Number of Expression: 1
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 SLVFLGMAP + 6 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 SLVFLGMAP + 14 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 XROVLY + 6 
+		 Offset e
+		 Opcode JB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 CARB 
+				 Number of Arguments:1
+					 NNGOL1 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset c
+		 Opcode JB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 ULFPK 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 XROVLY + 14 
+		 Offset 9
+		 Opcode JNB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 CARB 
+				 Number of Arguments:1
+					 NNGOL5 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset 7
+		 Opcode JB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 RSTLFP 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 XROVLY + 6 
+		 Offset 4
+		 Opcode JNB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 CARB 
+				 Number of Arguments:1
+					 PKLOG7 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset 0
+		 Opcode CLR
+			 Number of Expression: 1
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode CLR
+			 Number of Expression: 1
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 SLVFLGMAP + 6 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 SLVFLGMAP + 14 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 SLVFLGMAP + 6 
+	 Label name: NNGOL1
+	 Number of lines: e
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset c
+		 Opcode JB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 ULFPK 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 XROVLY + 14 
+		 Offset 9
+		 Opcode JNB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 CARB 
+				 Number of Arguments:1
+					 NNGOL5 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset 7
+		 Opcode JB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 RSTLFP 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 XROVLY + 6 
+		 Offset 4
+		 Opcode JNB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 CARB 
+				 Number of Arguments:1
+					 PKLOG7 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset 0
+		 Opcode CLR
+			 Number of Expression: 1
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode CLR
+			 Number of Expression: 1
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 SLVFLGMAP + 6 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 SLVFLGMAP + 14 
+	 Label name: TCNOPK
+	 Number of lines: 11
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 XROVLY + 14 
+		 Offset e
+		 Opcode JNB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 CARB 
+				 Number of Arguments:1
+					 NNGOL2 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset 7
+		 Opcode JB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 RSTLFP 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 XROVLY + 6 
+		 Offset 4
+		 Opcode JNB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 CARB 
+				 Number of Arguments:1
+					 PKLOG7 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset 0
+		 Opcode CLR
+			 Number of Expression: 1
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode CLR
+			 Number of Expression: 1
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 SLVFLGMAP + 6 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 XROVLY + 6 
+		 Offset 2
+		 Opcode JNB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 CARB 
+				 Number of Arguments:1
+					 NNGOL3 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset 0
+		 Opcode SETB
+			 Number of Expression: 1
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 SLVFLGMAP + 6 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 SLVFLGMAP + 14 
+	 Label name: NNGOL2
+	 Number of lines: e
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset 7
+		 Opcode JB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 RSTLFP 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 XROVLY + 6 
+		 Offset 4
+		 Opcode JNB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 CARB 
+				 Number of Arguments:1
+					 PKLOG7 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset 0
+		 Opcode CLR
+			 Number of Expression: 1
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode CLR
+			 Number of Expression: 1
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 SLVFLGMAP + 6 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 XROVLY + 6 
+		 Offset 2
+		 Opcode JNB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 CARB 
+				 Number of Arguments:1
+					 NNGOL3 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset 0
+		 Opcode SETB
+			 Number of Expression: 1
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 SLVFLGMAP + 6 
+	 Label name: NNGOL3
+	 Number of lines: 2
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset 0
+		 Opcode SETB
+			 Number of Expression: 1
+				 Number of Arguments:1
+					 A 
+	 Label name: RSTUFP
+	 Number of lines: 34
+		 Offset 0
+		 Opcode CLR
+			 Number of Expression: 1
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:1
+					 A 
+		 Offset 9
+		 Opcode JB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 CARB 
+				 Number of Arguments:1
+					 NNGRET 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 SLVFLGMAP + 6 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset 0
+		 Opcode ANL
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 c0 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 B 
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 SYSFLGMAP + 4 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset 0
+		 Opcode ANL
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 3f 
+		 Offset 0
+		 Opcode ORL
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 B 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode SETB
+			 Number of Expression: 1
+				 Number of Arguments:1
+					 CARB 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 XROVLY + 14 
+		 Offset 24
+		 Opcode JNB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 CARB 
+				 Number of Arguments:1
+					 PMIS_CT 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset 11
+		 Opcode JB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 SIMP 
+				 Number of Arguments:1
+					 TCNOPK 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 XROVLY + 14 
+		 Offset e
+		 Opcode JNB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 CARB 
+				 Number of Arguments:1
+					 NNGOL2 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset 7
+		 Opcode JB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 RSTLFP 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 XROVLY + 6 
+		 Offset 4
+		 Opcode JNB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 CARB 
+				 Number of Arguments:1
+					 PKLOG7 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset 0
+		 Opcode CLR
+			 Number of Expression: 1
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode CLR
+			 Number of Expression: 1
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 SLVFLGMAP + 6 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 XROVLY + 6 
+		 Offset 2
+		 Opcode JNB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 CARB 
+				 Number of Arguments:1
+					 NNGOL3 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset 0
+		 Opcode SETB
+			 Number of Expression: 1
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 SLVFLGMAP + 6 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 SLVFLGMAP + 14 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 XROVLY + 6 
+		 Offset e
+		 Opcode JB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 CARB 
+				 Number of Arguments:1
+					 NNGOL1 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset c
+		 Opcode JB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 ULFPK 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 XROVLY + 14 
+		 Offset 9
+		 Opcode JNB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 CARB 
+				 Number of Arguments:1
+					 NNGOL5 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset 7
+		 Opcode JB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 RSTLFP 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 XROVLY + 6 
+		 Offset 4
+		 Opcode JNB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 CARB 
+				 Number of Arguments:1
+					 PKLOG7 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset 0
+		 Opcode CLR
+			 Number of Expression: 1
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode CLR
+			 Number of Expression: 1
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 SLVFLGMAP + 6 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 SLVFLGMAP + 14 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 SLVFLGMAP + 6 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 SLVFLGMAP + 14 
+	 Label name: ULFPK
+	 Number of lines: c
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 XROVLY + 14 
+		 Offset 9
+		 Opcode JNB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 CARB 
+				 Number of Arguments:1
+					 NNGOL5 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset 7
+		 Opcode JB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 RSTLFP 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 XROVLY + 6 
+		 Offset 4
+		 Opcode JNB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 CARB 
+				 Number of Arguments:1
+					 PKLOG7 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset 0
+		 Opcode CLR
+			 Number of Expression: 1
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode CLR
+			 Number of Expression: 1
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 SLVFLGMAP + 6 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 SLVFLGMAP + 14 
+	 Label name: NNGOL5
+	 Number of lines: 9
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset 7
+		 Opcode JB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 RSTLFP 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 XROVLY + 6 
+		 Offset 4
+		 Opcode JNB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 CARB 
+				 Number of Arguments:1
+					 PKLOG7 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset 0
+		 Opcode CLR
+			 Number of Expression: 1
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode CLR
+			 Number of Expression: 1
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 SLVFLGMAP + 6 
+	 Label name: ULF1
+	 Number of lines: 39
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 XROVLY + 6 
+		 Offset 36
+		 Opcode JNB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 CARB 
+				 Number of Arguments:1
+					 PKLOG6 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset 0
+		 Opcode SETB
+			 Number of Expression: 1
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode CLR
+			 Number of Expression: 1
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:1
+					 A 
+		 Offset 9
+		 Opcode JB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 CARB 
+				 Number of Arguments:1
+					 NNGRET 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 SLVFLGMAP + 6 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset 0
+		 Opcode ANL
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 c0 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 B 
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 SYSFLGMAP + 4 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset 0
+		 Opcode ANL
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 3f 
+		 Offset 0
+		 Opcode ORL
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 B 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode SETB
+			 Number of Expression: 1
+				 Number of Arguments:1
+					 CARB 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 XROVLY + 14 
+		 Offset 24
+		 Opcode JNB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 CARB 
+				 Number of Arguments:1
+					 PMIS_CT 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset 11
+		 Opcode JB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 SIMP 
+				 Number of Arguments:1
+					 TCNOPK 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 XROVLY + 14 
+		 Offset e
+		 Opcode JNB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 CARB 
+				 Number of Arguments:1
+					 NNGOL2 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset 7
+		 Opcode JB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 RSTLFP 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 XROVLY + 6 
+		 Offset 4
+		 Opcode JNB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 CARB 
+				 Number of Arguments:1
+					 PKLOG7 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset 0
+		 Opcode CLR
+			 Number of Expression: 1
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode CLR
+			 Number of Expression: 1
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 SLVFLGMAP + 6 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 XROVLY + 6 
+		 Offset 2
+		 Opcode JNB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 CARB 
+				 Number of Arguments:1
+					 NNGOL3 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset 0
+		 Opcode SETB
+			 Number of Expression: 1
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 SLVFLGMAP + 6 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 SLVFLGMAP + 14 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 XROVLY + 6 
+		 Offset e
+		 Opcode JB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 CARB 
+				 Number of Arguments:1
+					 NNGOL1 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset c
+		 Opcode JB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 ULFPK 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 XROVLY + 14 
+		 Offset 9
+		 Opcode JNB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 CARB 
+				 Number of Arguments:1
+					 NNGOL5 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset 7
+		 Opcode JB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 RSTLFP 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 XROVLY + 6 
+		 Offset 4
+		 Opcode JNB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 CARB 
+				 Number of Arguments:1
+					 PKLOG7 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset 0
+		 Opcode CLR
+			 Number of Expression: 1
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode CLR
+			 Number of Expression: 1
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 SLVFLGMAP + 6 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 SLVFLGMAP + 14 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 SLVFLGMAP + 6 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 SLVFLGMAP + 14 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 SLVFLGMAP + 6 
+	 Label name: PKLOG6
+	 Number of lines: 36
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset 0
+		 Opcode SETB
+			 Number of Expression: 1
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode CLR
+			 Number of Expression: 1
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:1
+					 A 
+		 Offset 9
+		 Opcode JB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 CARB 
+				 Number of Arguments:1
+					 NNGRET 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 SLVFLGMAP + 6 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset 0
+		 Opcode ANL
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 c0 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 B 
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 SYSFLGMAP + 4 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset 0
+		 Opcode ANL
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 3f 
+		 Offset 0
+		 Opcode ORL
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 B 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode SETB
+			 Number of Expression: 1
+				 Number of Arguments:1
+					 CARB 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 XROVLY + 14 
+		 Offset 24
+		 Opcode JNB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 CARB 
+				 Number of Arguments:1
+					 PMIS_CT 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset 11
+		 Opcode JB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 SIMP 
+				 Number of Arguments:1
+					 TCNOPK 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 XROVLY + 14 
+		 Offset e
+		 Opcode JNB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 CARB 
+				 Number of Arguments:1
+					 NNGOL2 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset 7
+		 Opcode JB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 RSTLFP 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 XROVLY + 6 
+		 Offset 4
+		 Opcode JNB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 CARB 
+				 Number of Arguments:1
+					 PKLOG7 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset 0
+		 Opcode CLR
+			 Number of Expression: 1
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode CLR
+			 Number of Expression: 1
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 SLVFLGMAP + 6 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 XROVLY + 6 
+		 Offset 2
+		 Opcode JNB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 CARB 
+				 Number of Arguments:1
+					 NNGOL3 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset 0
+		 Opcode SETB
+			 Number of Expression: 1
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 SLVFLGMAP + 6 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 SLVFLGMAP + 14 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 XROVLY + 6 
+		 Offset e
+		 Opcode JB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 CARB 
+				 Number of Arguments:1
+					 NNGOL1 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset c
+		 Opcode JB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 ULFPK 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 XROVLY + 14 
+		 Offset 9
+		 Opcode JNB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 CARB 
+				 Number of Arguments:1
+					 NNGOL5 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset 7
+		 Opcode JB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 RSTLFP 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 XROVLY + 6 
+		 Offset 4
+		 Opcode JNB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 CARB 
+				 Number of Arguments:1
+					 PKLOG7 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset 0
+		 Opcode CLR
+			 Number of Expression: 1
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode CLR
+			 Number of Expression: 1
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 SLVFLGMAP + 6 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 SLVFLGMAP + 14 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 SLVFLGMAP + 6 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 SLVFLGMAP + 14 
+	 Label name: RSTLFP
+	 Number of lines: 7
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 XROVLY + 6 
+		 Offset 4
+		 Opcode JNB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 CARB 
+				 Number of Arguments:1
+					 PKLOG7 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset 0
+		 Opcode CLR
+			 Number of Expression: 1
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode CLR
+			 Number of Expression: 1
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 SLVFLGMAP + 6 
+	 Label name: PKLOG7
+	 Number of lines: 4
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset 0
+		 Opcode CLR
+			 Number of Expression: 1
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode CLR
+			 Number of Expression: 1
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:1
+					 A 
+	 Label name: NNGOL4
+	 Number of lines: 32
+		 Offset 9
+		 Opcode JB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 CARB 
+				 Number of Arguments:1
+					 NNGRET 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 SLVFLGMAP + 6 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset 0
+		 Opcode ANL
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 c0 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 B 
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 SYSFLGMAP + 4 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset 0
+		 Opcode ANL
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 3f 
+		 Offset 0
+		 Opcode ORL
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 B 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode SETB
+			 Number of Expression: 1
+				 Number of Arguments:1
+					 CARB 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 XROVLY + 14 
+		 Offset 24
+		 Opcode JNB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 CARB 
+				 Number of Arguments:1
+					 PMIS_CT 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset 11
+		 Opcode JB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 SIMP 
+				 Number of Arguments:1
+					 TCNOPK 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 XROVLY + 14 
+		 Offset e
+		 Opcode JNB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 CARB 
+				 Number of Arguments:1
+					 NNGOL2 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset 7
+		 Opcode JB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 RSTLFP 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 XROVLY + 6 
+		 Offset 4
+		 Opcode JNB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 CARB 
+				 Number of Arguments:1
+					 PKLOG7 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset 0
+		 Opcode CLR
+			 Number of Expression: 1
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode CLR
+			 Number of Expression: 1
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 SLVFLGMAP + 6 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 XROVLY + 6 
+		 Offset 2
+		 Opcode JNB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 CARB 
+				 Number of Arguments:1
+					 NNGOL3 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset 0
+		 Opcode SETB
+			 Number of Expression: 1
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 SLVFLGMAP + 6 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 SLVFLGMAP + 14 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 XROVLY + 6 
+		 Offset e
+		 Opcode JB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 CARB 
+				 Number of Arguments:1
+					 NNGOL1 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset c
+		 Opcode JB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 ULFPK 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 XROVLY + 14 
+		 Offset 9
+		 Opcode JNB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 CARB 
+				 Number of Arguments:1
+					 NNGOL5 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset 7
+		 Opcode JB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 RSTLFP 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 XROVLY + 6 
+		 Offset 4
+		 Opcode JNB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 CARB 
+				 Number of Arguments:1
+					 PKLOG7 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset 0
+		 Opcode CLR
+			 Number of Expression: 1
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode CLR
+			 Number of Expression: 1
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 SLVFLGMAP + 6 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 SLVFLGMAP + 14 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 SLVFLGMAP + 6 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 SLVFLGMAP + 14 
+	 Label name: NNGRET
+	 Number of lines: 9
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 SLVFLGMAP + 6 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset 0
+		 Opcode ANL
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 c0 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 B 
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:3
+					 SYSFLGMAP + 4 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset 0
+		 Opcode ANL
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 3f 
+		 Offset 0
+		 Opcode ORL
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 B 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:1
+					 A 
+---ADDRESSING LABEL---
+---HANDLE UNION---
+ABCDEFG : 10474
+NOP_K1ECROF : 10548
+TSMKHC : 105ac
+BPFUPFL : 10608
+CLRBRAC : 1062c
+CHK_RACA_KPON : 10680
+CLRXXBRAC : 106a4
+CHKLFP : 106a8
+PMIS_CT : 10744
+NNGOL1 : 107d4
+TCNOPK : 1080c
+NNGOL2 : 10850
+NNGOL3 : 10888
+RSTUFP : 10890
+ULFPK : 10960
+NNGOL5 : 10990
+ULF1 : 109b4
+PKLOG6 : 10a98
+RSTLFP : 10b70
+PKLOG7 : 10b8c
+NNGOL4 : 10b9c
+NNGRET : 10c64
+ REGISTER IS BIT PRESENTATOR A
+finish createing new frontend
+set Frontend for prog variable
+set frontend complete
+fe->read library catalog
+fe-readlibarycatalog finish
+entrypoint size 0
+decoding entry point...
+decode pname==null
+start: 10474 gotmain: true
+decode main at a!= NOADDRESS
+Proc name Before main main
+Entering Processing Proc
+Name Of Program : 8051
+Start at address = 10474
+***DECODE LABEL: ABCDEFG
+***AT ADDRESS: 10474
+***NUMBER OF INSTRUCTION: 35
+ABYTE PRESENT: r8
+10474: MOV_EXP r8, m[ *8**r214 + 1]
+RTL: 
+00010474    0 *8* r8 := m[ *8**r214 + 1]
+
+10478: JNB_DIR_IMM r117, 100
+RTL: 
+00010478    0 *j32* %flags := r117 ~= 0
+            0 BRANCH 0x104e0, condition equals
+High level: %flags
+
+DPTR1047c: MOV_DPTR_ADDR16 r11, r208 + 20
+RTL: 
+0001047c    0 *16* r11 := r208 + 20
+
+ABYTE PRESENT: r8
+10480: MOVX_A_DPTRA r8, m[ *8**zfill(16,31,r11)]
+RTL: 
+00010480    0 *32* tmp1 := zfill(16,31,r11)
+            0 *8* r8 := m[ *8**zfill(16,31,r11)]
+
+10484: SETB_DIR r146
+RTL: 
+00010484    0 *8* r146 := 1
+
+DPTRABYTE PRESENT: r8
+10488: MOVX_DPTRA_A r8
+movx dptr a:    0 *8* m[tmp1] := r8
+RTL: 
+00010488    0 *32* tmp1 := zfill(16,31,r11)
+            0 *8* m[tmp1] := r8
+
+1048c: CLR_DIR r224
+RTL: 
+0001048c    0 *8* r224 := 0
+
+10490: JB_DIR_IMM r224, 100
+RTL: 
+00010490    0 *j32* %flags := r224 ~= 1
+            0 BRANCH 0x104b8, condition equals
+High level: %flags
+
+DPTR10494: MOV_DPTR_ADDR16 r11, r166 + 20
+RTL: 
+00010494    0 *16* r11 := r166 + 20
+
+ABYTE PRESENT: r8
+10498: MOVX_A_DPTRA r8, m[ *8**zfill(16,31,r11)]
+RTL: 
+00010498    0 *32* tmp1 := zfill(16,31,r11)
+            0 *8* r8 := m[ *8**zfill(16,31,r11)]
+
+1049c: JNB_DIR_IMM r217, 100
+RTL: 
+0001049c    0 *j32* %flags := r217 ~= 0
+            0 BRANCH 0x104a4, condition equals
+High level: %flags
+
+104a0: SETB_DIR r123
+RTL: 
+000104a0    0 *8* r123 := 1
+
+DPTR104a4: MOV_DPTR_ADDR16 r11, r166 + 6
+RTL: 
+000104a4    0 *16* r11 := r166 + 6
+
+ABYTE PRESENT: r8
+104a8: MOVX_A_DPTRA r8, m[ *8**zfill(16,31,r11)]
+RTL: 
+000104a8    0 *32* tmp1 := zfill(16,31,r11)
+            0 *8* r8 := m[ *8**zfill(16,31,r11)]
+
+104ac: CLR_DIR r80
+RTL: 
+000104ac    0 *8* r80 := 0
+
+104b0: CLR_DIR r52
+RTL: 
+000104b0    0 *8* r52 := 0
+
+DPTRABYTE PRESENT: r8
+104b4: MOVX_DPTRA_A r8
+movx dptr a:    0 *8* m[tmp1] := r8
+RTL: 
+000104b4    0 *32* tmp1 := zfill(16,31,r11)
+            0 *8* m[tmp1] := r8
+
+DPTR104b8: MOV_DPTR_ADDR16 r11, r208 + 20
+RTL: 
+000104b8    0 *16* r11 := r208 + 20
+
+ABYTE PRESENT: r8
+104bc: MOVX_A_DPTRA r8, m[ *8**zfill(16,31,r11)]
+RTL: 
+000104bc    0 *32* tmp1 := zfill(16,31,r11)
+            0 *8* r8 := m[ *8**zfill(16,31,r11)]
+
+104c0: JNB_DIR_IMM r193, 100
+RTL: 
+000104c0    0 *j32* %flags := r193 ~= 0
+            0 BRANCH 0x104c8, condition equals
+High level: %flags
+
+104c4: SETB_DIR r58
+RTL: 
+000104c4    0 *8* r58 := 1
+
+DPTR104c8: MOV_DPTR_ADDR16 r11, r208 + 6
+RTL: 
+000104c8    0 *16* r11 := r208 + 6
+
+ABYTE PRESENT: r8
+104cc: MOVX_A_DPTRA r8, m[ *8**zfill(16,31,r11)]
+RTL: 
+000104cc    0 *32* tmp1 := zfill(16,31,r11)
+            0 *8* r8 := m[ *8**zfill(16,31,r11)]
+
+104d0: CLR_DIR r121
+RTL: 
+000104d0    0 *8* r121 := 0
+
+104d4: CLR_DIR r90
+RTL: 
+000104d4    0 *8* r90 := 0
+
+DPTRABYTE PRESENT: r8
+104d8: MOVX_DPTRA_A r8
+movx dptr a:    0 *8* m[tmp1] := r8
+RTL: 
+000104d8    0 *32* tmp1 := zfill(16,31,r11)
+            0 *8* m[tmp1] := r8
+
+104dc: SETB_DIR r194
+RTL: 
+000104dc    0 *8* r194 := 1
+
+ABYTE PRESENT: r8
+104e0: MOV_EXP r8, m[ *8**56]
+RTL: 
+000104e0    0 *8* r8 := m[ *8**56]
+
+104e4: JB_DIR_IMM r157, 100
+RTL: 
+000104e4    0 *j32* %flags := r157 ~= 1
+            0 BRANCH 0x10544, condition equals
+High level: %flags
+
+ABYTE PRESENT: r8
+BTS104e8: MOV_EXP r8, m[r71]
+COMPARE1: 1
+COMPARE2: 0
+RTL: 
+000104e8    0 *8* r8 := m[r71]
+
+104ec: JB_DIR_IMM r57, 100
+RTL: 
+000104ec    0 *j32* %flags := r57 ~= 1
+            0 BRANCH 0x10514, condition equals
+High level: %flags
+
+DPTR104f0: MOV_DPTR_ADDR16 r11, r203 + 4
+RTL: 
+000104f0    0 *16* r11 := r203 + 4
+
+ABYTE PRESENT: r8
+104f4: MOVX_A_DPTRA r8, m[ *8**zfill(16,31,r11)]
+RTL: 
+000104f4    0 *32* tmp1 := zfill(16,31,r11)
+            0 *8* r8 := m[ *8**zfill(16,31,r11)]
+
+ABYTE PRESENT: r8
+104f8: ANL_EXP r8, 0xc0
+RTL: 
+000104f8    0 *8* r8 := r8 & 192
+
+BABYTE PRESENT: r8
+104fc: MOV_EXP m[r9], r8
+RTL: 
+000104fc    0 *8* m[r9] := r8
+
+DPTR10500: MOV_DPTR_ADDR16 r11, r208 + 6
+RTL: 
+00010500    0 *16* r11 := r208 + 6
+
+ABYTE PRESENT: r8
+10504: MOVX_A_DPTRA r8, m[ *8**zfill(16,31,r11)]
+RTL: 
+00010504    0 *32* tmp1 := zfill(16,31,r11)
+            0 *8* r8 := m[ *8**zfill(16,31,r11)]
+
+ABYTE PRESENT: r8
+10508: ANL_EXP r8, 0xc0
+RTL: 
+00010508    0 *8* r8 := r8 & 192
+
+ABYTE PRESENT: r8
+B1050c: ORL_EXP r8, r9
+RTL: 
+0001050c    0 *8* r8 := r8 | r9
+
+DPTRABYTE PRESENT: r8
+10510: MOVX_DPTRA_A r8
+movx dptr a:    0 *8* m[tmp1] := r8
+RTL: 
+00010510    0 *32* tmp1 := zfill(16,31,r11)
+            0 *8* m[tmp1] := r8
+
+DPTR10514: MOV_DPTR_ADDR16 r11, r166 + 20
+RTL: 
+00010514    0 *16* r11 := r166 + 20
+
+ABYTE PRESENT: r8
+10518: MOVX_A_DPTRA r8, m[ *8**zfill(16,31,r11)]
+RTL: 
+00010518    0 *32* tmp1 := zfill(16,31,r11)
+            0 *8* r8 := m[ *8**zfill(16,31,r11)]
+
+1051c: JB_DIR_IMM r167, 100
+RTL: 
+0001051c    0 *j32* %flags := r167 ~= 1
+            0 BRANCH 0x10544, condition equals
+High level: %flags
+
+DPTR10520: MOV_DPTR_ADDR16 r11, r203 + 4
+RTL: 
+00010520    0 *16* r11 := r203 + 4
+
+ABYTE PRESENT: r8
+10524: MOVX_A_DPTRA r8, m[ *8**zfill(16,31,r11)]
+RTL: 
+00010524    0 *32* tmp1 := zfill(16,31,r11)
+            0 *8* r8 := m[ *8**zfill(16,31,r11)]
+
+ABYTE PRESENT: r8
+10528: ANL_EXP r8, 0xc0
+RTL: 
+00010528    0 *8* r8 := r8 & 192
+
+BABYTE PRESENT: r8
+1052c: MOV_EXP m[r9], r8
+RTL: 
+0001052c    0 *8* m[r9] := r8
+
+DPTR10530: MOV_DPTR_ADDR16 r11, r208 + 6
+RTL: 
+00010530    0 *16* r11 := r208 + 6
+
+ABYTE PRESENT: r8
+10534: MOVX_A_DPTRA r8, m[ *8**zfill(16,31,r11)]
+RTL: 
+00010534    0 *32* tmp1 := zfill(16,31,r11)
+            0 *8* r8 := m[ *8**zfill(16,31,r11)]
+
+ABYTE PRESENT: r8
+10538: ANL_EXP r8, 0xc0
+RTL: 
+00010538    0 *8* r8 := r8 & 192
+
+ABYTE PRESENT: r8
+B1053c: ORL_EXP r8, r9
+RTL: 
+0001053c    0 *8* r8 := r8 | r9
+
+DPTRABYTE PRESENT: r8
+10540: MOVX_DPTRA_A r8
+movx dptr a:    0 *8* m[tmp1] := r8
+RTL: 
+00010540    0 *32* tmp1 := zfill(16,31,r11)
+            0 *8* m[tmp1] := r8
+
+RTL: 
+00010544    0 RET
+              Modifieds: 
+              Reaching definitions: 
+
+retAddr = ffffffff rtl = 10544
+finished processing proc main at address 10474
+Proc name After decode main main
+Proc name main
+Sig type:intdecoing entrypoint finish
+decoding anything undecoded...
+decode child proc
+finishing decode...
+finishing decode finish
+found 1 procs
+decompiling...
+Proc before: *forced* { int r8 } main(int argc r32, char *[] * argv r33, char *[] * envp r34)
+in cluster elf-init
+parameters: 
+end parameters
+locals:
+end locals
+symbols:
+end symbols
+live variables: 
+end live variables
+Twoway BB:
+in edges: 
+out edges: 104e0 1047c 
+00010474    0 *8* r8 := m[ *8**r214 + 1]
+00010478    0 *j32* %flags := r117 ~= 0
+            0 BRANCH 0x104e0, condition equals
+High level: %flags
+L1: Twoway BB:
+in edges: 10478 104dc 
+out edges: 10544 104e8 
+000104e0    0 *8* r8 := m[ *8**56]
+000104e4    0 *j32* %flags := r157 ~= 1
+            0 BRANCH 0x10544, condition equals
+High level: %flags
+Twoway BB:
+in edges: 10478 
+out edges: 104b8 10494 
+0001047c    0 *16* r11 := r208 + 20
+00010480    0 *32* tmp1 := zfill(16,31,r11)
+            0 *8* r8 := m[ *8**zfill(16,31,r11)]
+00010484    0 *8* r146 := 1
+00010488    0 *32* tmp1 := zfill(16,31,r11)
+            0 *8* m[tmp1] := r8
+0001048c    0 *8* r224 := 0
+00010490    0 *j32* %flags := r224 ~= 1
+            0 BRANCH 0x104b8, condition equals
+High level: %flags
+L2: Twoway BB:
+in edges: 10490 104b4 
+out edges: 104c8 104c4 
+000104b8    0 *16* r11 := r208 + 20
+000104bc    0 *32* tmp1 := zfill(16,31,r11)
+            0 *8* r8 := m[ *8**zfill(16,31,r11)]
+000104c0    0 *j32* %flags := r193 ~= 0
+            0 BRANCH 0x104c8, condition equals
+High level: %flags
+Twoway BB:
+in edges: 10490 
+out edges: 104a4 104a0 
+00010494    0 *16* r11 := r166 + 20
+00010498    0 *32* tmp1 := zfill(16,31,r11)
+            0 *8* r8 := m[ *8**zfill(16,31,r11)]
+0001049c    0 *j32* %flags := r217 ~= 0
+            0 BRANCH 0x104a4, condition equals
+High level: %flags
+L3: Fall BB:
+in edges: 1049c 104a0 
+out edges: 104b8 
+000104a4    0 *16* r11 := r166 + 6
+000104a8    0 *32* tmp1 := zfill(16,31,r11)
+            0 *8* r8 := m[ *8**zfill(16,31,r11)]
+000104ac    0 *8* r80 := 0
+000104b0    0 *8* r52 := 0
+000104b4    0 *32* tmp1 := zfill(16,31,r11)
+            0 *8* m[tmp1] := r8
+Fall BB:
+in edges: 1049c 
+out edges: 104a4 
+000104a0    0 *8* r123 := 1
+L4: Fall BB:
+in edges: 104c0 104c4 
+out edges: 104e0 
+000104c8    0 *16* r11 := r208 + 6
+000104cc    0 *32* tmp1 := zfill(16,31,r11)
+            0 *8* r8 := m[ *8**zfill(16,31,r11)]
+000104d0    0 *8* r121 := 0
+000104d4    0 *8* r90 := 0
+000104d8    0 *32* tmp1 := zfill(16,31,r11)
+            0 *8* m[tmp1] := r8
+000104dc    0 *8* r194 := 1
+Fall BB:
+in edges: 104c0 
+out edges: 104c8 
+000104c4    0 *8* r58 := 1
+L5: Ret BB:
+in edges: 104e4 1051c 10540 
+out edges: 
+00010544    0 RET
+              Modifieds: 
+              Reaching definitions: 
+Twoway BB:
+in edges: 104e4 
+out edges: 10514 104f0 
+000104e8    0 *8* r8 := m[r71]
+000104ec    0 *j32* %flags := r57 ~= 1
+            0 BRANCH 0x10514, condition equals
+High level: %flags
+L6: Twoway BB:
+in edges: 104ec 10510 
+out edges: 10544 10520 
+00010514    0 *16* r11 := r166 + 20
+00010518    0 *32* tmp1 := zfill(16,31,r11)
+            0 *8* r8 := m[ *8**zfill(16,31,r11)]
+0001051c    0 *j32* %flags := r167 ~= 1
+            0 BRANCH 0x10544, condition equals
+High level: %flags
+Fall BB:
+in edges: 104ec 
+out edges: 10514 
+000104f0    0 *16* r11 := r203 + 4
+000104f4    0 *32* tmp1 := zfill(16,31,r11)
+            0 *8* r8 := m[ *8**zfill(16,31,r11)]
+000104f8    0 *8* r8 := r8 & 192
+000104fc    0 *8* m[r9] := r8
+00010500    0 *16* r11 := r208 + 6
+00010504    0 *32* tmp1 := zfill(16,31,r11)
+            0 *8* r8 := m[ *8**zfill(16,31,r11)]
+00010508    0 *8* r8 := r8 & 192
+0001050c    0 *8* r8 := r8 | r9
+00010510    0 *32* tmp1 := zfill(16,31,r11)
+            0 *8* m[tmp1] := r8
+Fall BB:
+in edges: 1051c 
+out edges: 10544 
+00010520    0 *16* r11 := r203 + 4
+00010524    0 *32* tmp1 := zfill(16,31,r11)
+            0 *8* r8 := m[ *8**zfill(16,31,r11)]
+00010528    0 *8* r8 := r8 & 192
+0001052c    0 *8* m[r9] := r8
+00010530    0 *16* r11 := r208 + 6
+00010534    0 *32* tmp1 := zfill(16,31,r11)
+            0 *8* r8 := m[ *8**zfill(16,31,r11)]
+00010538    0 *8* r8 := r8 & 192
+0001053c    0 *8* r8 := r8 | r9
+00010540    0 *32* tmp1 := zfill(16,31,r11)
+            0 *8* m[tmp1] := r8
+
+
+
+ considering main
+decompil process  
+No Decode Childern
+find ABI :
+child size = 0
+ decompiling main
+abc
+middle decompile  10
+test 1
+test 2
+test 3
+test 4
+test 5
+test 6
+test 11
+test 12, not null
+test 14
+test 15
+test 7
+test 5
+
+remUnusedStmtEtc *forced* { int r8 } main(int argc r32, char *[] * argv r33, char *[] * envp r34)
+
+
+remUnusedStmtEtc 2*forced* { int r8 } main(int argc r32, char *[] * argv r33, char *[] * envp r34)
+
+ISACCASSIGN:    0 *32* r214 := -
+1
+2: 0
+ISACCASSIGN:    0 *32* r117 := -
+1
+2: 0
+ISACCASSIGN:    0 *32* r208 := -
+1
+2: 0
+ISACCASSIGN:    0 *32* r166 := -
+1
+2: 0
+ISACCASSIGN:    0 *32* r217 := -
+1
+2: 0
+ISACCASSIGN:    0 *32* r123 := -
+1
+2: 0
+ISACCASSIGN:    0 *32* r52 := -
+1
+2: 0
+ISACCASSIGN:    0 *32* r80 := -
+1
+2: 0
+ISACCASSIGN:    0 *32* r193 := -
+1
+2: 0
+ISACCASSIGN:    0 *32* r58 := -
+1
+2: 0
+ISACCASSIGN:    0 *32* r11 := -
+1
+2: 0
+ISACCASSIGN:    0 *32* r90 := -
+1
+2: 0
+ISACCASSIGN:    0 *32* r121 := -
+1
+2: 0
+ISACCASSIGN:    0 *32* r146 := -
+1
+2: 0
+ISACCASSIGN:    0 *32* r194 := -
+1
+2: 0
+ISACCASSIGN:    0 *32* r224 := -
+1
+2: 0
+ISACCASSIGN:    0 *32* r157 := -
+1
+2: 0
+ISACCASSIGN:    0 *j8** r71 := -
+1
+2: 0
+ISACCASSIGN:    0 *32* r57 := -
+1
+2: 0
+ISACCASSIGN:    0 *32* r203 := -
+1
+2: 0
+ISACCASSIGN:    0 *j8** r9 := -
+1
+2: 0
+ISACCASSIGN:    0 *32* r167 := -
+1
+2: 0
+ISACCASSIGN:    1 *8* r8 := m[ *8**r214{0} + 1]
+1
+2: 1
+ISACCASSIGN:    2 *j32* %flags := r117{0} ~= 0
+1
+2: 0
+ISACCASSIGN:    3 BRANCH 0x104e0, condition equals
+High level: r117{0} ~= 0
+ISACCASSIGN:    4 *32* r11 := r208{0} + 20
+1
+2: 0
+ISACCASSIGN:    6 *8* r8 := m[ *8**zfill(16,31,r208{0} + 20)]
+1
+2: 1
+ISACCASSIGN:    7 *32* r146 := 1
+1
+2: 0
+ISACCASSIGN:    9 *8* m[zfill(16,31,r208{0} + 20)] := r8{6}
+1
+2: 0
+ISACCASSIGN:   10 *32* r224 := 0
+1
+2: 0
+ISACCASSIGN:   11 *j32* %flags := 1
+1
+2: 0
+ISACCASSIGN:    0 GOTO 0x104b8
+ISACCASSIGN:   13 *32* r11 := r166{0} + 20
+1
+2: 0
+ISACCASSIGN:   15 *8* r8 := m[ *8**zfill(16,31,r166{0} + 20)]
+1
+2: 1
+ISACCASSIGN:   16 *j32* %flags := r217{0} ~= 0
+1
+2: 0
+ISACCASSIGN:   17 BRANCH 0x104a4, condition equals
+High level: r217{0} ~= 0
+ISACCASSIGN:   18 *32* r123 := 1
+1
+2: 0
+ISACCASSIGN:   76 *32* r123 := phi{0 18}
+1
+2: 0
+ISACCASSIGN:   19 *32* r11 := r166{0} + 6
+1
+2: 0
+ISACCASSIGN:   21 *8* r8 := m[ *8**zfill(16,31,r166{0} + 6)]
+1
+2: 1
+ISACCASSIGN:   22 *32* r80 := 0
+1
+2: 0
+ISACCASSIGN:   23 *32* r52 := 0
+1
+2: 0
+ISACCASSIGN:   25 *8* m[zfill(16,31,r166{0} + 6)] := r8{21}
+1
+2: 0
+ISACCASSIGN:   77 *8* r8 := phi{6 21}
+1
+2: 1
+ISACCASSIGN:   78 *32* r11 := phi{4 19}
+1
+2: 0
+ISACCASSIGN:   79 *32* r52 := phi{0 23}
+1
+2: 0
+ISACCASSIGN:   80 *32* r80 := phi{0 22}
+1
+2: 0
+ISACCASSIGN:   81 *32* r123 := phi{0 76}
+1
+2: 0
+ISACCASSIGN:   83 *j32* %flags := phi{11 16}
+1
+2: 0
+ISACCASSIGN:   84 *j32* %ZF := phi{11 16}
+1
+2: 0
+ISACCASSIGN:   85 *j32* %CF := phi{11 16}
+1
+2: 0
+ISACCASSIGN:   26 *32* r11 := r208{0} + 20
+1
+2: 0
+ISACCASSIGN:   28 *8* r8 := m[ *8**zfill(16,31,r208{0} + 20)]
+1
+2: 1
+ISACCASSIGN:   29 *j32* %flags := r193{0} ~= 0
+1
+2: 0
+ISACCASSIGN:   30 BRANCH 0x104c8, condition equals
+High level: r193{0} ~= 0
+ISACCASSIGN:   31 *32* r58 := 1
+1
+2: 0
+ISACCASSIGN:   86 *32* r58 := phi{0 31}
+1
+2: 0
+ISACCASSIGN:   32 *32* r11 := r208{0} + 6
+1
+2: 0
+ISACCASSIGN:   34 *8* r8 := m[ *8**zfill(16,31,r208{0} + 6)]
+1
+2: 1
+ISACCASSIGN:   35 *32* r121 := 0
+1
+2: 0
+ISACCASSIGN:   36 *32* r90 := 0
+1
+2: 0
+ISACCASSIGN:   38 *8* m[zfill(16,31,r208{0} + 6)] := r8{34}
+1
+2: 0
+ISACCASSIGN:   39 *32* r194 := 1
+1
+2: 0
+ISACCASSIGN:   87 *8* r8 := phi{1 34}
+1
+2: 1
+ISACCASSIGN:   88 *32* r11 := phi{0 32}
+1
+2: 0
+ISACCASSIGN:   89 *32* r52 := phi{0 79}
+1
+2: 0
+ISACCASSIGN:   90 *32* r58 := phi{0 86}
+1
+2: 0
+ISACCASSIGN:   91 *32* r80 := phi{0 80}
+1
+2: 0
+ISACCASSIGN:   92 *32* r90 := phi{0 36}
+1
+2: 0
+ISACCASSIGN:   93 *32* r121 := phi{0 35}
+1
+2: 0
+ISACCASSIGN:   94 *32* r123 := phi{0 81}
+1
+2: 0
+ISACCASSIGN:   95 *32* r146 := phi{0 7}
+1
+2: 0
+ISACCASSIGN:   96 *32* r194 := phi{0 39}
+1
+2: 0
+ISACCASSIGN:   97 *32* r224 := phi{0 10}
+1
+2: 0
+ISACCASSIGN:   99 *j32* %flags := phi{2 29}
+1
+2: 0
+ISACCASSIGN:  100 *j32* %ZF := phi{2 29}
+1
+2: 0
+ISACCASSIGN:  101 *j32* %CF := phi{2 29}
+1
+2: 0
+ISACCASSIGN:   40 *j8* r8 := m[ *8**56]
+1
+2: 1
+ISACCASSIGN:   41 *j32* %flags := r157{0} ~= 1
+1
+2: 0
+ISACCASSIGN:   42 BRANCH 0x10544, condition equals
+High level: r157{0} ~= 1
+ISACCASSIGN:   43 *j8* r8 := m[r71{0}]
+1
+2: 1
+ISACCASSIGN:   44 *j32* %flags := r57{0} ~= 1
+1
+2: 0
+ISACCASSIGN:   45 BRANCH 0x10514, condition equals
+High level: r57{0} ~= 1
+ISACCASSIGN:   46 *32* r11 := r203{0} + 4
+1
+2: 0
+ISACCASSIGN:   48 *j8* r8 := m[ *8**zfill(16,31,r203{0} + 4)]
+1
+2: 1
+ISACCASSIGN:   49 *j8* r8 := r8{48} & 192
+1
+2: 0
+ISACCASSIGN:   50 *j8* m[r9{0}] := r8{48} & 192
+1
+2: 0
+ISACCASSIGN:   51 *32* r11 := r208{0} + 6
+1
+2: 0
+ISACCASSIGN:   53 *j8* r8 := m[ *8**zfill(16,31,r208{0} + 6)]
+1
+2: 1
+ISACCASSIGN:   54 *j8* r8 := r8{53} & 192
+1
+2: 0
+ISACCASSIGN:   55 *j8* r8 := (r8{53} & 192) | r9{0}
+1
+2: 0
+ISACCASSIGN:   57 *j8* m[zfill(16,31,r208{0} + 6)] := (r8{53} & 192) | r9{0}
+1
+2: 0
+ISACCASSIGN:  102 *j8* r8 := phi{43 55}
+1
+2: 1
+ISACCASSIGN:  103 *32* r11 := phi{88 51}
+1
+2: 0
+ISACCASSIGN:   58 *32* r11 := r166{0} + 20
+1
+2: 0
+ISACCASSIGN:   60 *j8* r8 := m[ *8**zfill(16,31,r166{0} + 20)]
+1
+2: 1
+ISACCASSIGN:   61 *j32* %flags := r167{0} ~= 1
+1
+2: 0
+ISACCASSIGN:   62 BRANCH 0x10544, condition equals
+High level: r167{0} ~= 1
+ISACCASSIGN:   63 *32* r11 := r203{0} + 4
+1
+2: 0
+ISACCASSIGN:   65 *j8* r8 := m[ *8**zfill(16,31,r203{0} + 4)]
+1
+2: 1
+ISACCASSIGN:   66 *j8* r8 := r8{65} & 192
+1
+2: 0
+ISACCASSIGN:   67 *j8* m[r9{0}] := r8{65} & 192
+1
+2: 0
+ISACCASSIGN:   68 *32* r11 := r208{0} + 6
+1
+2: 0
+ISACCASSIGN:   70 *j8* r8 := m[ *8**zfill(16,31,r208{0} + 6)]
+1
+2: 1
+ISACCASSIGN:   71 *j8* r8 := r8{70} & 192
+1
+2: 0
+ISACCASSIGN:   72 *j8* r8 := (r8{70} & 192) | r9{0}
+1
+2: 0
+ISACCASSIGN:   74 *j8* m[zfill(16,31,r208{0} + 6)] := (r8{70} & 192) | r9{0}
+1
+2: 0
+ISACCASSIGN:  105 *j8* r8 := phi{40 60 72}
+1
+2: 1
+ISACCASSIGN:  106 *32* r11 := phi{88 58 68}
+1
+2: 0
+ISACCASSIGN:  108 *j32* %flags := phi{41 61 61}
+1
+2: 0
+ISACCASSIGN:  109 *j32* %ZF := phi{41 61 61}
+1
+2: 0
+ISACCASSIGN:  110 *j32* %CF := phi{41 61 61}
+1
+2: 0
+ISACCASSIGN:   75 RET *j8* r8 := r8{105},   *32* r11 := r11{106},   *32* r52 := r52{89},   *32* r58 := r58{90},
+                *32* r80 := r80{91},   *32* r90 := r90{92},   *32* r121 := r121{93},   *32* r123 := r123{94},
+                *32* r146 := r146{95},   *32* r194 := r194{96},   *32* r224 := r224{97}
+              Modifieds: *8* r8,  *16* r11,  *32* r52,  *32* r58,  *32* r80,  *32* r90,  *32* r121,  *32* r123,
+                *32* r146,  *32* r194,  *32* r224
+              Reaching definitions: r8=r8{105},   r9=r9{0},   r11=r11{106},   r52=r52{89},   r57=r57{0},   r58=r58{90},
+                r71=r71{0},   r80=r80{91},   r90=r90{92},   r117=r117{0},   r121=r121{93},   r123=r123{94},
+                r146=r146{95},   r157=r157{0},   r166=r166{0},   r167=r167{0},   r193=r193{0},   r194=r194{96},
+                r203=r203{0},   r208=r208{0},   r214=r214{0},   r217=r217{0},   r224=r224{97},   tmp1=tmp1{107},
+                %flags=%flags{108},   %ZF=%ZF{109},   %CF=%CF{110}
+Into constant propagation of procedure
+Worklist size: 83
+Assign:    1 *8* r8 := m[ *8**r214{0} + 1]
+Visit typed exp:  *8**r214{0} + 1
+Visit binary expression r214{0} + 1
+Visit ref exp: r214{0}, 68
+Visit constant expression 1
+Value type: 2
+Value: 39
+Worklist size: 82
+Assign:    2 *j32* %flags := r117{0} ~= 0
+Visit binary expression r117{0} ~= 0
+Value type: 3
+Worklist size: 81
+Assign:    4 *32* r11 := r208{0} + 20
+Visit binary expression r208{0} + 20
+Visit ref exp: r208{0}, 68
+Visit constant expression 20
+Value type: 2
+Value: 38
+Worklist size: 80
+Assign:    6 *8* r8 := m[ *8**zfill(16,31,r208{0} + 20)]
+Visit typed exp:  *8**zfill(16,31,r208{0} + 20)
+Visit ternary expression zfill(16,31,r208{0} + 20)
+Visit binary expression r208{0} + 20
+Visit ref exp: r208{0}, 68
+Visit constant expression 20
+Value type: 2
+Value: 38
+Worklist size: 79
+Assign:    7 *32* r146 := 1
+Visit constant expression 1
+Value type: 2
+Value: 1
+Worklist size: 78
+Assign:    9 *8* m[zfill(16,31,r208{0} + 20)] := r8{6}
+Visit ref exp: r8{6}, 68
+Value type: 2
+Value: 38
+Worklist size: 77
+Assign:   10 *32* r224 := 0
+Visit constant expression 0
+Value type: 2
+Value: 0
+Worklist size: 76
+Assign:   11 *j32* %flags := 1
+Visit constant expression 1
+Value type: 2
+Value: 1
+Worklist size: 75
+Assign:   13 *32* r11 := r166{0} + 20
+Visit binary expression r166{0} + 20
+Visit ref exp: r166{0}, 68
+Visit constant expression 20
+Value type: 2
+Value: 52
+Worklist size: 74
+Assign:   15 *8* r8 := m[ *8**zfill(16,31,r166{0} + 20)]
+Visit typed exp:  *8**zfill(16,31,r166{0} + 20)
+Visit ternary expression zfill(16,31,r166{0} + 20)
+Visit binary expression r166{0} + 20
+Visit ref exp: r166{0}, 68
+Visit constant expression 20
+Value type: 2
+Value: 52
+Worklist size: 73
+Assign:   16 *j32* %flags := r217{0} ~= 0
+Visit binary expression r217{0} ~= 0
+Value type: 3
+Worklist size: 72
+Assign:   18 *32* r123 := 1
+Visit constant expression 1
+Value type: 2
+Value: 1
+Worklist size: 71
+Assign:   76 *32* r123 := phi{0 18}
+Value type: 2
+Value: 1
+Worklist size: 70
+Assign:   19 *32* r11 := r166{0} + 6
+Visit binary expression r166{0} + 6
+Visit ref exp: r166{0}, 68
+Visit constant expression 6
+Value type: 2
+Value: 38
+Worklist size: 69
+Assign:   21 *8* r8 := m[ *8**zfill(16,31,r166{0} + 6)]
+Visit typed exp:  *8**zfill(16,31,r166{0} + 6)
+Visit ternary expression zfill(16,31,r166{0} + 6)
+Visit binary expression r166{0} + 6
+Visit ref exp: r166{0}, 68
+Visit constant expression 6
+Value type: 2
+Value: 38
+Worklist size: 68
+Assign:   22 *32* r80 := 0
+Visit constant expression 0
+Value type: 2
+Value: 0
+Worklist size: 67
+Assign:   23 *32* r52 := 0
+Visit constant expression 0
+Value type: 2
+Value: 0
+Worklist size: 66
+Assign:   25 *8* m[zfill(16,31,r166{0} + 6)] := r8{21}
+Visit ref exp: r8{21}, 68
+Value type: 2
+Value: 38
+Worklist size: 65
+Assign:   77 *8* r8 := phi{6 21}
+Value type: 2
+Value: 38
+Worklist size: 64
+Assign:   78 *32* r11 := phi{4 19}
+Value type: 2
+Value: 38
+Worklist size: 63
+Assign:   79 *32* r52 := phi{0 23}
+Value type: 2
+Value: 0
+Worklist size: 62
+Assign:   80 *32* r80 := phi{0 22}
+Value type: 2
+Value: 0
+Worklist size: 61
+Assign:   81 *32* r123 := phi{0 76}
+Value type: 2
+Value: 1
+Worklist size: 60
+Assign:   83 *j32* %flags := phi{11 16}
+Value type: 3
+Value: 1
+Worklist size: 59
+Assign:   84 *j32* %ZF := phi{11 16}
+Value type: 3
+Value: 1
+Worklist size: 58
+Assign:   85 *j32* %CF := phi{11 16}
+Value type: 3
+Value: 1
+Worklist size: 57
+Assign:   26 *32* r11 := r208{0} + 20
+Visit binary expression r208{0} + 20
+Visit ref exp: r208{0}, 68
+Visit constant expression 20
+Value type: 2
+Value: 38
+Worklist size: 56
+Assign:   28 *8* r8 := m[ *8**zfill(16,31,r208{0} + 20)]
+Visit typed exp:  *8**zfill(16,31,r208{0} + 20)
+Visit ternary expression zfill(16,31,r208{0} + 20)
+Visit binary expression r208{0} + 20
+Visit ref exp: r208{0}, 68
+Visit constant expression 20
+Value type: 2
+Value: 38
+Worklist size: 55
+Assign:   29 *j32* %flags := r193{0} ~= 0
+Visit binary expression r193{0} ~= 0
+Value type: 3
+Worklist size: 54
+Assign:   31 *32* r58 := 1
+Visit constant expression 1
+Value type: 2
+Value: 1
+Worklist size: 53
+Assign:   86 *32* r58 := phi{0 31}
+Value type: 2
+Value: 1
+Worklist size: 52
+Assign:   32 *32* r11 := r208{0} + 6
+Visit binary expression r208{0} + 6
+Visit ref exp: r208{0}, 68
+Visit constant expression 6
+Value type: 2
+Value: 24
+Worklist size: 51
+Assign:   34 *8* r8 := m[ *8**zfill(16,31,r208{0} + 6)]
+Visit typed exp:  *8**zfill(16,31,r208{0} + 6)
+Visit ternary expression zfill(16,31,r208{0} + 6)
+Visit binary expression r208{0} + 6
+Visit ref exp: r208{0}, 68
+Visit constant expression 6
+Value type: 2
+Value: 24
+Worklist size: 50
+Assign:   35 *32* r121 := 0
+Visit constant expression 0
+Value type: 2
+Value: 0
+Worklist size: 49
+Assign:   36 *32* r90 := 0
+Visit constant expression 0
+Value type: 2
+Value: 0
+Worklist size: 48
+Assign:   38 *8* m[zfill(16,31,r208{0} + 6)] := r8{34}
+Visit ref exp: r8{34}, 68
+Value type: 2
+Value: 24
+Worklist size: 47
+Assign:   39 *32* r194 := 1
+Visit constant expression 1
+Value type: 2
+Value: 1
+Worklist size: 46
+Assign:   87 *8* r8 := phi{1 34}
+Value type: 3
+Value: 39
+Worklist size: 45
+Assign:   88 *32* r11 := phi{0 32}
+Value type: 2
+Value: 24
+Worklist size: 44
+Assign:   89 *32* r52 := phi{0 79}
+Value type: 2
+Value: 0
+Worklist size: 43
+Assign:   90 *32* r58 := phi{0 86}
+Value type: 2
+Value: 1
+Worklist size: 42
+Assign:   91 *32* r80 := phi{0 80}
+Value type: 2
+Value: 0
+Worklist size: 41
+Assign:   92 *32* r90 := phi{0 36}
+Value type: 2
+Value: 0
+Worklist size: 40
+Assign:   93 *32* r121 := phi{0 35}
+Value type: 2
+Value: 0
+Worklist size: 39
+Assign:   94 *32* r123 := phi{0 81}
+Value type: 2
+Value: 1
+Worklist size: 38
+Assign:   95 *32* r146 := phi{0 7}
+Value type: 2
+Value: 1
+Worklist size: 37
+Assign:   96 *32* r194 := phi{0 39}
+Value type: 2
+Value: 1
+Worklist size: 36
+Assign:   97 *32* r224 := phi{0 10}
+Value type: 2
+Value: 0
+Worklist size: 35
+Assign:   99 *j32* %flags := phi{2 29}
+Value type: 3
+Worklist size: 34
+Assign:  100 *j32* %ZF := phi{2 29}
+Value type: 3
+Worklist size: 33
+Assign:  101 *j32* %CF := phi{2 29}
+Value type: 3
+Worklist size: 32
+Assign:   40 *j8* r8 := m[ *8**56]
+Visit typed exp:  *8**56
+Visit constant expression 56
+Value type: 2
+Value: 56
+Worklist size: 31
+Assign:   41 *j32* %flags := r157{0} ~= 1
+Visit binary expression r157{0} ~= 1
+Value type: 3
+Worklist size: 30
+Assign:   43 *j8* r8 := m[r71{0}]
+Visit ref exp: r71{0}, 68
+Value type: 2
+Value: 56
+Worklist size: 29
+Assign:   44 *j32* %flags := r57{0} ~= 1
+Visit binary expression r57{0} ~= 1
+Value type: 3
+Worklist size: 28
+Assign:   46 *32* r11 := r203{0} + 4
+Visit binary expression r203{0} + 4
+Visit ref exp: r203{0}, 68
+Visit constant expression 4
+Value type: 2
+Value: 13
+Worklist size: 27
+Assign:   48 *j8* r8 := m[ *8**zfill(16,31,r203{0} + 4)]
+Visit typed exp:  *8**zfill(16,31,r203{0} + 4)
+Visit ternary expression zfill(16,31,r203{0} + 4)
+Visit binary expression r203{0} + 4
+Visit ref exp: r203{0}, 68
+Visit constant expression 4
+Value type: 2
+Value: 13
+Worklist size: 26
+Assign:   49 *j8* r8 := r8{48} & 192
+Value type: 3
+Worklist size: 25
+Assign:   50 *j8* m[r9{0}] := r8{48} & 192
+Visit binary expression r8{48} & 192
+Value type: 3
+Worklist size: 24
+Assign:   51 *32* r11 := r208{0} + 6
+Visit binary expression r208{0} + 6
+Visit ref exp: r208{0}, 68
+Visit constant expression 6
+Value type: 2
+Value: 24
+Worklist size: 23
+Assign:   53 *j8* r8 := m[ *8**zfill(16,31,r208{0} + 6)]
+Visit typed exp:  *8**zfill(16,31,r208{0} + 6)
+Visit ternary expression zfill(16,31,r208{0} + 6)
+Visit binary expression r208{0} + 6
+Visit ref exp: r208{0}, 68
+Visit constant expression 6
+Value type: 2
+Value: 24
+Worklist size: 22
+Assign:   54 *j8* r8 := r8{53} & 192
+Value type: 3
+Worklist size: 21
+Assign:   55 *j8* r8 := (r8{53} & 192) | r9{0}
+Value type: 3
+Worklist size: 20
+Assign:   57 *j8* m[zfill(16,31,r208{0} + 6)] := (r8{53} & 192) | r9{0}
+Visit binary expression (r8{53} & 192) | r9{0}
+Value type: 3
+Worklist size: 19
+Assign:  102 *j8* r8 := phi{43 55}
+Value type: 3
+Value: 56
+Worklist size: 18
+Assign:  103 *32* r11 := phi{88 51}
+Value type: 2
+Value: 24
+Worklist size: 17
+Assign:   58 *32* r11 := r166{0} + 20
+Visit binary expression r166{0} + 20
+Visit ref exp: r166{0}, 68
+Visit constant expression 20
+Value type: 2
+Value: 52
+Worklist size: 16
+Assign:   60 *j8* r8 := m[ *8**zfill(16,31,r166{0} + 20)]
+Visit typed exp:  *8**zfill(16,31,r166{0} + 20)
+Visit ternary expression zfill(16,31,r166{0} + 20)
+Visit binary expression r166{0} + 20
+Visit ref exp: r166{0}, 68
+Visit constant expression 20
+Value type: 2
+Value: 52
+Worklist size: 15
+Assign:   61 *j32* %flags := r167{0} ~= 1
+Visit binary expression r167{0} ~= 1
+Value type: 3
+Worklist size: 14
+Assign:   63 *32* r11 := r203{0} + 4
+Visit binary expression r203{0} + 4
+Visit ref exp: r203{0}, 68
+Visit constant expression 4
+Value type: 2
+Value: 13
+Worklist size: 13
+Assign:   65 *j8* r8 := m[ *8**zfill(16,31,r203{0} + 4)]
+Visit typed exp:  *8**zfill(16,31,r203{0} + 4)
+Visit ternary expression zfill(16,31,r203{0} + 4)
+Visit binary expression r203{0} + 4
+Visit ref exp: r203{0}, 68
+Visit constant expression 4
+Value type: 2
+Value: 13
+Worklist size: 12
+Assign:   66 *j8* r8 := r8{65} & 192
+Value type: 3
+Worklist size: 11
+Assign:   67 *j8* m[r9{0}] := r8{65} & 192
+Visit binary expression r8{65} & 192
+Value type: 3
+Worklist size: 10
+Assign:   68 *32* r11 := r208{0} + 6
+Visit binary expression r208{0} + 6
+Visit ref exp: r208{0}, 68
+Visit constant expression 6
+Value type: 2
+Value: 24
+Worklist size: 9
+Assign:   70 *j8* r8 := m[ *8**zfill(16,31,r208{0} + 6)]
+Visit typed exp:  *8**zfill(16,31,r208{0} + 6)
+Visit ternary expression zfill(16,31,r208{0} + 6)
+Visit binary expression r208{0} + 6
+Visit ref exp: r208{0}, 68
+Visit constant expression 6
+Value type: 2
+Value: 24
+Worklist size: 8
+Assign:   71 *j8* r8 := r8{70} & 192
+Value type: 3
+Worklist size: 7
+Assign:   72 *j8* r8 := (r8{70} & 192) | r9{0}
+Value type: 3
+Worklist size: 6
+Assign:   74 *j8* m[zfill(16,31,r208{0} + 6)] := (r8{70} & 192) | r9{0}
+Visit binary expression (r8{70} & 192) | r9{0}
+Value type: 3
+Worklist size: 5
+Assign:  105 *j8* r8 := phi{40 60 72}
+Value type: 3
+Value: 56
+Worklist size: 4
+Assign:  106 *32* r11 := phi{88 58 68}
+Value type: 3
+Value: 24
+Worklist size: 3
+Assign:  108 *j32* %flags := phi{41 61 61}
+Value type: 3
+Worklist size: 2
+Assign:  109 *j32* %ZF := phi{41 61 61}
+Value type: 3
+Worklist size: 1
+Assign:  110 *j32* %CF := phi{41 61 61}
+Value type: 3
+remove:   13 *32* r11 := r166{0} + 20, 0
+remove:   15 *8* r8 := m[ *8**zfill(16,31,r166{0} + 20)], 1
+remove:   77 *8* r8 := phi{6 21}, 1
+remove:   78 *32* r11 := phi{4 19}, 0
+remove:   83 *j32* %flags := phi{11 16}, 0
+remove:   84 *j32* %ZF := phi{11 16}, 0
+remove:   85 *j32* %CF := phi{11 16}, 0
+remove:   26 *32* r11 := r208{0} + 20, 0
+remove:   28 *8* r8 := m[ *8**zfill(16,31,r208{0} + 20)], 1
+remove:   87 *8* r8 := phi{1 34}, 1
+remove:   99 *j32* %flags := phi{2 29}, 0
+remove:  100 *j32* %ZF := phi{2 29}, 0
+remove:  101 *j32* %CF := phi{2 29}, 0
+remove:   44 *j32* %flags := r57{0} ~= 1, 0
+remove:   46 *32* r11 := r203{0} + 4, 0
+remove:   49 *j8* r8 := r8{48} & 192, 0
+remove:   54 *j8* r8 := r8{53} & 192, 0
+remove:  102 *j8* r8 := phi{43 55}, 1
+remove:  103 *32* r11 := phi{88 51}, 0
+remove:   63 *32* r11 := r203{0} + 4, 0
+remove:   66 *j8* r8 := r8{65} & 192, 0
+remove:   71 *j8* r8 := r8{70} & 192, 0
+remove:  108 *j32* %flags := phi{41 61 61}, 0
+remove:  109 *j32* %ZF := phi{41 61 61}, 0
+remove:  110 *j32* %CF := phi{41 61 61}, 0
+remove:    1 *8* r8 := m[ *8**r214{0} + 1], 1
+remove:    2 *j32* %flags := r117{0} ~= 0, 0
+remove:    4 *32* r11 := r208{0} + 20, 0
+remove:   11 *j32* %flags := 1, 0
+remove:   15 *8* r8 := m[ *8**zfill(16,31,r166{0} + 20)], 1
+remove:   16 *j32* %flags := r217{0} ~= 0, 0
+remove:   19 *32* r11 := r166{0} + 6, 0
+remove:   77 *8* r8 := phi{6 21}, 1
+remove:   28 *8* r8 := m[ *8**zfill(16,31,r208{0} + 20)], 1
+remove:   29 *j32* %flags := r193{0} ~= 0, 0
+remove:   87 *8* r8 := phi{1 34}, 1
+remove:   41 *j32* %flags := r157{0} ~= 1, 0
+remove:   43 *j8* r8 := m[r71{0}], 1
+remove:   51 *32* r11 := r208{0} + 6, 0
+remove:   55 *j8* r8 := (r8{53} & 192) | r9{0}, 0
+remove:  102 *j8* r8 := phi{43 55}, 1
+remove:   61 *j32* %flags := r167{0} ~= 1, 0
+remove:    0 *32* r214 := -, 0
+remove:    0 *j8** r71 := -, 0
+remove:    6 *8* r8 := m[ *8**zfill(16,31,r208{0} + 20)], 1
+remove:   15 *8* r8 := m[ *8**zfill(16,31,r166{0} + 20)], 1
+remove:   21 *8* r8 := m[ *8**zfill(16,31,r166{0} + 6)], 1
+remove:   77 *8* r8 := phi{6 21}, 1
+remove:   28 *8* r8 := m[ *8**zfill(16,31,r208{0} + 20)], 1
+remove:   34 *8* r8 := m[ *8**zfill(16,31,r208{0} + 6)], 1
+remove:   87 *8* r8 := phi{1 34}, 1
+remove:  102 *j8* r8 := phi{43 55}, 1
+remove:   15 *8* r8 := m[ *8**zfill(16,31,r166{0} + 20)], 1
+remove:   77 *8* r8 := phi{6 21}, 1
+remove:   28 *8* r8 := m[ *8**zfill(16,31,r208{0} + 20)], 1
+remove:   87 *8* r8 := phi{1 34}, 1
+remove:  102 *j8* r8 := phi{43 55}, 1
+test 2 *forced* { int r8 } main(int argc r32, char *[] * argv r33, char *[] * envp r34)
+
+
+remUnusedStmtEtc 2.5*forced* { int r8 } main(int argc r32, char *[] * argv r33, char *[] * envp r34)
+
+test 3 
+11
+when will a signature force
+test 4 
+
+remUnusedStmtEtc 3*forced* { int r8 } main(int argc r32, char *[] * argv r33, char *[] * envp r34)
+
+test 5 
+test 7 
+test 8 
+
+remUnusedStmtEtc 4*forced* { int r8 } main(int argc r32, char *[] * argv r33, char *[] * envp r34)
+
+test 9 
+test 10 
+after rem
+global type analysis for main
+is called ...
+update for change
+
+remUnusedStmtEtc *forced* { int r8 } main(int argc r32, char *[] * argv r33, char *[] * envp r34)
+
+
+remUnusedStmtEtc 2*forced* { int r8 } main(int argc r32, char *[] * argv r33, char *[] * envp r34)
+
+ISACCASSIGN:    0 *32* r117 := -
+1
+2: 0
+ISACCASSIGN:    0 *32* r208 := -
+1
+2: 0
+ISACCASSIGN:    0 *32* r166 := -
+1
+2: 0
+ISACCASSIGN:    0 *32* r217 := -
+1
+2: 0
+ISACCASSIGN:    0 *32* r123 := -
+1
+2: 0
+ISACCASSIGN:    0 *32* r52 := -
+1
+2: 0
+ISACCASSIGN:    0 *32* r80 := -
+1
+2: 0
+ISACCASSIGN:    0 *32* r193 := -
+1
+2: 0
+ISACCASSIGN:    0 *32* r58 := -
+1
+2: 0
+ISACCASSIGN:    0 *32* r11 := -
+1
+2: 0
+ISACCASSIGN:    0 *32* r90 := -
+1
+2: 0
+ISACCASSIGN:    0 *32* r121 := -
+1
+2: 0
+ISACCASSIGN:    0 *32* r146 := -
+1
+2: 0
+ISACCASSIGN:    0 *32* r194 := -
+1
+2: 0
+ISACCASSIGN:    0 *32* r224 := -
+1
+2: 0
+ISACCASSIGN:    0 *32* r157 := -
+1
+2: 0
+ISACCASSIGN:    0 *32* r57 := -
+1
+2: 0
+ISACCASSIGN:    0 *32* r203 := -
+1
+2: 0
+ISACCASSIGN:    0 *j8** r9 := -
+1
+2: 0
+ISACCASSIGN:    0 *32* r167 := -
+1
+2: 0
+ISACCASSIGN:    0 *i32* r32 := -
+1
+2: 0
+ISACCASSIGN:    0 *[c*]** r33 := -
+1
+2: 0
+ISACCASSIGN:    0 *[c*]** r34 := -
+1
+2: 0
+ISACCASSIGN:    1 *8* r8 := m[ *8**r214{0} + 1]
+1
+2: 1
+ISACCASSIGN:    3 BRANCH 0x104e0, condition equals
+High level: r117{0} ~= 0
+ISACCASSIGN:    6 *8* r8 := m[ *8**zfill(16,31,r208{0} + 20)]
+1
+2: 1
+ISACCASSIGN:    7 *32* r146 := 1
+1
+2: 0
+ISACCASSIGN:    9 *8* m[zfill(16,31,r208{0} + 20)] := r8{6}
+1
+2: 0
+ISACCASSIGN:   10 *32* r224 := 0
+1
+2: 0
+ISACCASSIGN:    0 GOTO 0x104b8
+ISACCASSIGN:   15 *8* r8 := m[ *8**zfill(16,31,r166{0} + 20)]
+1
+2: 1
+ISACCASSIGN:   17 BRANCH 0x104a4, condition equals
+High level: r217{0} ~= 0
+ISACCASSIGN:   18 *32* r123 := 1
+1
+2: 0
+ISACCASSIGN:   76 *32* r123 := phi{0 18}
+1
+2: 0
+ISACCASSIGN:   21 *8* r8 := m[ *8**zfill(16,31,r166{0} + 6)]
+1
+2: 1
+ISACCASSIGN:   22 *32* r80 := 0
+1
+2: 0
+ISACCASSIGN:   23 *32* r52 := 0
+1
+2: 0
+ISACCASSIGN:   25 *8* m[zfill(16,31,r166{0} + 6)] := r8{21}
+1
+2: 0
+ISACCASSIGN:   77 *8* r8 := phi{6 21}
+1
+2: 1
+ISACCASSIGN:   79 *32* r52 := phi{0 23}
+1
+2: 0
+ISACCASSIGN:   80 *32* r80 := phi{0 22}
+1
+2: 0
+ISACCASSIGN:   81 *32* r123 := phi{0 76}
+1
+2: 0
+ISACCASSIGN:   28 *8* r8 := m[ *8**zfill(16,31,r208{0} + 20)]
+1
+2: 1
+ISACCASSIGN:   30 BRANCH 0x104c8, condition equals
+High level: r193{0} ~= 0
+ISACCASSIGN:   31 *32* r58 := 1
+1
+2: 0
+ISACCASSIGN:   86 *32* r58 := phi{0 31}
+1
+2: 0
+ISACCASSIGN:   32 *32* r11 := r208{0} + 6
+1
+2: 0
+ISACCASSIGN:   34 *8* r8 := m[ *8**zfill(16,31,r208{0} + 6)]
+1
+2: 1
+ISACCASSIGN:   35 *32* r121 := 0
+1
+2: 0
+ISACCASSIGN:   36 *32* r90 := 0
+1
+2: 0
+ISACCASSIGN:   38 *8* m[zfill(16,31,r208{0} + 6)] := r8{34}
+1
+2: 0
+ISACCASSIGN:   39 *32* r194 := 1
+1
+2: 0
+ISACCASSIGN:   87 *8* r8 := phi{1 34}
+1
+2: 1
+ISACCASSIGN:   88 *32* r11 := phi{0 32}
+1
+2: 0
+ISACCASSIGN:   89 *32* r52 := phi{0 79}
+1
+2: 0
+ISACCASSIGN:   90 *32* r58 := phi{0 86}
+1
+2: 0
+ISACCASSIGN:   91 *32* r80 := phi{0 80}
+1
+2: 0
+ISACCASSIGN:   92 *32* r90 := phi{0 36}
+1
+2: 0
+ISACCASSIGN:   93 *32* r121 := phi{0 35}
+1
+2: 0
+ISACCASSIGN:   94 *32* r123 := phi{0 81}
+1
+2: 0
+ISACCASSIGN:   95 *32* r146 := phi{0 7}
+1
+2: 0
+ISACCASSIGN:   96 *32* r194 := phi{0 39}
+1
+2: 0
+ISACCASSIGN:   97 *32* r224 := phi{0 10}
+1
+2: 0
+ISACCASSIGN:   40 *j8* r8 := m[ *8**56]
+1
+2: 1
+ISACCASSIGN:   42 BRANCH 0x10544, condition equals
+High level: r157{0} ~= 1
+ISACCASSIGN:   43 *j8* r8 := m[r71{0}]
+1
+2: 1
+ISACCASSIGN:   45 BRANCH 0x10514, condition equals
+High level: r57{0} ~= 1
+ISACCASSIGN:   48 *j8* r8 := m[ *8**zfill(16,31,r203{0} + 4)]
+1
+2: 1
+ISACCASSIGN:   50 *j8* m[r9{0}] := r8{48} & 192
+1
+2: 0
+ISACCASSIGN:   53 *j8* r8 := m[ *8**zfill(16,31,r208{0} + 6)]
+1
+2: 1
+ISACCASSIGN:   57 *j8* m[zfill(16,31,r208{0} + 6)] := (r8{53} & 192) | r9{0}
+1
+2: 0
+ISACCASSIGN:  102 *j8* r8 := phi{43 53}
+1
+2: 1
+ISACCASSIGN:   58 *32* r11 := r166{0} + 20
+1
+2: 0
+ISACCASSIGN:   60 *j8* r8 := m[ *8**zfill(16,31,r166{0} + 20)]
+1
+2: 1
+ISACCASSIGN:   62 BRANCH 0x10544, condition equals
+High level: r167{0} ~= 1
+ISACCASSIGN:   65 *j8* r8 := m[ *8**zfill(16,31,r203{0} + 4)]
+1
+2: 1
+ISACCASSIGN:   67 *j8* m[r9{0}] := r8{65} & 192
+1
+2: 0
+ISACCASSIGN:   68 *32* r11 := r208{0} + 6
+1
+2: 0
+ISACCASSIGN:   70 *j8* r8 := m[ *8**zfill(16,31,r208{0} + 6)]
+1
+2: 1
+ISACCASSIGN:   72 *j8* r8 := (r8{70} & 192) | r9{0}
+1
+2: 0
+ISACCASSIGN:   74 *j8* m[zfill(16,31,r208{0} + 6)] := (r8{70} & 192) | r9{0}
+1
+2: 0
+ISACCASSIGN:  105 *j8* r8 := phi{40 60 72}
+1
+2: 1
+ISACCASSIGN:  106 *32* r11 := phi{88 58 68}
+1
+2: 0
+ISACCASSIGN:   75 RET *j8* r8 := r8{105}
+              Modifieds: *8* r8,  *16* r11,  *32* r52,  *32* r58,  *32* r80,  *32* r90,  *32* r121,  *32* r123,
+                *32* r146,  *32* r194,  *32* r224
+              Reaching definitions: r8=r8{105},   r9=r9{0},   r11=r11{106},   r32=r32{0},   r33=r33{0},   r34=r34{0},
+                r52=r52{89},   r57=r57{0},   r58=r58{90},   r71=r71{0},   r80=r80{91},   r90=r90{92},   r117=r117{0},
+                r121=r121{93},   r123=r123{94},   r146=r146{95},   r157=r157{0},   r166=r166{0},   r167=r167{0},
+                r193=r193{0},   r194=r194{96},   r203=r203{0},   r208=r208{0},   r214=r214{0},   r217=r217{0},
+                r224=r224{97},   tmp1=tmp1{107},   %flags=%flags{108},   %ZF=%ZF{109},   %CF=%CF{110}
+Into constant propagation of procedure
+Worklist size: 53
+Assign:    1 *8* r8 := m[ *8**r214{0} + 1]
+Visit typed exp:  *8**r214{0} + 1
+Visit binary expression r214{0} + 1
+Visit ref exp: r214{0}, 68
+Visit constant expression 1
+Value type: 2
+Value: 39
+Worklist size: 52
+Assign:    6 *8* r8 := m[ *8**zfill(16,31,r208{0} + 20)]
+Visit typed exp:  *8**zfill(16,31,r208{0} + 20)
+Visit ternary expression zfill(16,31,r208{0} + 20)
+Visit binary expression r208{0} + 20
+Visit ref exp: r208{0}, 68
+Visit constant expression 20
+Value type: 2
+Value: 38
+Worklist size: 51
+Assign:    7 *32* r146 := 1
+Visit constant expression 1
+Value type: 2
+Value: 1
+Worklist size: 50
+Assign:    9 *8* m[zfill(16,31,r208{0} + 20)] := r8{6}
+Visit ref exp: r8{6}, 68
+Value type: 2
+Value: 38
+Worklist size: 49
+Assign:   10 *32* r224 := 0
+Visit constant expression 0
+Value type: 2
+Value: 0
+Worklist size: 48
+Assign:   15 *8* r8 := m[ *8**zfill(16,31,r166{0} + 20)]
+Visit typed exp:  *8**zfill(16,31,r166{0} + 20)
+Visit ternary expression zfill(16,31,r166{0} + 20)
+Visit binary expression r166{0} + 20
+Visit ref exp: r166{0}, 68
+Visit constant expression 20
+Value type: 2
+Value: 52
+Worklist size: 47
+Assign:   18 *32* r123 := 1
+Visit constant expression 1
+Value type: 2
+Value: 1
+Worklist size: 46
+Assign:   76 *32* r123 := phi{0 18}
+Value type: 2
+Value: 1
+Worklist size: 45
+Assign:   21 *8* r8 := m[ *8**zfill(16,31,r166{0} + 6)]
+Visit typed exp:  *8**zfill(16,31,r166{0} + 6)
+Visit ternary expression zfill(16,31,r166{0} + 6)
+Visit binary expression r166{0} + 6
+Visit ref exp: r166{0}, 68
+Visit constant expression 6
+Value type: 2
+Value: 38
+Worklist size: 44
+Assign:   22 *32* r80 := 0
+Visit constant expression 0
+Value type: 2
+Value: 0
+Worklist size: 43
+Assign:   23 *32* r52 := 0
+Visit constant expression 0
+Value type: 2
+Value: 0
+Worklist size: 42
+Assign:   25 *8* m[zfill(16,31,r166{0} + 6)] := r8{21}
+Visit ref exp: r8{21}, 68
+Value type: 2
+Value: 38
+Worklist size: 41
+Assign:   77 *8* r8 := phi{6 21}
+Value type: 2
+Value: 38
+Worklist size: 40
+Assign:   79 *32* r52 := phi{0 23}
+Value type: 2
+Value: 0
+Worklist size: 39
+Assign:   80 *32* r80 := phi{0 22}
+Value type: 2
+Value: 0
+Worklist size: 38
+Assign:   81 *32* r123 := phi{0 76}
+Value type: 2
+Value: 1
+Worklist size: 37
+Assign:   28 *8* r8 := m[ *8**zfill(16,31,r208{0} + 20)]
+Visit typed exp:  *8**zfill(16,31,r208{0} + 20)
+Visit ternary expression zfill(16,31,r208{0} + 20)
+Visit binary expression r208{0} + 20
+Visit ref exp: r208{0}, 68
+Visit constant expression 20
+Value type: 2
+Value: 38
+Worklist size: 36
+Assign:   31 *32* r58 := 1
+Visit constant expression 1
+Value type: 2
+Value: 1
+Worklist size: 35
+Assign:   86 *32* r58 := phi{0 31}
+Value type: 2
+Value: 1
+Worklist size: 34
+Assign:   32 *32* r11 := r208{0} + 6
+Visit binary expression r208{0} + 6
+Visit ref exp: r208{0}, 68
+Visit constant expression 6
+Value type: 2
+Value: 24
+Worklist size: 33
+Assign:   34 *8* r8 := m[ *8**zfill(16,31,r208{0} + 6)]
+Visit typed exp:  *8**zfill(16,31,r208{0} + 6)
+Visit ternary expression zfill(16,31,r208{0} + 6)
+Visit binary expression r208{0} + 6
+Visit ref exp: r208{0}, 68
+Visit constant expression 6
+Value type: 2
+Value: 24
+Worklist size: 32
+Assign:   35 *32* r121 := 0
+Visit constant expression 0
+Value type: 2
+Value: 0
+Worklist size: 31
+Assign:   36 *32* r90 := 0
+Visit constant expression 0
+Value type: 2
+Value: 0
+Worklist size: 30
+Assign:   38 *8* m[zfill(16,31,r208{0} + 6)] := r8{34}
+Visit ref exp: r8{34}, 68
+Value type: 2
+Value: 24
+Worklist size: 29
+Assign:   39 *32* r194 := 1
+Visit constant expression 1
+Value type: 2
+Value: 1
+Worklist size: 28
+Assign:   87 *8* r8 := phi{1 34}
+Value type: 3
+Value: 39
+Worklist size: 27
+Assign:   88 *32* r11 := phi{0 32}
+Value type: 2
+Value: 24
+Worklist size: 26
+Assign:   89 *32* r52 := phi{0 79}
+Value type: 2
+Value: 0
+Worklist size: 25
+Assign:   90 *32* r58 := phi{0 86}
+Value type: 2
+Value: 1
+Worklist size: 24
+Assign:   91 *32* r80 := phi{0 80}
+Value type: 2
+Value: 0
+Worklist size: 23
+Assign:   92 *32* r90 := phi{0 36}
+Value type: 2
+Value: 0
+Worklist size: 22
+Assign:   93 *32* r121 := phi{0 35}
+Value type: 2
+Value: 0
+Worklist size: 21
+Assign:   94 *32* r123 := phi{0 81}
+Value type: 2
+Value: 1
+Worklist size: 20
+Assign:   95 *32* r146 := phi{0 7}
+Value type: 2
+Value: 1
+Worklist size: 19
+Assign:   96 *32* r194 := phi{0 39}
+Value type: 2
+Value: 1
+Worklist size: 18
+Assign:   97 *32* r224 := phi{0 10}
+Value type: 2
+Value: 0
+Worklist size: 17
+Assign:   40 *j8* r8 := m[ *8**56]
+Visit typed exp:  *8**56
+Visit constant expression 56
+Value type: 2
+Value: 56
+Worklist size: 16
+Assign:   43 *j8* r8 := m[r71{0}]
+Visit ref exp: r71{0}, 68
+Value type: 2
+Value: 56
+Worklist size: 15
+Assign:   48 *j8* r8 := m[ *8**zfill(16,31,r203{0} + 4)]
+Visit typed exp:  *8**zfill(16,31,r203{0} + 4)
+Visit ternary expression zfill(16,31,r203{0} + 4)
+Visit binary expression r203{0} + 4
+Visit ref exp: r203{0}, 68
+Visit constant expression 4
+Value type: 2
+Value: 13
+Worklist size: 14
+Assign:   50 *j8* m[r9{0}] := r8{48} & 192
+Visit binary expression r8{48} & 192
+Value type: 3
+Worklist size: 13
+Assign:   53 *j8* r8 := m[ *8**zfill(16,31,r208{0} + 6)]
+Visit typed exp:  *8**zfill(16,31,r208{0} + 6)
+Visit ternary expression zfill(16,31,r208{0} + 6)
+Visit binary expression r208{0} + 6
+Visit ref exp: r208{0}, 68
+Visit constant expression 6
+Value type: 2
+Value: 24
+Worklist size: 12
+Assign:   57 *j8* m[zfill(16,31,r208{0} + 6)] := (r8{53} & 192) | r9{0}
+Visit binary expression (r8{53} & 192) | r9{0}
+Value type: 3
+Worklist size: 11
+Assign:  102 *j8* r8 := phi{43 53}
+Value type: 3
+Value: 56
+Worklist size: 10
+Assign:   58 *32* r11 := r166{0} + 20
+Visit binary expression r166{0} + 20
+Visit ref exp: r166{0}, 68
+Visit constant expression 20
+Value type: 2
+Value: 52
+Worklist size: 9
+Assign:   60 *j8* r8 := m[ *8**zfill(16,31,r166{0} + 20)]
+Visit typed exp:  *8**zfill(16,31,r166{0} + 20)
+Visit ternary expression zfill(16,31,r166{0} + 20)
+Visit binary expression r166{0} + 20
+Visit ref exp: r166{0}, 68
+Visit constant expression 20
+Value type: 2
+Value: 52
+Worklist size: 8
+Assign:   65 *j8* r8 := m[ *8**zfill(16,31,r203{0} + 4)]
+Visit typed exp:  *8**zfill(16,31,r203{0} + 4)
+Visit ternary expression zfill(16,31,r203{0} + 4)
+Visit binary expression r203{0} + 4
+Visit ref exp: r203{0}, 68
+Visit constant expression 4
+Value type: 2
+Value: 13
+Worklist size: 7
+Assign:   67 *j8* m[r9{0}] := r8{65} & 192
+Visit binary expression r8{65} & 192
+Value type: 3
+Worklist size: 6
+Assign:   68 *32* r11 := r208{0} + 6
+Visit binary expression r208{0} + 6
+Visit ref exp: r208{0}, 68
+Visit constant expression 6
+Value type: 2
+Value: 24
+Worklist size: 5
+Assign:   70 *j8* r8 := m[ *8**zfill(16,31,r208{0} + 6)]
+Visit typed exp:  *8**zfill(16,31,r208{0} + 6)
+Visit ternary expression zfill(16,31,r208{0} + 6)
+Visit binary expression r208{0} + 6
+Visit ref exp: r208{0}, 68
+Visit constant expression 6
+Value type: 2
+Value: 24
+Worklist size: 4
+Assign:   72 *j8* r8 := (r8{70} & 192) | r9{0}
+Value type: 3
+Worklist size: 3
+Assign:   74 *j8* m[zfill(16,31,r208{0} + 6)] := (r8{70} & 192) | r9{0}
+Visit binary expression (r8{70} & 192) | r9{0}
+Value type: 3
+Worklist size: 2
+Assign:  105 *j8* r8 := phi{40 60 72}
+Value type: 3
+Value: 56
+Worklist size: 1
+Assign:  106 *32* r11 := phi{88 58 68}
+Value type: 3
+Value: 24
+remove:    0 *i32* r32 := -, 0
+remove:    0 *[c*]** r33 := -, 0
+remove:    0 *[c*]** r34 := -, 0
+remove:   15 *8* r8 := m[ *8**zfill(16,31,r166{0} + 20)], 1
+remove:   77 *8* r8 := phi{6 21}, 1
+remove:   28 *8* r8 := m[ *8**zfill(16,31,r208{0} + 20)], 1
+remove:   87 *8* r8 := phi{1 34}, 1
+remove:   89 *32* r52 := phi{0 79}, 0
+remove:   90 *32* r58 := phi{0 86}, 0
+remove:   91 *32* r80 := phi{0 80}, 0
+remove:   92 *32* r90 := phi{0 36}, 0
+remove:   93 *32* r121 := phi{0 35}, 0
+remove:   94 *32* r123 := phi{0 81}, 0
+remove:   95 *32* r146 := phi{0 7}, 0
+remove:   96 *32* r194 := phi{0 39}, 0
+remove:   97 *32* r224 := phi{0 10}, 0
+remove:  102 *j8* r8 := phi{43 53}, 1
+remove:  106 *32* r11 := phi{88 58 68}, 0
+remove:    0 *32* r90 := -, 0
+remove:    0 *32* r121 := -, 0
+remove:    0 *32* r146 := -, 0
+remove:    0 *32* r194 := -, 0
+remove:    0 *32* r224 := -, 0
+remove:    1 *8* r8 := m[ *8**r214{0} + 1], 1
+remove:    7 *32* r146 := 1, 1
+remove:   10 *32* r224 := 0, 1
+remove:   15 *8* r8 := m[ *8**zfill(16,31,r166{0} + 20)], 1
+remove:   77 *8* r8 := phi{6 21}, 1
+remove:   79 *32* r52 := phi{0 23}, 0
+remove:   80 *32* r80 := phi{0 22}, 0
+remove:   81 *32* r123 := phi{0 76}, 0
+remove:   28 *8* r8 := m[ *8**zfill(16,31,r208{0} + 20)], 1
+remove:   86 *32* r58 := phi{0 31}, 0
+remove:   35 *32* r121 := 0, 1
+remove:   36 *32* r90 := 0, 1
+remove:   39 *32* r194 := 1, 1
+remove:   87 *8* r8 := phi{1 34}, 1
+remove:   88 *32* r11 := phi{0 32}, 0
+remove:   43 *j8* r8 := m[r71{0}], 1
+remove:  102 *j8* r8 := phi{43 53}, 1
+remove:   58 *32* r11 := r166{0} + 20, 0
+remove:   68 *32* r11 := r208{0} + 6, 0
+remove:    0 *32* r52 := -, 0
+remove:    0 *32* r80 := -, 0
+remove:    0 *32* r58 := -, 0
+remove:    0 *32* r11 := -, 0
+remove:    6 *8* r8 := m[ *8**zfill(16,31,r208{0} + 20)], 1
+remove:    7 *32* r146 := 1, 1
+remove:   10 *32* r224 := 0, 1
+remove:   15 *8* r8 := m[ *8**zfill(16,31,r166{0} + 20)], 1
+remove:   76 *32* r123 := phi{0 18}, 0
+remove:   21 *8* r8 := m[ *8**zfill(16,31,r166{0} + 6)], 1
+remove:   22 *32* r80 := 0, 1
+remove:   23 *32* r52 := 0, 1
+remove:   77 *8* r8 := phi{6 21}, 1
+remove:   28 *8* r8 := m[ *8**zfill(16,31,r208{0} + 20)], 1
+remove:   31 *32* r58 := 1, 1
+remove:   32 *32* r11 := r208{0} + 6, 0
+remove:   34 *8* r8 := m[ *8**zfill(16,31,r208{0} + 6)], 1
+remove:   35 *32* r121 := 0, 1
+remove:   36 *32* r90 := 0, 1
+remove:   39 *32* r194 := 1, 1
+remove:   87 *8* r8 := phi{1 34}, 1
+remove:   53 *j8* r8 := m[ *8**zfill(16,31,r208{0} + 6)], 1
+remove:  102 *j8* r8 := phi{43 53}, 1
+remove:    0 *32* r166 := -, 0
+remove:    0 *32* r123 := -, 0
+remove:    7 *32* r146 := 1, 1
+remove:   10 *32* r224 := 0, 1
+remove:   15 *8* r8 := m[ *8**zfill(16,31,r166{0} + 20)], 1
+remove:   18 *32* r123 := 1, 1
+remove:   22 *32* r80 := 0, 1
+remove:   23 *32* r52 := 0, 1
+remove:   77 *8* r8 := phi{6 21}, 1
+remove:   28 *8* r8 := m[ *8**zfill(16,31,r208{0} + 20)], 1
+remove:   31 *32* r58 := 1, 1
+remove:   35 *32* r121 := 0, 1
+remove:   36 *32* r90 := 0, 1
+remove:   39 *32* r194 := 1, 1
+remove:   87 *8* r8 := phi{1 34}, 1
+remove:  102 *j8* r8 := phi{43 53}, 1
+remove:    7 *32* r146 := 1, 1
+remove:   10 *32* r224 := 0, 1
+remove:   15 *8* r8 := m[ *8**zfill(16,31,r166{0} + 20)], 1
+remove:   18 *32* r123 := 1, 1
+remove:   22 *32* r80 := 0, 1
+remove:   23 *32* r52 := 0, 1
+remove:   77 *8* r8 := phi{6 21}, 1
+remove:   28 *8* r8 := m[ *8**zfill(16,31,r208{0} + 20)], 1
+remove:   31 *32* r58 := 1, 1
+remove:   35 *32* r121 := 0, 1
+remove:   36 *32* r90 := 0, 1
+remove:   39 *32* r194 := 1, 1
+remove:   87 *8* r8 := phi{1 34}, 1
+remove:  102 *j8* r8 := phi{43 53}, 1
+test 2 *forced* { int r8 } main(int argc r32, char *[] * argv r33, char *[] * envp r34)
+
+
+remUnusedStmtEtc 2.5*forced* { int r8 } main(int argc r32, char *[] * argv r33, char *[] * envp r34)
+
+test 3 
+1
+when will a signature force
+test 4 
+
+remUnusedStmtEtc 3*forced* { int r8 } main(int argc r32, char *[] * argv r33, char *[] * envp r34)
+
+test 5 
+test 7 
+test 8 
+
+remUnusedStmtEtc 4*forced* { int r8 } main(int argc r32, char *[] * argv r33, char *[] * envp r34)
+
+test 9 
+test 10 
+after rem
+test 12
+test 13
+test 14
+after 1
+after rem return
+is called ...
+after 1
+after rem return
+abc xyz
+mnk xyz
+uik xyz
+Proc: *forced* { int r8 } main(int argc r32, char *[] * argv r33, char *[] * envp r34)
+in cluster elf-init
+parameters: i32 argc, [c*]* argv, [c*]* envp
+end parameters
+locals:
+/*signed?*/char * BTS r71
+__size32 CARB r224
+__size32 MASTER r57
+__size32 OPTIONS r214
+__size32 SIMP r167
+__size32 SLVFLGMAP r208
+__size32 SMPDUP r117
+__size32 SYSFLGMAP r203
+__size32 XROVLY r166
+__size8 a r8
+/*signed?*/char a_1 r8{40}
+/*signed?*/char * b r9
+__size32 specbits_121_7 r121
+__size32 specbits_123_1 r123
+__size32 specbits_146_5 r146
+__size32 specbits_157_6 r157
+__size32 specbits_193_5 r193
+__size32 specbits_194_1 r194
+__size32 specbits_217_5 r217
+__size32 specbits_52_6 r52
+__size32 specbits_58_1 r58
+__size32 specbits_80_7 r80
+__size32 specbits_90_6 r90
+end locals
+symbols:
+  r8 maps to a type __size8
+  r9 maps to b type /*signed?*/char *
+  r52 maps to specbits_52_6 type __size32
+  r57 maps to MASTER type __size32
+  r58 maps to specbits_58_1 type __size32
+  r71 maps to BTS type /*signed?*/char *
+  r80 maps to specbits_80_7 type __size32
+  r90 maps to specbits_90_6 type __size32
+  r117 maps to SMPDUP type __size32
+  r121 maps to specbits_121_7 type __size32
+  r123 maps to specbits_123_1 type __size32
+  r146 maps to specbits_146_5 type __size32
+  r157 maps to specbits_157_6 type __size32
+  r166 maps to XROVLY type __size32
+  r167 maps to SIMP type __size32
+  r193 maps to specbits_193_5 type __size32
+  r194 maps to specbits_194_1 type __size32
+  r203 maps to SYSFLGMAP type __size32
+  r208 maps to SLVFLGMAP type __size32
+  r214 maps to OPTIONS type __size32
+  r217 maps to specbits_217_5 type __size32
+  r224 maps to CARB type __size32
+  r8{40} maps to a_1 type /*signed?*/char
+  r8{60} maps to a_1 type /*signed?*/char
+  r8{72} maps to a_1 type /*signed?*/char
+  r8{105} maps to a_1 type /*signed?*/char
+  r32{0} maps to argc type int
+  r33{0} maps to argv type char *[] *
+  r34{0} maps to envp type char *[] *
+end symbols
+live variables: r9,  r57,  r71,  r117,  r157,  r166,  r167,  r193,  r203,  r208,  r214,  r217
+end live variables
+Twoway BB:
+in edges: 
+out edges: 104e0 1047c 
+00000000    0 *32* SMPDUP := -
+            0 *32* SLVFLGMAP := -
+            0 *32* specbits_217_5 := -
+            0 *32* specbits_193_5 := -
+            0 *32* specbits_157_6 := -
+            0 *32* MASTER := -
+            0 *32* SYSFLGMAP := -
+            0 *j8** b := -
+            0 *32* SIMP := -
+00010474    1 *8* a := m[ *8**OPTIONS + 1]
+00010478    3 BRANCH 0x104e0, condition equals
+High level: SMPDUP ~= 0
+Oneway BB:
+in edges: 10478 
+out edges: 104b8 
+0001047c
+00010480    6 *8* a := m[ *8**zfill(16,31,SLVFLGMAP + 20)]
+00010484    7 *32* specbits_146_5 := 1
+00010488    9 *8* m[zfill(16,31,SLVFLGMAP + 20)] := a
+0001048c   10 *32* CARB := 0
+00010490    0 GOTO 0x104b8
+Twoway BB:
+in edges: 
+out edges: 104a4 104a0 
+00010494
+00010498   15 *8* a := m[ *8**zfill(16,31,XROVLY + 20)]
+0001049c   17 BRANCH 0x104a4, condition equals
+High level: specbits_217_5 ~= 0
+Fall BB:
+in edges: 1049c 
+out edges: 104a4 
+000104a0   18 *32* specbits_123_1 := 1
+L3: Fall BB:
+in edges: 1049c 104a0 
+out edges: 104b8 
+00000000
+000104a4
+000104a8   21 *8* a := m[ *8**zfill(16,31,XROVLY + 6)]
+000104ac   22 *32* specbits_80_7 := 0
+000104b0   23 *32* specbits_52_6 := 0
+000104b4   25 *8* m[zfill(16,31,XROVLY + 6)] := a
+L2: Twoway BB:
+in edges: 10490 104b4 
+out edges: 104c8 104c4 
+00000000
+000104b8
+000104bc   28 *8* a := m[ *8**zfill(16,31,SLVFLGMAP + 20)]
+000104c0   30 BRANCH 0x104c8, condition equals
+High level: specbits_193_5 ~= 0
+Fall BB:
+in edges: 104c0 
+out edges: 104c8 
+000104c4   31 *32* specbits_58_1 := 1
+L4: Fall BB:
+in edges: 104c0 104c4 
+out edges: 104e0 
+00000000
+000104c8
+000104cc   34 *8* a := m[ *8**zfill(16,31,SLVFLGMAP + 6)]
+000104d0   35 *32* specbits_121_7 := 0
+000104d4   36 *32* specbits_90_6 := 0
+000104d8   38 *8* m[zfill(16,31,SLVFLGMAP + 6)] := a
+000104dc   39 *32* specbits_194_1 := 1
+L1: Twoway BB:
+in edges: 10478 104dc 
+out edges: 10544 104e8 
+00000000
+000104e0   40 *j8* a_1 := m[ *8**56]
+000104e4   42 BRANCH 0x10544, condition equals
+High level: specbits_157_6 ~= 1
+Twoway BB:
+in edges: 104e4 
+out edges: 10514 104f0 
+000104e8   43 *j8* a := m[BTS]
+000104ec   45 BRANCH 0x10514, condition equals
+High level: MASTER ~= 1
+Fall BB:
+in edges: 104ec 
+out edges: 10514 
+000104f0
+000104f4   48 *j8* a := m[ *8**zfill(16,31,SYSFLGMAP + 4)]
+000104f8
+000104fc   50 *j8* m[b] := a & 192
+00010500
+00010504   53 *j8* a := m[ *8**zfill(16,31,SLVFLGMAP + 6)]
+00010508
+0001050c
+00010510   57 *j8* m[zfill(16,31,SLVFLGMAP + 6)] := (a & 192) | b
+L6: Twoway BB:
+in edges: 104ec 10510 
+out edges: 10544 10520 
+00000000
+00010514
+00010518   60 *j8* a_1 := m[ *8**zfill(16,31,XROVLY + 20)]
+0001051c   62 BRANCH 0x10544, condition equals
+High level: SIMP ~= 1
+Fall BB:
+in edges: 1051c 
+out edges: 10544 
+00010520
+00010524   65 *j8* a := m[ *8**zfill(16,31,SYSFLGMAP + 4)]
+00010528
+0001052c   67 *j8* m[b] := a & 192
+00010530
+00010534   70 *j8* a := m[ *8**zfill(16,31,SLVFLGMAP + 6)]
+00010538
+0001053c   72 *j8* a_1 :=
+===============================
+UNION MAKING AREA
+Statement:    0 *32* SMPDUP := -
+Bit use: 0, 
+Statement:    0 *32* SLVFLGMAP := -
+Bit use: 0, 
+Statement:    0 *32* specbits_217_5 := -
+Bit use: 0, 
+Statement:    0 *32* specbits_193_5 := -
+Bit use: 0, 
+Statement:    0 *32* specbits_157_6 := -
+Bit use: 0, 
+Statement:    0 *32* MASTER := -
+Bit use: 0, 
+Statement:    0 *32* SYSFLGMAP := -
+Bit use: 0, 
+Statement:    0 *j8** b := -
+Bit use: 0, 
+Statement:    0 *32* SIMP := -
+Bit use: 0, 
+Statement:    1 *8* a := m[ *8**OPTIONS + 1]
+Bit use: 0, 
+Statement:    3 BRANCH 0x104e0, condition equals
+High level: SMPDUP ~= 0
+Bit use: 1, SMPDUP
+aDefine: r8{1}
+aValue: 39, SMPDUP
+===================================
+===============================
+UNION MAKING AREA
+Statement:    6 *8* a := m[ *8**zfill(16,31,SLVFLGMAP + 20)]
+Bit use: 0, 
+Statement:    7 *32* specbits_146_5 := 1
+Bit use: 1, specbits5
+Statement:    9 *8* m[zfill(16,31,SLVFLGMAP + 20)] := a
+Bit use: 0, 
+Statement:   10 *32* CARB := 0
+Bit use: 1, CARB
+aDefine: r8{6}
+aValue: 38, CARB
+Statement:    0 GOTO 0x104b8
+Bit use: 0, 
+===================================
+===============================
+UNION MAKING AREA
+Statement:   15 *8* a := m[ *8**zfill(16,31,XROVLY + 20)]
+Bit use: 0, 
+Statement:   17 BRANCH 0x104a4, condition equals
+High level: specbits_217_5 ~= 0
+Bit use: 1, specbits5
+===================================
+===============================
+UNION MAKING AREA
+Statement:   18 *32* specbits_123_1 := 1
+Bit use: 1, specbits1
+===================================
+===============================
+UNION MAKING AREA
+Statement:   21 *8* a := m[ *8**zfill(16,31,XROVLY + 6)]
+Bit use: 0, 
+Statement:   22 *32* specbits_80_7 := 0
+Bit use: 1, specbits7
+Statement:   23 *32* specbits_52_6 := 0
+Bit use: 1, specbits6
+Statement:   25 *8* m[zfill(16,31,XROVLY + 6)] := a
+Bit use: 0, 
+===================================
+===============================
+UNION MAKING AREA
+Statement:   28 *8* a := m[ *8**zfill(16,31,SLVFLGMAP + 20)]
+Bit use: 0, 
+Statement:   30 BRANCH 0x104c8, condition equals
+High level: specbits_193_5 ~= 0
+Bit use: 1, specbits5
+===================================
+===============================
+UNION MAKING AREA
+Statement:   31 *32* specbits_58_1 := 1
+Bit use: 1, specbits1
+===================================
+===============================
+UNION MAKING AREA
+Statement:   34 *8* a := m[ *8**zfill(16,31,SLVFLGMAP + 6)]
+Bit use: 0, 
+Statement:   35 *32* specbits_121_7 := 0
+Bit use: 1, specbits7
+Statement:   36 *32* specbits_90_6 := 0
+Bit use: 1, specbits6
+Statement:   38 *8* m[zfill(16,31,SLVFLGMAP + 6)] := a
+Bit use: 0, 
+Statement:   39 *32* specbits_194_1 := 1
+Bit use: 1, specbits1
+===================================
+===============================
+UNION MAKING AREA
+Statement:   40 *j8* a_1 := m[ *8**56]
+Bit use: 0, 
+Statement:   42 BRANCH 0x10544, condition equals
+High level: specbits_157_6 ~= 1
+Bit use: 1, specbits6
+===================================
+===============================
+UNION MAKING AREA
+Statement:   43 *j8* a := m[BTS]
+Bit use: 0, 
+Statement:   45 BRANCH 0x10514, condition equals
+High level: MASTER ~= 1
+Bit use: 1, MASTER
+aDefine: r8{43}
+aValue: 56, MASTER
+===================================
+===============================
+UNION MAKING AREA
+Statement:   48 *j8* a := m[ *8**zfill(16,31,SYSFLGMAP + 4)]
+Bit use: 0, 
+Statement:   50 *j8* m[b] := a & 192
+Bit use: 0, 
+Statement:   53 *j8* a := m[ *8**zfill(16,31,SLVFLGMAP + 6)]
+Bit use: 0, 
+Statement:   57 *j8* m[zfill(16,31,SLVFLGMAP + 6)] := (a & 192) | b
+Bit use: 0, 
+===================================
+===============================
+UNION MAKING AREA
+Statement:   60 *j8* a_1 := m[ *8**zfill(16,31,XROVLY + 20)]
+Bit use: 0, 
+Statement:   62 BRANCH 0x10544, condition equals
+High level: SIMP ~= 1
+Bit use: 1, SIMP
+aDefine: r8{60}
+aValue: 52, SIMP
+===================================
+===============================
+UNION MAKING AREA
+Statement:   65 *j8* a := m[ *8**zfill(16,31,SYSFLGMAP + 4)]
+Bit use: 0, 
+Statement:   67 *j8* m[b] := a & 192
+Bit use: 0, 
+Statement:   70 *j8* a := m[ *8**zfill(16,31,SLVFLGMAP + 6)]
+Bit use: 0, 
+Statement:   72 *j8* a_1 := (a & 192) | b
+Bit use: 0, 
+Statement:   74 *j8* m[zfill(16,31,SLVFLGMAP + 6)] := (a & 192) | b
+Bit use: 0, 
+===================================
+===============================
+UNION MAKING AREA
+Statement:   75 RET *j8* a := a_1
+              Modifieds: *8* a,  *16* r11,  *32* specbits_52_6,  *32* specbits_58_1,  *32* specbits_80_7,
+                *32* specbits_90_6,  *32* specbits_121_7,  *32* specbits_123_1,  *32* specbits_146_5,
+                *32* specbits_194_1,  *32* CARB
+              Reaching definitions: a=a_1,   r9=b,   r11=r11,   r32=argc,   r33=argv,   r34=envp,
+                specbits_52_6=specbits_52_6,   MASTER=MASTER,   specbits_58_1=specbits_58_1,   BTS=BTS,
+                specbits_80_7=specbits_80_7,   specbits_90_6=specbits_90_6,   SMPDUP=SMPDUP,
+                specbits_121_7=specbits_121_7,   specbits_123_1=specbits_123_1,   specbits_146_5=specbits_146_5,
+                specbits_157_6=specbits_157_6,   XROVLY=XROVLY,   SIMP=SIMP,   specbits_193_5=specbits_193_5,
+                specbits_194_1=specbits_194_1,   SYSFLGMAP=SYSFLGMAP,   SLVFLGMAP=SLVFLGMAP,   OPTIONS=OPTIONS,
+                specbits_217_5=specbits_217_5,   CARB=CARB,   tmp1=tmp1,   %flags=%flags,   %ZF=%ZF,   %CF=%CF
+Bit use: 0, 
+===================================
+NUM OF UNION FOUND: 4
+Byte var: LOCATION_39
+Bit vars: 
+SMPDUP: 1
+Byte var: OPTIONS
+Bit vars: 
+CARB: 4
+Byte var: BTS
+Bit vars: 
+MASTER: 2
+Byte var: LOCATION_52
+Bit vars: 
+SIMP: 3
+ENTER REPLACE ACC
+Statement:    0 *32* SMPDUP := -
+Statement:    0 *32* SLVFLGMAP := -
+Statement:    0 *32* specbits_217_5 := -
+Statement:    0 *32* specbits_193_5 := -
+Statement:    0 *32* specbits_157_6 := -
+Statement:    0 *32* MASTER := -
+Statement:    0 *32* SYSFLGMAP := -
+Statement:    0 *j8** b := -
+Statement:    0 *32* SIMP := -
+Statement:    1 *8* a := m[ *8**OPTIONS + 1]
+Statement:    3 BRANCH 0x104e0, condition equals
+High level: SMPDUP ~= 0
+Bit name: SMPDUP
+ENTER FIND BYTE VAR LOCATION_39
+Byte var: LOCATION_39
+statment list: 10
+bb: Twoway BB:
+in edges: 
+out edges: 104e0 1047c 
+00000000    0 *32* SMPDUP := -
+            0 *32* SLVFLGMAP := -
+            0 *32* specbits_217_5 := -
+            0 *32* specbits_193_5 := -
+            0 *32* specbits_157_6 := -
+            0 *32* MASTER := -
+            0 *32* SYSFLGMAP := -
+            0 *j8** b := -
+            0 *32* SIMP := -
+00010474
+00010478    3 BRANCH 0x104e0, condition equals
+High level: (LOCATION_39.bits.SMPDUP) ~= 0
+
+ENTER REPLACE ACC
+Statement:    6 *8* a := m[ *8**zfill(16,31,SLVFLGMAP + 20)]
+Statement:    7 *32* specbits_146_5 := 1
+Bit name: specbits5
+Byte var: OPTIONS
+Statement:    9 *8* m[zfill(16,31,SLVFLGMAP + 20)] := a
+Statement:   10 *32* CARB := 0
+Bit name: CARB
+ENTER FIND BYTE VAR OPTIONS
+Byte var: OPTIONS
+Statement:    0 GOTO 0x104b8
+statment list: 3
+bb: Oneway BB:
+in edges: 10478 
+out edges: 104b8 
+0001047c
+00010480
+00010484    7 *32* OPTIONS.bits.bit5 := 1
+00010488
+0001048c   10 *32* OPTIONS.bits.CARB := 0
+00010490    0 GOTO 0x104b8
+
+ENTER REPLACE ACC
+Statement:   15 *8* a := m[ *8**zfill(16,31,XROVLY + 20)]
+Statement:   17 BRANCH 0x104a4, condition equals
+High level: specbits_217_5 ~= 0
+Bit name: specbits5
+Byte var: LOCATION_52
+statment list: 1
+bb: Twoway BB:
+in edges: 
+out edges: 104a4 104a0 
+00010494
+00010498
+0001049c   17 BRANCH 0x104a4, condition equals
+High level: (LOCATION_52.bits.bit5) ~= 0
+
+ENTER REPLACE ACC
+Statement:   18 *32* specbits_123_1 := 1
+Bit name: specbits1
+Byte var: LOCATION_52
+statment list: 1
+bb: Fall BB:
+in edges: 1049c 
+out edges: 104a4 
+000104a0   18 *32* LOCATION_52.bits.bit1 := 1
+
+ENTER REPLACE ACC
+Statement:   21 *8* a := m[ *8**zfill(16,31,XROVLY + 6)]
+Statement:   22 *32* specbits_80_7 := 0
+Bit name: specbits7
+Byte var: OPTIONS
+Statement:   23 *32* specbits_52_6 := 0
+Bit name: specbits6
+Byte var: OPTIONS
+Statement:   25 *8* m[zfill(16,31,XROVLY + 6)] := a
+statment list: 2
+bb: L3: Fall BB:
+in edges: 1049c 104a0 
+out edges: 104b8 
+00000000
+000104a4
+000104a8
+000104ac   22 *32* OPTIONS.bits.bit7 := 0
+000104b0   23 *32* OPTIONS.bits.bit6 := 0
+000104b4
+
+ENTER REPLACE ACC
+Statement:   28 *8* a := m[ *8**zfill(16,31,SLVFLGMAP + 20)]
+Statement:   30 BRANCH 0x104c8, condition equals
+High level: specbits_193_5 ~= 0
+Bit name: specbits5
+Byte var: OPTIONS
+statment list: 1
+bb: L2: Twoway BB:
+in edges: 10490 104b4 
+out edges: 104c8 104c4 
+00000000
+000104b8
+000104bc
+000104c0   30 BRANCH 0x104c8, condition equals
+High level: (OPTIONS.bits.bit5) ~= 0
+
+ENTER REPLACE ACC
+Statement:   31 *32* specbits_58_1 := 1
+Bit name: specbits1
+Byte var: OPTIONS
+statment list: 1
+bb: Fall BB:
+in edges: 104c0 
+out edges: 104c8 
+000104c4   31 *32* OPTIONS.bits.bit1 := 1
+
+ENTER REPLACE ACC
+Statement:   34 *8* a := m[ *8**zfill(16,31,SLVFLGMAP + 6)]
+Statement:   35 *32* specbits_121_7 := 0
+Bit name: specbits7
+not exist, 24
+getbytefromvalue is called, 24
+byteVar: OPTIONS
+byteVar: SMPDUP
+byteVar: SLVFLGMAP
+byteVar: BTS
+byteVar: MASTER
+byteVar: XROVLY
+byteVar: SIMP
+byteVar: SYSFLGMAP
+byteVar: CARB
+result: LOCATION_24
+Byte var: LOCATION_24
+Statement:   36 *32* specbits_90_6 := 0
+Bit name: specbits6
+Byte var: LOCATION_24
+Statement:   38 *8* m[zfill(16,31,SLVFLGMAP + 6)] := a
+Statement:   39 *32* specbits_194_1 := 1
+Bit name: specbits1
+Byte var: LOCATION_24
+statment list: 3
+bb: L4: Fall BB:
+in edges: 104c0 104c4 
+out edges: 104e0 
+00000000
+000104c8
+000104cc
+000104d0   35 *32* LOCATION_24.bits.bit7 := 0
+000104d4   36 *32* LOCATION_24.bits.bit6 := 0
+000104d8
+000104dc   39 *32* LOCATION_24.bits.bit1 := 1
+
+ENTER REPLACE ACC
+Statement:   40 *j8* a_1 := m[ *8**56]
+Statement:   42 BRANCH 0x10544, condition equals
+High level: specbits_157_6 ~= 1
+Bit name: specbits6
+Byte var: BTS
+statment list: 1
+bb: L1: Twoway BB:
+in edges: 10478 104dc 
+out edges: 10544 104e8 
+00000000
+000104e0
+000104e4   42 BRANCH 0x10544, condition equals
+High level: (BTS.bits.bit6) ~= 1
+
+ENTER REPLACE ACC
+Statement:   43 *j8* a := m[BTS]
+Statement:   45 BRANCH 0x10514, condition equals
+High level: MASTER ~= 1
+Bit name: MASTER
+ENTER FIND BYTE VAR BTS
+Byte var: BTS
+statment list: 1
+bb: Twoway BB:
+in edges: 104e4 
+out edges: 10514 104f0 
+000104e8
+000104ec   45 BRANCH 0x10514, condition equals
+High level: (BTS.bits.MASTER) ~= 1
+
+ENTER REPLACE ACC
+Statement:   48 *j8* a := m[ *8**zfill(16,31,SYSFLGMAP + 4)]
+Statement:   50 *j8* m[b] := a & 192
+Statement:   53 *j8* a := m[ *8**zfill(16,31,SLVFLGMAP + 6)]
+Statement:   57 *j8* m[zfill(16,31,SLVFLGMAP + 6)] := (a & 192) | b
+statment list: 1
+bb: Fall BB:
+in edges: 104ec 
+out edges: 10514 
+000104f0
+000104f4
+000104f8
+000104fc   50 *j8* m[b] := (BTS.byte) & 192
+00010500
+00010504
+00010508
+0001050c
+00010510
+
+ENTER REPLACE ACC
+Statement:   60 *j8* a_1 := m[ *8**zfill(16,31,XROVLY + 20)]
+Statement:   62 BRANCH 0x10544, condition equals
+High level: SIMP ~= 1
+Bit name: SIMP
+ENTER FIND BYTE VAR LOCATION_52
+Byte var: LOCATION_52
+statment list: 1
+bb: L6: Twoway BB:
+in edges: 104ec 10510 
+out edges: 10544 10520 
+00000000
+00010514
+00010518
+0001051c   62 BRANCH 0x10544, condition equals
+High level: (LOCATION_52.bits.SIMP) ~= 1
+
+ENTER REPLACE ACC
+Statement:   65 *j8* a := m[ *8**zfill(16,31,SYSFLGMAP + 4)]
+Statement:   67 *j8* m[b] := a & 192
+Statement:   70 *j8* a := m[ *8**zfill(16,31,SLVFLGMAP + 6)]
+Statement:   72 *j8* a_1 := (a & 192) | b
+Statement:   74 *j8* m[zfill(16,31,SLVFLGMAP + 6)] := (a & 192) | b
+statment list: 2
+bb: Fall BB:
+in edges: 1051c 
+out edges: 10544 
+00010520
+00010524
+00010528
+0001052c   67 *j8* m[b] := (LOCATION_52.byte) & 192
+00010530
+00010534
+00010538
+0001053c   72 *j8* a_1 := ((LOCATION_24.byte) & 192) | b
+00010540
+
+ENTER REPLACE ACC
+Statement:   75 RET *j8* a := a_1
+              Modifieds: *8* a,  *16* r11,  *32* specbits_52_6,  *32* specbits_58_1,  *32* specbits_80_7,
+                *32* specbits_90_6,  *32* specbits_121_7,  *32* specbits_123_1,  *32* specbits_146_5,
+                *32* specbits_194_1,  *32* CARB
+              Reaching definitions: a=a_1,   r9=b,   r11=r11,   r32=argc,   r33=argv,   r34=envp,
+                specbits_52_6=specbits_52_6,   MASTER=MASTER,   specbits_58_1=specbits_58_1,   BTS=BTS,
+                specbits_80_7=specbits_80_7,   specbits_90_6=specbits_90_6,   SMPDUP=SMPDUP,
+                specbits_121_7=specbits_121_7,   specbits_123_1=specbits_123_1,   specbits_146_5=specbits_146_5,
+                specbits_157_6=specbits_157_6,   XROVLY=XROVLY,   SIMP=SIMP,   specbits_193_5=specbits_193_5,
+                specbits_194_1=specbits_194_1,   SYSFLGMAP=SYSFLGMAP,   SLVFLGMAP=SLVFLGMAP,   OPTIONS=OPTIONS,
+                specbits_217_5=specbits_217_5,   CARB=CARB,   tmp1=tmp1,   %flags=%flags,   %ZF=%ZF,   %CF=%CF
+statment list: 1
+bb: L5: Ret BB:
+in edges: 104e4 1051c 10540 
+out edges: 
+00000000
+00010544   75 RET *j8* a := a_1
+              Modifieds: *8* a,  *16* r11,  *32* specbits_52_6,  *32* specbits_58_1,  *32* specbits_80_7,
+                *32* specbits_90_6,  *32* specbits_121_7,  *32* specbits_123_1,  *32* specbits_146_5,
+                *32* specbits_194_1,  *32* CARB
+              Reaching definitions: a=a_1,   r9=b,   r11=r11,   r32=argc,   r33=argv,   r34=envp,
+                specbits_52_6=specbits_52_6,   MASTER=MASTER,   specbits_58_1=specbits_58_1,   BTS=BTS,
+                specbits_80_7=specbits_80_7,   specbits_90_6=specbits_90_6,   SMPDUP=SMPDUP,
+                specbits_121_7=specbits_121_7,   specbits_123_1=specbits_123_1,   specbits_146_5=specbits_146_5,
+                specbits_157_6=specbits_157_6,   XROVLY=XROVLY,   SIMP=SIMP,   specbits_193_5=specbits_193_5,
+                specbits_194_1=specbits_194_1,   SYSFLGMAP=SYSFLGMAP,   SLVFLGMAP=SLVFLGMAP,   OPTIONS=OPTIONS,
+                specbits_217_5=specbits_217_5,   CARB=CARB,   tmp1=tmp1,   %flags=%flags,   %ZF=%ZF,   %CF=%CF
+
+Byte var: LOCATION_39
+Bit vars: 
+SMPDUP: 1
+bit2: 2
+bit3: 3
+bit4: 4
+bit5: 5
+bit6: 6
+bit7: 7
+bit8: 8
+Byte var: OPTIONS
+Bit vars: 
+bit1: 1
+bit2: 2
+bit3: 3
+CARB: 4
+bit5: 5
+bit6: 6
+bit7: 7
+bit8: 8
+Byte var: BTS
+Bit vars: 
+bit1: 1
+MASTER: 2
+bit3: 3
+bit4: 4
+bit5: 5
+bit6: 6
+bit7: 7
+bit8: 8
+Byte var: LOCATION_52
+Bit vars: 
+bit1: 1
+bit2: 2
+SIMP: 3
+bit4: 4
+bit5: 5
+bit6: 6
+bit7: 7
+bit8: 8
+Byte var: LOCATION_24
+Bit vars: 
+bit1: 1
+bit6: 6
+bit7: 7
+generating code...
+Proc is null
+noDecompile is false
+1
+proc name main
+return exp: r8
+output written to ./testoutput/sourcecode/25/testfolder
+completed in 0 secs.

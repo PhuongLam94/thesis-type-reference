@@ -1,0 +1,661 @@
+Boomerang alpha 0.3.1 09/Sep/2006
+Machine 8051 detected 
+Decode assembly 
+loading...
+fname= ./typereferencetestcases/tpn10.txt
+ pname = `
+creating a new Frontend 
+in frontend::load pBF =bff->load
+binaryfactory::load
+after get instace for, numsections =  0
+<---------------RealLoad---------------> 
+file image size :4884
+ELF
+pHeader -> e_ident ELF
+pHeader -> e_class 
+pHeader -> endianess 
+pHeader -> e_version 16777216
+pHeader -> phoff 34000000
+i34
+pHeader -> shoff dc0e0000
+iedc
+m_pStrings
+<--SECTION INFO 0-->
+NAME : 
+OFFSET : 0
+HOSTADDR : 0
+NATIVEADDR : 0
+SECTIONSIZE : 0
+.rel true
+jump to branch
+align : 0
+re set NativeAddr: 8000000
+TYPE : 0
+READONLY SECTION
+<--SECTION INFO 1-->
+NAME : .interp
+OFFSET : 114
+HOSTADDR : 993c114
+NATIVEADDR : 10114
+SECTIONSIZE : 13
+.rel true
+TYPE : 1
+READONLY SECTION
+<--SECTION INFO 2-->
+NAME : .note.ABI-tag
+OFFSET : 128
+HOSTADDR : 993c128
+NATIVEADDR : 10128
+SECTIONSIZE : 20
+.rel true
+TYPE : 7
+READONLY SECTION
+<--SECTION INFO 3-->
+NAME : .hash
+OFFSET : 148
+HOSTADDR : 993c148
+NATIVEADDR : 10148
+SECTIONSIZE : 24
+.rel true
+TYPE : 5
+READONLY SECTION
+<--SECTION INFO 4-->
+NAME : .dynsym
+OFFSET : 16c
+HOSTADDR : 993c16c
+NATIVEADDR : 1016c
+SECTIONSIZE : 40
+.rel true
+TYPE : b
+READONLY SECTION
+<--SECTION INFO 5-->
+NAME : .dynstr
+OFFSET : 1ac
+HOSTADDR : 993c1ac
+NATIVEADDR : 101ac
+SECTIONSIZE : 45
+.rel true
+TYPE : 3
+READONLY SECTION
+<--SECTION INFO 6-->
+NAME : .gnu.version
+OFFSET : 1f2
+HOSTADDR : 993c1f2
+NATIVEADDR : 101f2
+SECTIONSIZE : 8
+.rel true
+TYPE : 6fffffff
+READONLY SECTION
+<--SECTION INFO 7-->
+NAME : .gnu.version_r
+OFFSET : 1fc
+HOSTADDR : 993c1fc
+NATIVEADDR : 101fc
+SECTIONSIZE : 20
+.rel true
+TYPE : 6ffffffe
+READONLY SECTION
+<--SECTION INFO 8-->
+NAME : .rela.dyn
+OFFSET : 21c
+HOSTADDR : 993c21c
+NATIVEADDR : 1021c
+SECTIONSIZE : c
+TYPE : 4
+READONLY SECTION
+<--SECTION INFO 9-->
+NAME : .rela.plt
+OFFSET : 228
+HOSTADDR : 993c228
+NATIVEADDR : 10228
+SECTIONSIZE : 18
+TYPE : 4
+READONLY SECTION
+<--SECTION INFO a-->
+NAME : .init
+OFFSET : 240
+HOSTADDR : 993c240
+NATIVEADDR : 10240
+SECTIONSIZE : 48
+.rel true
+TYPE : 1
+READONLY SECTION
+EXECUTE SECTION
+<--SECTION INFO b-->
+NAME : .text
+OFFSET : 2a0
+HOSTADDR : 993c2a0
+NATIVEADDR : 102a0
+SECTIONSIZE : 2b0
+.rel true
+TYPE : 1
+READONLY SECTION
+EXECUTE SECTION
+<--SECTION INFO c-->
+NAME : .fini
+OFFSET : 550
+HOSTADDR : 993c550
+NATIVEADDR : 10550
+SECTIONSIZE : 14
+.rel true
+TYPE : 1
+READONLY SECTION
+EXECUTE SECTION
+<--SECTION INFO d-->
+NAME : .rodata
+OFFSET : 564
+HOSTADDR : 993c564
+NATIVEADDR : 10564
+SECTIONSIZE : 4
+.rel true
+TYPE : 1
+READONLY SECTION
+<--SECTION INFO e-->
+NAME : .eh_frame
+OFFSET : 568
+HOSTADDR : 993c568
+NATIVEADDR : 10568
+SECTIONSIZE : 4
+.rel true
+TYPE : 1
+READONLY SECTION
+<--SECTION INFO f-->
+NAME : .ctors
+OFFSET : 56c
+HOSTADDR : 993c56c
+NATIVEADDR : 2056c
+SECTIONSIZE : 8
+.rel true
+TYPE : 1
+<--SECTION INFO 10-->
+NAME : .dtors
+OFFSET : 574
+HOSTADDR : 993c574
+NATIVEADDR : 20574
+SECTIONSIZE : 8
+.rel true
+TYPE : 1
+<--SECTION INFO 11-->
+NAME : .jcr
+OFFSET : 57c
+HOSTADDR : 993c57c
+NATIVEADDR : 2057c
+SECTIONSIZE : 4
+.rel true
+TYPE : 1
+<--SECTION INFO 12-->
+NAME : .dynamic
+OFFSET : 580
+HOSTADDR : 993c580
+NATIVEADDR : 20580
+SECTIONSIZE : c8
+.rel true
+TYPE : 6
+<--SECTION INFO 13-->
+NAME : .got
+OFFSET : 648
+HOSTADDR : 993c648
+NATIVEADDR : 20648
+SECTIONSIZE : 10
+.rel true
+TYPE : 1
+<--SECTION INFO 14-->
+NAME : .plt
+OFFSET : 658
+HOSTADDR : 993c658
+NATIVEADDR : 20658
+SECTIONSIZE : 4c
+.rel true
+TYPE : 1
+EXECUTE SECTION
+<--SECTION INFO 15-->
+NAME : .data
+OFFSET : 6a4
+HOSTADDR : 993c6a4
+NATIVEADDR : 206a4
+SECTIONSIZE : 8
+.rel true
+TYPE : 1
+<--SECTION INFO 16-->
+NAME : .bss
+OFFSET : 6ac
+HOSTADDR : 993c6ac
+NATIVEADDR : 206ac
+SECTIONSIZE : c
+.rel true
+TYPE : 8
+BSS SECTION
+<--SECTION INFO 17-->
+NAME : .comment
+OFFSET : 6ac
+HOSTADDR : 993c6ac
+NATIVEADDR : 0
+SECTIONSIZE : 21
+.rel true
+jump to branch
+align : 1
+re set NativeAddr: 8000000
+TYPE : 1
+READONLY SECTION
+<--SECTION INFO 18-->
+NAME : .shstrtab
+OFFSET : 6cd
+HOSTADDR : 993c6cd
+NATIVEADDR : 0
+SECTIONSIZE : d0
+.rel true
+jump to branch
+align : 1
+re set NativeAddr: 8000021
+TYPE : 3
+READONLY SECTION
+<--SECTION INFO 19-->
+NAME : .symtab
+OFFSET : 7a0
+HOSTADDR : 993c7a0
+NATIVEADDR : 0
+SECTIONSIZE : 480
+.rel true
+jump to branch
+align : 4
+re set NativeAddr: 80000f4
+TYPE : 2
+READONLY SECTION
+<--SECTION INFO 1a-->
+NAME : .strtab
+OFFSET : c20
+HOSTADDR : 993cc20
+NATIVEADDR : 0
+SECTIONSIZE : 2ba
+.rel true
+jump to branch
+align : 1
+re set NativeAddr: 8000574
+TYPE : 3
+READONLY SECTION
+<---------------Finish RealLoad---------------> 
+after realload, numsections =  1b
+in binaryfile::gettextlimits, numsections = 1b 
+Sect->pSectionName 0 000 
+Sect->pSectionName 1 000 .interp
+Sect->pSectionName 2 000 .note.ABI-tag
+Sect->pSectionName 3 000 .hash
+Sect->pSectionName 4 000 .dynsym
+Sect->pSectionName 5 000 .dynstr
+Sect->pSectionName 6 000 .gnu.version
+Sect->pSectionName 7 000 .gnu.version_r
+Sect->pSectionName 8 000 .rela.dyn
+Sect->pSectionName 9 000 .rela.plt
+Sect->pSectionName a 100 .init
+Sect->pSectionName b 100 .text
+Sect->pSectionName c 100 .fini
+Sect->pSectionName d 010 .rodata
+Sect->pSectionName e 010 .eh_frame
+Sect->pSectionName f 010 .ctors
+Sect->pSectionName 10 010 .dtors
+Sect->pSectionName 11 010 .jcr
+Sect->pSectionName 12 010 .dynamic
+Sect->pSectionName 13 010 .got
+Sect->pSectionName 14 100 .plt
+Sect->pSectionName 15 010 .data
+Sect->pSectionName 16 001 .bss
+Sect->pSectionName 17 000 .comment
+Sect->pSectionName 18 000 .shstrtab
+Sect->pSectionName 19 000 .symtab
+Sect->pSectionName 1a 000 .strtab
+./typereferencetestcases/tpn10.txt
+instantiate 8051
+------START PARSING------
+./typereferencetestcases/tpn10.txt
+Immediate Value 26
+Define variable OPTIONS
+BIT
+BIT
+BIT
+BIT
+BIT
+BIT
+BIT
+BIT
+ID A
+ID OPTIONS
+Direct Value 1
+Operator +
+BIT
+Label AA
+Start LabelAA1
+TESTTTT 9
+-----HANDLE BINARY EXPRESSION---
+-----HANDLE BIT ---
+-----APPENDING JUMP AND BRANCH STATEMENTS---
+-----CHECK FOR LOOPS------
+***Assembly Name 8051
+***Number of labels 1
+	 Label name: AA
+	 Number of lines: 3
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:3
+					 OPTIONS + 1 
+		 Offset 0
+		 Opcode SETB
+			 Number of Expression: 1
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode RET
+			 Number of Expression: 0
+---ADDRESSING LABEL---
+---HANDLE UNION---
+AA : 10474
+ REGISTER IS BIT PRESENTATOR A
+finish createing new frontend
+set Frontend for prog variable
+set frontend complete
+fe->read library catalog
+fe-readlibarycatalog finish
+entrypoint size 0
+decoding entry point...
+decode pname==null
+start: 10474 gotmain: true
+decode main at a!= NOADDRESS
+Proc name Before main main
+Entering Processing Proc
+Name Of Program : 8051
+Start at address = 10474
+***DECODE LABEL: AA
+***AT ADDRESS: 10474
+***NUMBER OF INSTRUCTION: 3
+ABYTE PRESENT: r8
+10474: MOV_EXP r8, m[ *8**r214 + 1]
+RTL: 
+00010474    0 *8* r8 := m[ *8**r214 + 1]
+
+10478: SETB_DIR r117
+RTL: 
+00010478    0 *8* r117 := 1
+
+RTL: 
+0001047c    0 RET
+              Modifieds: 
+              Reaching definitions: 
+
+retAddr = ffffffff rtl = 1047c
+finished processing proc main at address 10474
+Proc name After decode main main
+Proc name main
+Sig type:intdecoing entrypoint finish
+decoding anything undecoded...
+decode child proc
+finishing decode...
+finishing decode finish
+found 1 procs
+decompiling...
+Proc before: *forced* { int r8 } main(int argc r32, char *[] * argv r33, char *[] * envp r34)
+in cluster elf-init
+parameters: 
+end parameters
+locals:
+end locals
+symbols:
+end symbols
+live variables: 
+end live variables
+Ret BB:
+in edges: 
+out edges: 
+00010474    0 *8* r8 := m[ *8**r214 + 1]
+00010478    0 *8* r117 := 1
+0001047c    0 RET
+              Modifieds: 
+              Reaching definitions: 
+
+
+
+ considering main
+decompil process  
+No Decode Childern
+find ABI :
+child size = 0
+ decompiling main
+abc
+middle decompile  10
+test 1
+test 2
+test 3
+test 4
+test 5
+test 6
+test 11
+test 12, not null
+test 14
+test 15
+test 7
+test 5
+
+remUnusedStmtEtc *forced* { int r8 } main(int argc r32, char *[] * argv r33, char *[] * envp r34)
+
+
+remUnusedStmtEtc 2*forced* { int r8 } main(int argc r32, char *[] * argv r33, char *[] * envp r34)
+
+ISACCASSIGN:    0 *32* r214 := -
+1
+2: 0
+ISACCASSIGN:    1 *8* r8 := m[ *8**r214{0} + 1]
+1
+2: 1
+ISACCASSIGN:    2 *8* r117 := 1
+1
+2: 0
+ISACCASSIGN:    3 RET *8* r8 := r8{1},   *32* r117 := 1
+              Modifieds: *8* r8,  *32* r117
+              Reaching definitions: r8=r8{1},   r117=1,   r214=r214{0}
+Into constant propagation of procedure
+Worklist size: 2
+Assign:    1 *8* r8 := m[ *8**r214{0} + 1]
+Visit typed exp:  *8**r214{0} + 1
+Visit binary expression r214{0} + 1
+Visit ref exp: r214{0}, 68
+Visit constant expression 1
+Value type: 2
+Value: 39
+Worklist size: 1
+Assign:    2 *8* r117 := 1
+Visit constant expression 1
+Value type: 2
+Value: 1
+remove:    2 *8* r117 := 1, 1
+test 2 *forced* { int r8 } main(int argc r32, char *[] * argv r33, char *[] * envp r34)
+
+
+remUnusedStmtEtc 2.5*forced* { int r8 } main(int argc r32, char *[] * argv r33, char *[] * envp r34)
+
+test 3 
+2
+when will a signature force
+test 4 
+
+remUnusedStmtEtc 3*forced* { int r8 } main(int argc r32, char *[] * argv r33, char *[] * envp r34)
+
+test 5 
+test 7 
+test 8 
+
+remUnusedStmtEtc 4*forced* { int r8 } main(int argc r32, char *[] * argv r33, char *[] * envp r34)
+
+test 9 
+test 10 
+after rem
+global type analysis for main
+is called ...
+update for change
+
+remUnusedStmtEtc *forced* { int r8 } main(int argc r32, char *[] * argv r33, char *[] * envp r34)
+
+
+remUnusedStmtEtc 2*forced* { int r8 } main(int argc r32, char *[] * argv r33, char *[] * envp r34)
+
+ISACCASSIGN:    0 *32* r214 := -
+1
+2: 0
+ISACCASSIGN:    0 *i32* r32 := -
+1
+2: 0
+ISACCASSIGN:    0 *[c*]** r33 := -
+1
+2: 0
+ISACCASSIGN:    0 *[c*]** r34 := -
+1
+2: 0
+ISACCASSIGN:    1 *8* r8 := m[ *8**r214{0} + 1]
+1
+2: 1
+ISACCASSIGN:    2 *8* r117 := 1
+1
+2: 0
+ISACCASSIGN:    3 RET *8* r8 := r8{1}
+              Modifieds: *8* r8,  *32* r117
+              Reaching definitions: r8=r8{1},   r32=r32{0},   r33=r33{0},   r34=r34{0},   r117=1,   r214=r214{0}
+Into constant propagation of procedure
+Worklist size: 2
+Assign:    1 *8* r8 := m[ *8**r214{0} + 1]
+Visit typed exp:  *8**r214{0} + 1
+Visit binary expression r214{0} + 1
+Visit ref exp: r214{0}, 68
+Visit constant expression 1
+Value type: 2
+Value: 39
+Worklist size: 1
+Assign:    2 *8* r117 := 1
+Visit constant expression 1
+Value type: 2
+Value: 1
+remove:    0 *i32* r32 := -, 0
+remove:    0 *[c*]** r33 := -, 0
+remove:    0 *[c*]** r34 := -, 0
+remove:    2 *8* r117 := 1, 1
+remove:    2 *8* r117 := 1, 1
+test 2 *forced* { int r8 } main(int argc r32, char *[] * argv r33, char *[] * envp r34)
+
+
+remUnusedStmtEtc 2.5*forced* { int r8 } main(int argc r32, char *[] * argv r33, char *[] * envp r34)
+
+test 3 
+1
+when will a signature force
+test 4 
+
+remUnusedStmtEtc 3*forced* { int r8 } main(int argc r32, char *[] * argv r33, char *[] * envp r34)
+
+test 5 
+test 7 
+test 8 
+
+remUnusedStmtEtc 4*forced* { int r8 } main(int argc r32, char *[] * argv r33, char *[] * envp r34)
+
+test 9 
+test 10 
+after rem
+test 12
+test 13
+test 14
+after 1
+after rem return
+is called ...
+after 1
+after rem return
+abc xyz
+mnk xyz
+uik xyz
+Proc: *forced* { int r8 } main(int argc r32, char *[] * argv r33, char *[] * envp r34)
+in cluster elf-init
+parameters: i32 argc, [c*]* argv, [c*]* envp
+end parameters
+locals:
+__size32 OPTIONS r214
+__size8 a r8
+__size8 specbits_117_5 r117
+end locals
+symbols:
+  r8 maps to a type __size8
+  r117 maps to specbits_117_5 type __size8
+  r214 maps to OPTIONS type __size32
+  r32{0} maps to argc type int
+  r33{0} maps to argv type char *[] *
+  r34{0} maps to envp type char *[] *
+end symbols
+live variables: r214
+end live variables
+Ret BB:
+in edges: 
+out edges: 
+00000000    0 *32* OPTIONS := -
+00010474    1 *8* a := m[ *8**OPTIONS + 1]
+00010478    2 *8* specbits_117_5 := 1
+0001047c    3 RET *8* a := a
+              Modifieds: *8* a,  *32* specbits_117_5
+              Reaching definitions: a=a,   r32=argc,   r33=argv,   r34=envp,   specbits_117_5=1,   OPTIONS=OPTIONS
+
+
+
+===============================
+UNION MAKING AREA
+Statement:    0 *32* OPTIONS := -
+Bit use: 0, 
+Statement:    1 *8* a := m[ *8**OPTIONS + 1]
+Bit use: 0, 
+Statement:    2 *8* specbits_117_5 := 1
+Bit use: 1, specbits5
+Statement:    3 RET *8* a := a
+              Modifieds: *8* a,  *32* specbits_117_5
+              Reaching definitions: a=a,   r32=argc,   r33=argv,   r34=envp,   specbits_117_5=1,   OPTIONS=OPTIONS
+Bit use: 0, 
+===================================
+NUM OF UNION FOUND: 0
+ENTER REPLACE ACC
+Statement:    0 *32* OPTIONS := -
+Statement:    1 *8* a := m[ *8**OPTIONS + 1]
+Statement:    2 *8* specbits_117_5 := 1
+Bit name: specbits5
+not exist, 39
+getbytefromvalue is called, 39
+byteVar: OPTIONS
+byteVar: TESTSUPS
+byteVar: TESTSDOWNS
+byteVar: SIMP
+byteVar: CBR
+byteVar: CLAMP
+byteVar: MNK
+byteVar: COMP
+byteVar: MIN
+result: LOCATION_39
+Byte var: LOCATION_39
+Statement:    3 RET *8* a := a
+              Modifieds: *8* a,  *32* specbits_117_5
+              Reaching definitions: a=a,   r32=argc,   r33=argv,   r34=envp,   specbits_117_5=1,   OPTIONS=OPTIONS
+statment list: 3
+bb: Ret BB:
+in edges: 
+out edges: 
+00000000    0 *32* OPTIONS := -
+00010474
+00010478    2 *8* LOCATION_39.bits.bit5 := 1
+0001047c    3 RET *8* LOCATION_39.byte := LOCATION_39.byte
+              Modifieds: *8* a,  *32* specbits_117_5
+              Reaching definitions: LOCATION_39.byte=LOCATION_39.byte,   r32=argc,   r33=argv,   r34=envp,
+                specbits_117_5=1,   OPTIONS=OPTIONS
+
+Byte var: LOCATION_39
+Bit vars: 
+bit5: 5
+generating code...
+Proc is null
+noDecompile is false
+1
+proc name main
+return exp: r8
+output written to ./testoutput/sourcecode/10/testfolder
+completed in 0 secs.

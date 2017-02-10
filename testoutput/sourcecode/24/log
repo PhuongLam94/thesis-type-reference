@@ -1,0 +1,33 @@
+got filename elf-init.c for main
+after removing matching assigns  (t[WILDSTR]).
+### WARNING: iteration limit exceeded for dfaTypeAnalysis of procedure main ###
+### WARNING: iteration limit exceeded for dfaTypeAnalysis of procedure main ###
+*forced* { int r8 } main(int argc r32, char *[] * argv r33, char *[] * envp r34)
+in cluster elf-init
+parameters: i32 argc, [c*]* argv, [c*]* envp
+end parameters
+locals:
+end locals
+symbols:
+  r32{0} maps to argc type int
+  r33{0} maps to argv type char *[] *
+  r34{0} maps to envp type char *[] *
+end symbols
+live variables: 
+end live variables
+Ret BB:
+in edges: 
+out edges: 
+00000000
+00010474
+00010478
+0001047c    4 *8* LOCATION_30.bits.COMP := 1
+00010480    5 RET *8* LOCATION_30.byte := LOCATION_30.byte
+              Modifieds: *8* a,  *16* r11,  *32* COMP
+              Reaching definitions: LOCATION_30.byte=LOCATION_30.byte,   r11=30,   r32=argc,   r33=argv,   r34=envp,
+                COMP=1,   tmp1=30
+
+
+type failure: no type for subexp1 of LOCATION_30.bits.COMP
+type failure: no type for subexp1 of LOCATION_30.bits
+type failure: no type for subexp1 of LOCATION_30.byte

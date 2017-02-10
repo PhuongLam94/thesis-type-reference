@@ -1,0 +1,55 @@
+got filename elf-init.c for main
+size 0x20 meet with size 0x8!
+size 0x8 meet with size 0x20!
+size 0x20 meet with size 0x8!
+size 0x8 meet with size 0x20!
+### WARNING: iteration limit exceeded for dfaTypeAnalysis of procedure main ###
+### WARNING: iteration limit exceeded for dfaTypeAnalysis of procedure main ###
+*forced* { int r8 } main(int argc r32, char *[] * argv r33, char *[] * envp r34)
+in cluster elf-init
+parameters: i32 argc, [c*]* argv, [c*]* envp
+end parameters
+locals:
+__size8 a r8
+end locals
+symbols:
+  r8 maps to a type __size8
+  r32{0} maps to argc type int
+  r33{0} maps to argv type char *[] *
+  r34{0} maps to envp type char *[] *
+end symbols
+live variables: r46,  r114,  r224
+end live variables
+Twoway BB:
+in edges: 
+out edges: 10490 10488 
+00000000
+00010474
+00010478    2 *8* OPTIONS.bits.TESTSUPS := 1
+0001047c    3 *8* OPTIONS.bits.CBR := 0
+00010480
+00010484    6 BRANCH 0x10490, condition equals
+High level: (OPTIONS2.bits.COMP2) ~= 1
+Fall BB:
+in edges: 10484 
+out edges: 10490 
+00010488
+0001048c    8 *32* OPTIONS.bits.MIN := 1
+L1: Ret BB:
+in edges: 10484 1048c 
+out edges: 
+00000000
+00010490    9 RET *8* a := a
+              Modifieds: *8* a,  *32* TESTSUPS,  *32* MIN,  *32* CBR
+              Reaching definitions: a=a,   r32=argc,   r33=argv,   r34=envp,   OPTIONS2=OPTIONS2,   OPTIONS=OPTIONS,
+                TESTSUPS=1,   MIN=MIN,   CBR=0,   COMP2=COMP2,   %flags=COMP2 ~= 1,   %ZF=%ZF,   %CF=%CF
+
+
+type failure: no type for subexp1 of OPTIONS.bits.TESTSUPS
+type failure: no type for subexp1 of OPTIONS.bits
+type failure: no type for subexp1 of OPTIONS.bits.CBR
+type failure: no type for subexp1 of OPTIONS.bits
+type failure: no type for subexp1 of OPTIONS2.bits.COMP2
+type failure: no type for subexp1 of OPTIONS2.bits
+type failure: no type for subexp1 of OPTIONS.bits.MIN
+type failure: no type for subexp1 of OPTIONS.bits

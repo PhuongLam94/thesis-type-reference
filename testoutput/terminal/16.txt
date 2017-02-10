@@ -1,0 +1,831 @@
+Boomerang alpha 0.3.1 09/Sep/2006
+Machine 8051 detected 
+Decode assembly 
+loading...
+fname= ./typereferencetestcases/tpn16.txt
+ pname = `
+creating a new Frontend 
+in frontend::load pBF =bff->load
+binaryfactory::load
+after get instace for, numsections =  0
+<---------------RealLoad---------------> 
+file image size :4884
+ELF
+pHeader -> e_ident ELF
+pHeader -> e_class 
+pHeader -> endianess 
+pHeader -> e_version 16777216
+pHeader -> phoff 34000000
+i34
+pHeader -> shoff dc0e0000
+iedc
+m_pStrings
+<--SECTION INFO 0-->
+NAME : 
+OFFSET : 0
+HOSTADDR : 0
+NATIVEADDR : 0
+SECTIONSIZE : 0
+.rel true
+jump to branch
+align : 0
+re set NativeAddr: 8000000
+TYPE : 0
+READONLY SECTION
+<--SECTION INFO 1-->
+NAME : .interp
+OFFSET : 114
+HOSTADDR : 9376114
+NATIVEADDR : 10114
+SECTIONSIZE : 13
+.rel true
+TYPE : 1
+READONLY SECTION
+<--SECTION INFO 2-->
+NAME : .note.ABI-tag
+OFFSET : 128
+HOSTADDR : 9376128
+NATIVEADDR : 10128
+SECTIONSIZE : 20
+.rel true
+TYPE : 7
+READONLY SECTION
+<--SECTION INFO 3-->
+NAME : .hash
+OFFSET : 148
+HOSTADDR : 9376148
+NATIVEADDR : 10148
+SECTIONSIZE : 24
+.rel true
+TYPE : 5
+READONLY SECTION
+<--SECTION INFO 4-->
+NAME : .dynsym
+OFFSET : 16c
+HOSTADDR : 937616c
+NATIVEADDR : 1016c
+SECTIONSIZE : 40
+.rel true
+TYPE : b
+READONLY SECTION
+<--SECTION INFO 5-->
+NAME : .dynstr
+OFFSET : 1ac
+HOSTADDR : 93761ac
+NATIVEADDR : 101ac
+SECTIONSIZE : 45
+.rel true
+TYPE : 3
+READONLY SECTION
+<--SECTION INFO 6-->
+NAME : .gnu.version
+OFFSET : 1f2
+HOSTADDR : 93761f2
+NATIVEADDR : 101f2
+SECTIONSIZE : 8
+.rel true
+TYPE : 6fffffff
+READONLY SECTION
+<--SECTION INFO 7-->
+NAME : .gnu.version_r
+OFFSET : 1fc
+HOSTADDR : 93761fc
+NATIVEADDR : 101fc
+SECTIONSIZE : 20
+.rel true
+TYPE : 6ffffffe
+READONLY SECTION
+<--SECTION INFO 8-->
+NAME : .rela.dyn
+OFFSET : 21c
+HOSTADDR : 937621c
+NATIVEADDR : 1021c
+SECTIONSIZE : c
+TYPE : 4
+READONLY SECTION
+<--SECTION INFO 9-->
+NAME : .rela.plt
+OFFSET : 228
+HOSTADDR : 9376228
+NATIVEADDR : 10228
+SECTIONSIZE : 18
+TYPE : 4
+READONLY SECTION
+<--SECTION INFO a-->
+NAME : .init
+OFFSET : 240
+HOSTADDR : 9376240
+NATIVEADDR : 10240
+SECTIONSIZE : 48
+.rel true
+TYPE : 1
+READONLY SECTION
+EXECUTE SECTION
+<--SECTION INFO b-->
+NAME : .text
+OFFSET : 2a0
+HOSTADDR : 93762a0
+NATIVEADDR : 102a0
+SECTIONSIZE : 2b0
+.rel true
+TYPE : 1
+READONLY SECTION
+EXECUTE SECTION
+<--SECTION INFO c-->
+NAME : .fini
+OFFSET : 550
+HOSTADDR : 9376550
+NATIVEADDR : 10550
+SECTIONSIZE : 14
+.rel true
+TYPE : 1
+READONLY SECTION
+EXECUTE SECTION
+<--SECTION INFO d-->
+NAME : .rodata
+OFFSET : 564
+HOSTADDR : 9376564
+NATIVEADDR : 10564
+SECTIONSIZE : 4
+.rel true
+TYPE : 1
+READONLY SECTION
+<--SECTION INFO e-->
+NAME : .eh_frame
+OFFSET : 568
+HOSTADDR : 9376568
+NATIVEADDR : 10568
+SECTIONSIZE : 4
+.rel true
+TYPE : 1
+READONLY SECTION
+<--SECTION INFO f-->
+NAME : .ctors
+OFFSET : 56c
+HOSTADDR : 937656c
+NATIVEADDR : 2056c
+SECTIONSIZE : 8
+.rel true
+TYPE : 1
+<--SECTION INFO 10-->
+NAME : .dtors
+OFFSET : 574
+HOSTADDR : 9376574
+NATIVEADDR : 20574
+SECTIONSIZE : 8
+.rel true
+TYPE : 1
+<--SECTION INFO 11-->
+NAME : .jcr
+OFFSET : 57c
+HOSTADDR : 937657c
+NATIVEADDR : 2057c
+SECTIONSIZE : 4
+.rel true
+TYPE : 1
+<--SECTION INFO 12-->
+NAME : .dynamic
+OFFSET : 580
+HOSTADDR : 9376580
+NATIVEADDR : 20580
+SECTIONSIZE : c8
+.rel true
+TYPE : 6
+<--SECTION INFO 13-->
+NAME : .got
+OFFSET : 648
+HOSTADDR : 9376648
+NATIVEADDR : 20648
+SECTIONSIZE : 10
+.rel true
+TYPE : 1
+<--SECTION INFO 14-->
+NAME : .plt
+OFFSET : 658
+HOSTADDR : 9376658
+NATIVEADDR : 20658
+SECTIONSIZE : 4c
+.rel true
+TYPE : 1
+EXECUTE SECTION
+<--SECTION INFO 15-->
+NAME : .data
+OFFSET : 6a4
+HOSTADDR : 93766a4
+NATIVEADDR : 206a4
+SECTIONSIZE : 8
+.rel true
+TYPE : 1
+<--SECTION INFO 16-->
+NAME : .bss
+OFFSET : 6ac
+HOSTADDR : 93766ac
+NATIVEADDR : 206ac
+SECTIONSIZE : c
+.rel true
+TYPE : 8
+BSS SECTION
+<--SECTION INFO 17-->
+NAME : .comment
+OFFSET : 6ac
+HOSTADDR : 93766ac
+NATIVEADDR : 0
+SECTIONSIZE : 21
+.rel true
+jump to branch
+align : 1
+re set NativeAddr: 8000000
+TYPE : 1
+READONLY SECTION
+<--SECTION INFO 18-->
+NAME : .shstrtab
+OFFSET : 6cd
+HOSTADDR : 93766cd
+NATIVEADDR : 0
+SECTIONSIZE : d0
+.rel true
+jump to branch
+align : 1
+re set NativeAddr: 8000021
+TYPE : 3
+READONLY SECTION
+<--SECTION INFO 19-->
+NAME : .symtab
+OFFSET : 7a0
+HOSTADDR : 93767a0
+NATIVEADDR : 0
+SECTIONSIZE : 480
+.rel true
+jump to branch
+align : 4
+re set NativeAddr: 80000f4
+TYPE : 2
+READONLY SECTION
+<--SECTION INFO 1a-->
+NAME : .strtab
+OFFSET : c20
+HOSTADDR : 9376c20
+NATIVEADDR : 0
+SECTIONSIZE : 2ba
+.rel true
+jump to branch
+align : 1
+re set NativeAddr: 8000574
+TYPE : 3
+READONLY SECTION
+<---------------Finish RealLoad---------------> 
+after realload, numsections =  1b
+in binaryfile::gettextlimits, numsections = 1b 
+Sect->pSectionName 0 000 
+Sect->pSectionName 1 000 .interp
+Sect->pSectionName 2 000 .note.ABI-tag
+Sect->pSectionName 3 000 .hash
+Sect->pSectionName 4 000 .dynsym
+Sect->pSectionName 5 000 .dynstr
+Sect->pSectionName 6 000 .gnu.version
+Sect->pSectionName 7 000 .gnu.version_r
+Sect->pSectionName 8 000 .rela.dyn
+Sect->pSectionName 9 000 .rela.plt
+Sect->pSectionName a 100 .init
+Sect->pSectionName b 100 .text
+Sect->pSectionName c 100 .fini
+Sect->pSectionName d 010 .rodata
+Sect->pSectionName e 010 .eh_frame
+Sect->pSectionName f 010 .ctors
+Sect->pSectionName 10 010 .dtors
+Sect->pSectionName 11 010 .jcr
+Sect->pSectionName 12 010 .dynamic
+Sect->pSectionName 13 010 .got
+Sect->pSectionName 14 100 .plt
+Sect->pSectionName 15 010 .data
+Sect->pSectionName 16 001 .bss
+Sect->pSectionName 17 000 .comment
+Sect->pSectionName 18 000 .shstrtab
+Sect->pSectionName 19 000 .symtab
+Sect->pSectionName 1a 000 .strtab
+./typereferencetestcases/tpn16.txt
+instantiate 8051
+------START PARSING------
+./typereferencetestcases/tpn16.txt
+Immediate Value 26
+Define variable OPTIONS
+BIT
+BIT
+BIT
+BIT
+BIT
+BIT
+BIT
+BIT
+Immediate Value 27
+Define variable OPTIONS2
+BIT
+BIT
+BIT
+BIT
+BIT
+BIT
+BIT
+BIT
+ID DPTR
+Immediate Value OPTIONS
+ID A
+Indirect value DPTR
+BIT
+ID BB
+BIT
+Label AA
+ID A
+ID OPTIONS
+Direct Value 1
+Operator +
+Label BB
+Start LabelAA2
+TESTTTT 12
+-----HANDLE BINARY EXPRESSION---
+-----HANDLE BIT ---
+-----APPENDING JUMP AND BRANCH STATEMENTS---
+-----CHECK FOR LOOPS------
+***Assembly Name 8051
+***Number of labels 2
+	 Label name: AA
+	 Number of lines: 6
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 DPTR 
+				 Number of Arguments:1
+					 OPTIONS 
+		 Offset 0
+		 Opcode MOVX
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 DPTR 
+		 Offset 1
+		 Opcode JB
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:1
+					 BB 
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:3
+					 OPTIONS + 1 
+		 Offset 0
+		 Opcode SETB
+			 Number of Expression: 1
+				 Number of Arguments:1
+					 A 
+		 Offset 0
+		 Opcode RET
+			 Number of Expression: 0
+	 Label name: BB
+	 Number of lines: 1
+		 Offset 0
+		 Opcode MOV
+			 Number of Expression: 2
+				 Number of Arguments:1
+					 A 
+				 Number of Arguments:3
+					 OPTIONS + 1 
+---ADDRESSING LABEL---
+---HANDLE UNION---
+AA : 10474
+BB : 1048c
+ REGISTER IS BIT PRESENTATOR A
+finish createing new frontend
+set Frontend for prog variable
+set frontend complete
+fe->read library catalog
+fe-readlibarycatalog finish
+entrypoint size 0
+decoding entry point...
+decode pname==null
+start: 10474 gotmain: true
+decode main at a!= NOADDRESS
+Proc name Before main main
+Entering Processing Proc
+Name Of Program : 8051
+Start at address = 10474
+***DECODE LABEL: AA
+***AT ADDRESS: 10474
+***NUMBER OF INSTRUCTION: 6
+DPTRNUM: 26
+10474: MOV_DPTR_ADDR16 r11, 38
+RTL: 
+00010474    0 *16* r11 := 38
+
+ABYTE PRESENT: r8
+10478: MOVX_A_DPTRA r8, m[ *8**zfill(16,31,r11)]
+RTL: 
+00010478    0 *32* tmp1 := zfill(16,31,r11)
+            0 *8* r8 := m[ *8**zfill(16,31,r11)]
+
+1047c: JB_DIR_IMM r214, 100
+RTL: 
+0001047c    0 *j32* %flags := r214 ~= 1
+            0 BRANCH 0x10484, condition equals
+High level: %flags
+
+ABYTE PRESENT: r8
+10480: MOV_EXP r8, m[ *8**r117 + 1]
+RTL: 
+00010480    0 *8* r8 := m[ *8**r117 + 1]
+
+10484: SETB_DIR r208
+RTL: 
+00010484    0 *8* r208 := 1
+
+RTL: 
+00010488    0 RET
+              Modifieds: 
+              Reaching definitions: 
+
+retAddr = ffffffff rtl = 10488
+finished processing proc main at address 10474
+Proc name After decode main main
+Proc name main
+Sig type:intdecoing entrypoint finish
+decoding anything undecoded...
+decode child proc
+finishing decode...
+finishing decode finish
+found 1 procs
+decompiling...
+Proc before: *forced* { int r8 } main(int argc r32, char *[] * argv r33, char *[] * envp r34)
+in cluster elf-init
+parameters: 
+end parameters
+locals:
+end locals
+symbols:
+end symbols
+live variables: 
+end live variables
+Twoway BB:
+in edges: 
+out edges: 10484 10480 
+00010474    0 *16* r11 := 38
+00010478    0 *32* tmp1 := zfill(16,31,r11)
+            0 *8* r8 := m[ *8**zfill(16,31,r11)]
+0001047c    0 *j32* %flags := r214 ~= 1
+            0 BRANCH 0x10484, condition equals
+High level: %flags
+L1: Ret BB:
+in edges: 1047c 10480 
+out edges: 
+00010484    0 *8* r208 := 1
+00010488    0 RET
+              Modifieds: 
+              Reaching definitions: 
+Fall BB:
+in edges: 1047c 
+out edges: 10484 
+00010480    0 *8* r8 := m[ *8**r117 + 1]
+
+
+
+ considering main
+decompil process  
+No Decode Childern
+find ABI :
+child size = 0
+ decompiling main
+abc
+middle decompile  10
+test 1
+test 2
+test 3
+test 4
+test 5
+test 6
+test 11
+test 12, not null
+test 14
+test 15
+test 7
+test 5
+
+remUnusedStmtEtc *forced* { int r8 } main(int argc r32, char *[] * argv r33, char *[] * envp r34)
+
+
+remUnusedStmtEtc 2*forced* { int r8 } main(int argc r32, char *[] * argv r33, char *[] * envp r34)
+
+ISACCASSIGN:    0 *32* r214 := -
+1
+2: 0
+ISACCASSIGN:    0 *32* r117 := -
+1
+2: 0
+ISACCASSIGN:    1 *16* r11 := 38
+1
+2: 0
+ISACCASSIGN:    3 *8* r8 := m[ *8**38]
+1
+2: 1
+ISACCASSIGN:    4 *j32* %flags := r214{0} ~= 1
+1
+2: 0
+ISACCASSIGN:    5 BRANCH 0x10484, condition equals
+High level: r214{0} ~= 1
+ISACCASSIGN:    6 *8* r8 := m[ *8**r117{0} + 1]
+1
+2: 1
+ISACCASSIGN:    9 *8* r8 := phi{3 6}
+1
+2: 1
+ISACCASSIGN:    7 *8* r208 := 1
+1
+2: 0
+ISACCASSIGN:    8 RET *8* r8 := r8{9},   *16* r11 := 38,   *32* r208 := 1
+              Modifieds: *8* r8,  *16* r11,  *32* r208
+              Reaching definitions: r8=r8{9},   r11=38,   r117=r117{0},   r208=1,   r214=r214{0},   tmp1=38,
+                %flags=r214{0} ~= 1,   %ZF=%ZF{4},   %CF=%CF{4}
+Into constant propagation of procedure
+Worklist size: 6
+Assign:    1 *16* r11 := 38
+Visit constant expression 38
+Value type: 2
+Value: 38
+Worklist size: 5
+Assign:    3 *8* r8 := m[ *8**38]
+Visit typed exp:  *8**38
+Visit constant expression 38
+Value type: 2
+Value: 38
+Worklist size: 4
+Assign:    4 *j32* %flags := r214{0} ~= 1
+Visit binary expression r214{0} ~= 1
+Value type: 3
+Worklist size: 3
+Assign:    6 *8* r8 := m[ *8**r117{0} + 1]
+Visit typed exp:  *8**r117{0} + 1
+Visit binary expression r117{0} + 1
+Visit ref exp: r117{0}, 68
+Visit constant expression 1
+Value type: 2
+Value: 39
+Worklist size: 2
+Assign:    9 *8* r8 := phi{3 6}
+Value type: 3
+Value: 38
+Worklist size: 1
+Assign:    7 *8* r208 := 1
+Visit constant expression 1
+Value type: 2
+Value: 1
+remove:    1 *16* r11 := 38, 0
+remove:    4 *j32* %flags := r214{0} ~= 1, 0
+remove:    7 *8* r208 := 1, 1
+remove:    7 *8* r208 := 1, 1
+test 2 *forced* { int r8 } main(int argc r32, char *[] * argv r33, char *[] * envp r34)
+
+
+remUnusedStmtEtc 2.5*forced* { int r8 } main(int argc r32, char *[] * argv r33, char *[] * envp r34)
+
+test 3 
+3
+when will a signature force
+test 4 
+
+remUnusedStmtEtc 3*forced* { int r8 } main(int argc r32, char *[] * argv r33, char *[] * envp r34)
+
+test 5 
+test 7 
+test 8 
+
+remUnusedStmtEtc 4*forced* { int r8 } main(int argc r32, char *[] * argv r33, char *[] * envp r34)
+
+test 9 
+test 10 
+after rem
+global type analysis for main
+is called ...
+update for change
+
+remUnusedStmtEtc *forced* { int r8 } main(int argc r32, char *[] * argv r33, char *[] * envp r34)
+
+
+remUnusedStmtEtc 2*forced* { int r8 } main(int argc r32, char *[] * argv r33, char *[] * envp r34)
+
+ISACCASSIGN:    0 *32* r214 := -
+1
+2: 0
+ISACCASSIGN:    0 *32* r117 := -
+1
+2: 0
+ISACCASSIGN:    0 *i32* r32 := -
+1
+2: 0
+ISACCASSIGN:    0 *[c*]** r33 := -
+1
+2: 0
+ISACCASSIGN:    0 *[c*]** r34 := -
+1
+2: 0
+ISACCASSIGN:    3 *8* r8 := m[ *8**38]
+1
+2: 1
+ISACCASSIGN:    5 BRANCH 0x10484, condition equals
+High level: r214{0} ~= 1
+ISACCASSIGN:    6 *8* r8 := m[ *8**r117{0} + 1]
+1
+2: 1
+ISACCASSIGN:    9 *8* r8 := phi{3 6}
+1
+2: 1
+ISACCASSIGN:    7 *8* r208 := 1
+1
+2: 0
+ISACCASSIGN:    8 RET *8* r8 := r8{9}
+              Modifieds: *8* r8,  *16* r11,  *32* r208
+              Reaching definitions: r8=r8{9},   r11=38,   r32=r32{0},   r33=r33{0},   r34=r34{0},   r117=r117{0},
+                r208=1,   r214=r214{0},   tmp1=38,   %flags=r214{0} ~= 1,   %ZF=%ZF{4},   %CF=%CF{4}
+Into constant propagation of procedure
+Worklist size: 4
+Assign:    3 *8* r8 := m[ *8**38]
+Visit typed exp:  *8**38
+Visit constant expression 38
+Value type: 2
+Value: 38
+Worklist size: 3
+Assign:    6 *8* r8 := m[ *8**r117{0} + 1]
+Visit typed exp:  *8**r117{0} + 1
+Visit binary expression r117{0} + 1
+Visit ref exp: r117{0}, 68
+Visit constant expression 1
+Value type: 2
+Value: 39
+Worklist size: 2
+Assign:    9 *8* r8 := phi{3 6}
+Value type: 3
+Value: 38
+Worklist size: 1
+Assign:    7 *8* r208 := 1
+Visit constant expression 1
+Value type: 2
+Value: 1
+remove:    0 *i32* r32 := -, 0
+remove:    0 *[c*]** r33 := -, 0
+remove:    0 *[c*]** r34 := -, 0
+remove:    7 *8* r208 := 1, 1
+remove:    7 *8* r208 := 1, 1
+test 2 *forced* { int r8 } main(int argc r32, char *[] * argv r33, char *[] * envp r34)
+
+
+remUnusedStmtEtc 2.5*forced* { int r8 } main(int argc r32, char *[] * argv r33, char *[] * envp r34)
+
+test 3 
+1
+when will a signature force
+test 4 
+
+remUnusedStmtEtc 3*forced* { int r8 } main(int argc r32, char *[] * argv r33, char *[] * envp r34)
+
+test 5 
+test 7 
+test 8 
+
+remUnusedStmtEtc 4*forced* { int r8 } main(int argc r32, char *[] * argv r33, char *[] * envp r34)
+
+test 9 
+test 10 
+after rem
+test 12
+test 13
+test 14
+after 1
+after rem return
+is called ...
+after 1
+after rem return
+abc xyz
+mnk xyz
+uik xyz
+Proc: *forced* { int r8 } main(int argc r32, char *[] * argv r33, char *[] * envp r34)
+in cluster elf-init
+parameters: i32 argc, [c*]* argv, [c*]* envp
+end parameters
+locals:
+__size32 OPTIONS r117
+__size8 a r8
+__size8 specbits_208_6 r208
+__size32 specbits_214_1 r214
+end locals
+symbols:
+  r8 maps to a type __size8
+  r117 maps to OPTIONS type __size32
+  r208 maps to specbits_208_6 type __size8
+  r214 maps to specbits_214_1 type __size32
+  r32{0} maps to argc type int
+  r33{0} maps to argv type char *[] *
+  r34{0} maps to envp type char *[] *
+end symbols
+live variables: r117,  r214
+end live variables
+Twoway BB:
+in edges: 
+out edges: 10484 10480 
+00000000    0 *32* specbits_214_1 := -
+            0 *32* OPTIONS := -
+00010474
+00010478    3 *8* a := m[ *8**38]
+0001047c    5 BRANCH 0x10484, condition equals
+High level: specbits_214_1 ~= 1
+Fall BB:
+in edges: 1047c 
+out edges: 10484 
+00010480    6 *8* a := m[ *8**OPTIONS + 1]
+L1: Ret BB:
+in edges: 1047c 10480 
+out edges: 
+00000000
+00010484    7 *8* specbits_208_6 := 1
+00010488    8 RET *8* a := a
+              Modifieds: *8* a,  *16* r11,  *32* specbits_208_6
+              Reaching definitions: a=a,   r11=38,   r32=argc,   r33=argv,   r34=envp,   OPTIONS=OPTIONS,
+                specbits_208_6=1,   specbits_214_1=specbits_214_1,   tmp1=38,   %flags=specbits_214_1 ~= 1,   %ZF=%ZF,
+                %CF=%CF
+
+
+
+===============================
+UNION MAKING AREA
+Statement:    0 *32* specbits_214_1 := -
+Bit use: 0, 
+Statement:    0 *32* OPTIONS := -
+Bit use: 0, 
+Statement:    3 *8* a := m[ *8**38]
+Bit use: 0, 
+Statement:    5 BRANCH 0x10484, condition equals
+High level: specbits_214_1 ~= 1
+Bit use: 1, specbits1
+===================================
+===============================
+UNION MAKING AREA
+Statement:    6 *8* a := m[ *8**OPTIONS + 1]
+Bit use: 0, 
+===================================
+===============================
+UNION MAKING AREA
+Statement:    7 *8* specbits_208_6 := 1
+Bit use: 1, specbits6
+Statement:    8 RET *8* a := a
+              Modifieds: *8* a,  *16* r11,  *32* specbits_208_6
+              Reaching definitions: a=a,   r11=38,   r32=argc,   r33=argv,   r34=envp,   OPTIONS=OPTIONS,
+                specbits_208_6=1,   specbits_214_1=specbits_214_1,   tmp1=38,   %flags=specbits_214_1 ~= 1,   %ZF=%ZF,
+                %CF=%CF
+Bit use: 0, 
+===================================
+NUM OF UNION FOUND: 0
+ENTER REPLACE ACC
+Statement:    0 *32* specbits_214_1 := -
+Statement:    0 *32* OPTIONS := -
+Statement:    3 *8* a := m[ *8**38]
+Statement:    5 BRANCH 0x10484, condition equals
+High level: specbits_214_1 ~= 1
+Bit name: specbits1
+not exist, 38
+getbytefromvalue is called, 38
+byteVar: OPTIONS
+Byte var: OPTIONS
+statment list: 3
+bb: Twoway BB:
+in edges: 
+out edges: 10484 10480 
+00000000    0 *32* specbits_214_1 := -
+            0 *32* OPTIONS := -
+00010474
+00010478
+0001047c    5 BRANCH 0x10484, condition equals
+High level: (OPTIONS.bits.bit1) ~= 1
+
+ENTER REPLACE ACC
+Statement:    6 *8* a := m[ *8**OPTIONS + 1]
+statment list: 0
+bb: Fall BB:
+in edges: 1047c 
+out edges: 10484 
+00010480
+
+Remove bb 4294967295
+ENTER REPLACE ACC
+Statement:    7 *8* specbits_208_6 := 1
+Bit name: specbits6
+ERROR: A DOES NOT HAVE A CONSTANT VALUE AT THIS POINT OF PROGRAM
+STATEMENT:    7 *8* specbits_208_6 := 1
+Byte var: 
+Statement:    8 RET *8* a := a
+              Modifieds: *8* a,  *16* r11,  *32* specbits_208_6
+              Reaching definitions: a=a,   r11=38,   r32=argc,   r33=argv,   r34=envp,   OPTIONS=OPTIONS,
+                specbits_208_6=1,   specbits_214_1=specbits_214_1,   tmp1=38,   %flags=specbits_214_1 ~= 1,   %ZF=%ZF,
+                %CF=%CF
+THERE ARE SOME PROBLEMS WITH UNION IN YOUR CODE, CANNOT CONTINUE TO DECOMPILE.
+completed in 0 secs.

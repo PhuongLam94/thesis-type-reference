@@ -1,0 +1,222 @@
+got filename elf-init.c for main
+after removing matching assigns  (t[WILDSTR]).
+size 0x10 meet with size 0x20!
+size 0x10 meet with size 0x20!
+size 0x20 meet with size 0x8!
+size 0x8 meet with size 0x20!
+size 0x10 meet with size 0x20!
+size 0x10 meet with size 0x20!
+size 0x20 meet with size 0x8!
+size 0x8 meet with size 0x20!
+size 0x20 meet with size 0x8!
+size 0x8 meet with size 0x20!
+size 0x10 meet with size 0x20!
+size 0x20 meet with size 0x8!
+size 0x8 meet with size 0x20!
+size 0x10 meet with size 0x20!
+size 0x10 meet with size 0x20!
+size 0x10 meet with size 0x20!
+size 0x20 meet with size 0x8!
+size 0x8 meet with size 0x20!
+size 0x20 meet with size 0x8!
+size 0x8 meet with size 0x20!
+size 0x20 meet with size 0x8!
+size 0x8 meet with size 0x20!
+size 0x20 meet with size 0x8!
+size 0x8 meet with size 0x20!
+size 0x20 meet with size 0x8!
+size 0x8 meet with size 0x20!
+size 0x10 meet with size 0x20!
+WARNING: size 0x8 meet with /*signed?*/char *; allowing temporarily
+size 0x10 meet with size 0x20!
+size 0x10 meet with size 0x20!
+size 0x10 meet with size 0x20!
+size 0x10 meet with size 0x20!
+size 0x10 meet with size 0x20!
+size 0x10 meet with size 0x20!
+size 0x10 meet with size 0x20!
+size 0x20 meet with size 0x8!
+size 0x8 meet with size 0x20!
+size 0x20 meet with size 0x8!
+size 0x8 meet with size 0x20!
+size 0x20 meet with size 0x8!
+size 0x8 meet with size 0x20!
+size 0x20 meet with size 0x8!
+size 0x8 meet with size 0x20!
+size 0x20 meet with size 0x8!
+size 0x8 meet with size 0x20!
+size 0x20 meet with size 0x8!
+size 0x8 meet with size 0x20!
+size 0x20 meet with size 0x8!
+size 0x8 meet with size 0x20!
+size 0x20 meet with size 0x8!
+size 0x8 meet with size 0x20!
+size 0x20 meet with size 0x8!
+size 0x8 meet with size 0x20!
+### WARNING: iteration limit exceeded for dfaTypeAnalysis of procedure main ###
+### WARNING: iteration limit exceeded for dfaTypeAnalysis of procedure main ###
+*forced* { int r8 } main(int argc r32, char *[] * argv r33, char *[] * envp r34)
+in cluster elf-init
+parameters: i32 argc, [c*]* argv, [c*]* envp
+end parameters
+locals:
+/*signed?*/char a_1 r8{40}
+/*signed?*/char * b r9
+end locals
+symbols:
+  r9 maps to b type /*signed?*/char *
+  r8{40} maps to a_1 type /*signed?*/char
+  r8{60} maps to a_1 type /*signed?*/char
+  r8{72} maps to a_1 type /*signed?*/char
+  r8{105} maps to a_1 type /*signed?*/char
+  r32{0} maps to argc type int
+  r33{0} maps to argv type char *[] *
+  r34{0} maps to envp type char *[] *
+end symbols
+live variables: r9,  r57,  r71,  r117,  r157,  r166,  r167,  r193,  r203,  r208,  r214,  r217
+end live variables
+Twoway BB:
+in edges: 
+out edges: 104e0 1047c 
+00000000    0 *j8** b := -
+00010474
+00010478    3 BRANCH 0x104e0, condition equals
+High level: (LOCATION_39.bits.SMPDUP) ~= 0
+Oneway BB:
+in edges: 10478 
+out edges: 104b8 
+0001047c
+00010480
+00010484    7 *32* OPTIONS.bits.bit5 := 1
+00010488
+0001048c   10 *32* OPTIONS.bits.CARB := 0
+00010490    0 GOTO 0x104b8
+Twoway BB:
+in edges: 
+out edges: 104a4 104a0 
+00010494
+00010498
+0001049c   17 BRANCH 0x104a4, condition equals
+High level: (LOCATION_52.bits.bit5) ~= 0
+Fall BB:
+in edges: 1049c 
+out edges: 104a4 
+000104a0   18 *32* LOCATION_52.bits.bit1 := 1
+L3: Fall BB:
+in edges: 1049c 104a0 
+out edges: 104b8 
+00000000
+000104a4
+000104a8
+000104ac   22 *32* OPTIONS.bits.bit7 := 0
+000104b0   23 *32* OPTIONS.bits.bit6 := 0
+000104b4
+L2: Twoway BB:
+in edges: 10490 104b4 
+out edges: 104c8 104c4 
+00000000
+000104b8
+000104bc
+000104c0   30 BRANCH 0x104c8, condition equals
+High level: (OPTIONS.bits.bit5) ~= 0
+Fall BB:
+in edges: 104c0 
+out edges: 104c8 
+000104c4   31 *32* OPTIONS.bits.bit1 := 1
+L4: Fall BB:
+in edges: 104c0 104c4 
+out edges: 104e0 
+00000000
+000104c8
+000104cc
+000104d0   35 *32* LOCATION_24.bits.bit7 := 0
+000104d4   36 *32* LOCATION_24.bits.bit6 := 0
+000104d8
+000104dc   39 *32* LOCATION_24.bits.bit1 := 1
+L1: Twoway BB:
+in edges: 10478 104dc 
+out edges: 10544 104e8 
+00000000
+000104e0
+000104e4   42 BRANCH 0x10544, condition equals
+High level: (BTS.bits.bit6) ~= 1
+Twoway BB:
+in edges: 104e4 
+out edges: 10514 104f0 
+000104e8
+000104ec   45 BRANCH 0x10514, condition equals
+High level: (BTS.bits.MASTER) ~= 1
+Fall BB:
+in edges: 104ec 
+out edges: 10514 
+000104f0
+000104f4
+000104f8
+000104fc   50 *j8* m[b] := (BTS.byte) & 192
+00010500
+00010504
+00010508
+0001050c
+00010510
+L6: Twoway BB:
+in edges: 104ec 10510 
+out edges: 10544 10520 
+00000000
+00010514
+00010518
+0001051c   62 BRANCH 0x10544, condition equals
+High level: (LOCATION_52.bits.SIMP) ~= 1
+Fall BB:
+in edges: 1051c 
+out edges: 10544 
+00010520
+00010524
+00010528
+0001052c   67 *j8* m[b] := (LOCATION_52.byte) & 192
+00010530
+00010534
+00010538
+0001053c   72 *j8* a_1 := ((LOCATION_24.byte) & 192) | b
+00010540
+L5: Ret BB:
+in edges: 104e4 1051c 10540 
+out edges: 
+00000000
+00010544   75 RET *j8* a := a_1
+              Modifieds: *8* a,  *16* r11,  *32* specbits_52_6,  *32* specbits_58_1,  *32* specbits_80_7,
+                *32* specbits_90_6,  *32* specbits_121_7,  *32* specbits_123_1,  *32* specbits_146_5,
+                *32* specbits_194_1,  *32* CARB
+              Reaching definitions: a=a_1,   r9=b,   r11=r11,   r32=argc,   r33=argv,   r34=envp,
+                specbits_52_6=specbits_52_6,   MASTER=MASTER,   specbits_58_1=specbits_58_1,   BTS=BTS,
+                specbits_80_7=specbits_80_7,   specbits_90_6=specbits_90_6,   SMPDUP=SMPDUP,
+                specbits_121_7=specbits_121_7,   specbits_123_1=specbits_123_1,   specbits_146_5=specbits_146_5,
+                specbits_157_6=specbits_157_6,   XROVLY=XROVLY,   SIMP=SIMP,   specbits_193_5=specbits_193_5,
+                specbits_194_1=specbits_194_1,   SYSFLGMAP=SYSFLGMAP,   SLVFLGMAP=SLVFLGMAP,   OPTIONS=OPTIONS,
+                specbits_217_5=specbits_217_5,   CARB=CARB,   tmp1=tmp1,   %flags=%flags,   %ZF=%ZF,   %CF=%CF
+
+
+type failure: no type for subexp1 of LOCATION_39.bits.SMPDUP
+type failure: no type for subexp1 of LOCATION_39.bits
+type failure: no type for subexp1 of OPTIONS.bits.bit5
+type failure: no type for subexp1 of OPTIONS.bits
+type failure: no type for subexp1 of OPTIONS.bits.CARB
+type failure: no type for subexp1 of OPTIONS.bits
+type failure: no type for subexp1 of OPTIONS.bits.bit5
+type failure: no type for subexp1 of OPTIONS.bits
+type failure: no type for subexp1 of OPTIONS.bits.bit1
+type failure: no type for subexp1 of OPTIONS.bits
+type failure: no type for subexp1 of LOCATION_24.bits.bit7
+type failure: no type for subexp1 of LOCATION_24.bits
+type failure: no type for subexp1 of LOCATION_24.bits.bit6
+type failure: no type for subexp1 of LOCATION_24.bits
+type failure: no type for subexp1 of LOCATION_24.bits.bit1
+type failure: no type for subexp1 of LOCATION_24.bits
+type failure: no type for subexp1 of BTS.bits.bit6
+type failure: no type for subexp1 of BTS.bits
+type failure: no type for subexp1 of BTS.bits.MASTER
+type failure: no type for subexp1 of BTS.bits
+type failure: no type for subexp1 of BTS.byte
+type failure: no type for subexp1 of LOCATION_52.bits.SIMP
+type failure: no type for subexp1 of LOCATION_52.bits
+type failure: no type for subexp1 of LOCATION_52.byte
+type failure: no type for subexp1 of LOCATION_24.byte

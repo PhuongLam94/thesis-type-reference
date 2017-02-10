@@ -1,0 +1,34 @@
+got filename elf-init.c for main
+### WARNING: iteration limit exceeded for dfaTypeAnalysis of procedure main ###
+### WARNING: iteration limit exceeded for dfaTypeAnalysis of procedure main ###
+*forced* { int r8 } main(int argc r32, char *[] * argv r33, char *[] * envp r34)
+in cluster elf-init
+parameters: i32 argc, [c*]* argv, [c*]* envp
+end parameters
+locals:
+end locals
+symbols:
+  r32{0} maps to argc type int
+  r33{0} maps to argv type char *[] *
+  r34{0} maps to envp type char *[] *
+end symbols
+live variables: r114
+end live variables
+Ret BB:
+in edges: 
+out edges: 
+00000000
+00010474
+00010478    2 *8* OPTIONS.bits.bit1 := 1
+0001047c    3 *8* OPTIONS.bits.bit8 := 0
+00010480    4 RET *8* OPTIONS.byte := OPTIONS.byte
+              Modifieds: *8* a,  *32* specbits_117_1,  *32* specbits_208_8
+              Reaching definitions: OPTIONS.byte=OPTIONS.byte,   r32=argc,   r33=argv,   r34=envp,   OPTIONS=OPTIONS,
+                specbits_117_1=1,   specbits_208_8=0
+
+
+type failure: no type for subexp1 of OPTIONS.bits.bit1
+type failure: no type for subexp1 of OPTIONS.bits
+type failure: no type for subexp1 of OPTIONS.bits.bit8
+type failure: no type for subexp1 of OPTIONS.bits
+type failure: no type for subexp1 of OPTIONS.byte
